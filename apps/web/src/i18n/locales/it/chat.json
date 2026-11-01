@@ -1,0 +1,108 @@
+{
+  "chat": {
+    "title": "Chat",
+    "user": "Utente",
+    "send": "Invia",
+    "stop": "Ferma",
+    "stopped": "Interrotto",
+    "reset": "Reimposta",
+    "resetConversation": "Reimposta conversazione",
+    "streaming": "…in arrivo",
+    "hideOptions": "Nascondi opzioni",
+    "showOptions": "Mostra opzioni",
+    "loadingOlder": "Caricamento dei messaggi precedenti",
+    "scrollToLatest": "Vai all'ultimo",
+    "scrollToLatestAria": "Vai all'ultimo messaggio",
+    "inputPlaceholder": "Cosa hai mangiato? (Invio per inviare · Maiusc/Ctrl+Invio per andare a capo)",
+    "attachImage": "allega un'immagine",
+    "imageNeedsModel": "il riconoscimento delle foto richiede sul server un modello AI in grado di analizzare immagini",
+    "chatUnavailable": "la chat AI richiede un modello AI configurato sul server",
+    "takePhoto": "Scatta foto",
+    "uploadImage": "Carica immagine",
+    "removeImage": "rimuovi {{name}}",
+    "attachedImageAlt": "allegato",
+    "imageUnavailable": "Immagine non più disponibile",
+    "sources": "Fonti",
+    "sourceFallback": "fonte",
+    "micError": "errore microfono: {{error}}",
+    "errorPrefix": "errore: {{error}}",
+    "connectionLost": "Connessione persa prima che la risposta fosse completa: ricarica la pagina per vederla.",
+    "loaderIs": "{{name}} sta",
+    "loaderReplying": "{{name}} sta rispondendo",
+    "loaderPhrases": [
+      "pensando",
+      "cucinando",
+      "spingendo",
+      "macinando numeri",
+      "elaborando",
+      "flettendo i muscoli",
+      "riflettendo",
+      "mettendo massa",
+      "facendoti da spotter",
+      "entrando nel mood",
+      "rimuginando",
+      "scaldandosi",
+      "macinando ripetizioni",
+      "caricando i dischi",
+      "contando i macro",
+      "facendo il taglio del peso",
+      "facendo stretching",
+      "mettendo la magnesite",
+      "riponendo i pesi",
+      "applicando il sovraccarico progressivo",
+      "facendo superserie",
+      "facendo scarico",
+      "battendo i propri PR",
+      "pianificando la tua split",
+      "perfezionando la tecnica",
+      "registrando le serie",
+      "costruendo il tuo piano",
+      "seguendo i tuoi progressi",
+      "facendo leg day"
+    ],
+    "thinking": {
+      "label": "Ragionamento",
+      "onTitle": "Il ragionamento esteso è attivo: fai clic per disattivarlo nel prossimo turno",
+      "offTitle": "Il ragionamento esteso è disattivato: fai clic per attivarlo"
+    },
+    "resetDialog": {
+      "title": "Cancellare la cronologia della conversazione?",
+      "description": "La chat attuale verrà cancellata definitivamente. Il modello ripartirà da zero, senza contesto precedente."
+    },
+    "dock": {
+      "ask": "Chiedi a {{name}}…",
+      "using": "{{tool}}…",
+      "openChat": "Apri chat",
+      "gateTitle": "{{name}} ha bisogno di un tocco",
+      "gateAction": "Tocca per controllare e salvare →"
+    },
+    "activity": {
+      "thinking": "Sto pensando…",
+      "thoughtProcess": "Ragionamento",
+      "working": "Al lavoro…",
+      "thoughtWithTools_one": "Ragionamento · {{count}} strumento",
+      "thoughtWithTools_other": "Ragionamento · {{count}} strumenti",
+      "usedTools_one": "{{count}} strumento usato",
+      "usedTools_other": "{{count}} strumenti usati"
+    },
+    "language": {
+      "title": "lingua della chat: usata per il riconoscimento vocale e per la lingua delle risposte dell'assistente",
+      "label": "lingua della chat"
+    },
+    "dictation": {
+      "start": "detta a voce (funziona meglio con Chrome/Edge)",
+      "stop": "interrompi dettatura",
+      "toggle": "Attiva/disattiva dettatura"
+    },
+    "attach": {
+      "label": "Allega",
+      "maxPerTurn": "max {{n}} immagini per messaggio",
+      "unsupportedType": "{{name}}: tipo non supportato ({{type}})",
+      "unknownType": "sconosciuto",
+      "tooLarge": "{{name}}: troppo grande (max ~7,5MB)",
+      "readError": "{{name}}: {{error}}",
+      "readFailed": "lettura non riuscita",
+      "onlyFirst": "sono state allegate solo le prime {{n}}"
+    }
+  }
+}

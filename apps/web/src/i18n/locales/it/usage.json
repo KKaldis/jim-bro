@@ -1,0 +1,36 @@
+{
+  "usage": {
+    "title": "Utilizzo AI",
+    "subtitle": "Quanto costa far funzionare le funzioni AI, ai prezzi di listino del tuo provider AI.",
+    "month": "Mese",
+    "current": "attuale",
+    "noLlm": "Su questo server non è configurato alcun modello AI, quindi la chat con il coach e il riconoscimento delle foto sono disattivati. Imposta LLM_PROVIDER e la chiave API di quel provider nell'ambiente del server per attivarli.",
+    "estCost": "Costo stimato",
+    "estCostHint": "Ai prezzi di listino",
+    "requests": "Richieste",
+    "inputTokens": "Token in input",
+    "outputTokens": "Token in output",
+    "cachedHint": "{{n}} dalla cache",
+    "bySource": "Per funzione",
+    "byModel": "Per modello",
+    "noUsage": "Nessun utilizzo AI questo mese.",
+    "dailyChart": "Token al giorno",
+    "feature": "Funzione",
+    "cost": "Costo stim.",
+    "unpriced": "Nessun prezzo di listino per questo modello",
+    "inOut": "{{input}} in input · {{output}} in output",
+    "tokensCount": "{{n}} token",
+    "requestsCount_one": "{{count}} richiesta",
+    "requestsCount_other": "{{count}} richieste",
+    "kind": {
+      "llm": "Chat AI",
+      "image_recognition": "Riconoscimento immagini"
+    },
+    "source": {
+      "chat": "Chat con il coach",
+      "chat_image": "Foto in chat",
+      "food_scan": "Scansione foto del cibo",
+      "receipt_scan": "Scansione scontrino"
+    }
+  }
+}

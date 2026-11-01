@@ -1,0 +1,96 @@
+{
+  "pageHelp": {
+    "aria": "Cosa posso fare qui?",
+    "heading": "In questa pagina puoi",
+    "dashboard": {
+      "items": [
+        "Vedere le calorie e i macro di oggi e quanto ti resta rispetto ai tuoi obiettivi.",
+        "Controllare l'allenamento previsto, i passi, l'acqua e le calorie bruciate.",
+        "Usare le frecce in alto per spostarti tra i giorni."
+      ]
+    },
+    "nutrition": {
+      "items": [
+        "Vedere tutto ciò che hai mangiato nel giorno selezionato, pasto per pasto.",
+        "Confrontare i tuoi totali con gli obiettivi di calorie e macro.",
+        "Aggiungere cibo a mano, o semplicemente dire al coach cosa hai mangiato.",
+        "Modificare o eliminare qualsiasi alimento registrato.",
+        "Cambiare l'intervallo per vedere l'andamento nelle settimane o nei mesi."
+      ]
+    },
+    "pantry": {
+      "items": [
+        "Tenere un catalogo dei tuoi alimenti e integratori con i relativi macro.",
+        "Aggiungere alimenti a mano o scansionando un codice a barre.",
+        "Tenere traccia di ciò che hai a disposizione.",
+        "Importare uno scontrino o una foto della spesa tramite la chat."
+      ]
+    },
+    "recipes": {
+      "items": [
+        "Salvare le ricette che prepari spesso, o importarne una da un link.",
+        "Vedere i macro per porzione.",
+        "Registrare una ricetta intera, o qualche porzione, come pasto in un colpo solo."
+      ]
+    },
+    "diet": {
+      "items": [
+        "Creare piani alimentari su più giorni con obiettivi giornalieri.",
+        "Impostare una programmazione settimanale per decidere quale giorno del piano seguire.",
+        "Registrare un pasto pianificato con un tocco.",
+        "Ottenere una lista della spesa di ciò che manca nella tua dispensa."
+      ]
+    },
+    "training": {
+      "items": [
+        "Registrare le sessioni: serie, ripetizioni, peso e sforzo.",
+        "Partire da una scheda di allenamento o allenarti a ruota libera.",
+        "Ricevere dal coach il suggerimento sui carichi per la prossima volta.",
+        "Spostarti tra i giorni per rivedere le sessioni passate."
+      ]
+    },
+    "progress": {
+      "items": [
+        "Vedere lo storico di ogni esercizio.",
+        "Seguire il tuo massimale stimato (1RM) e l'andamento della forza.",
+        "Cambiare l'intervallo per confrontare settimane o mesi."
+      ]
+    },
+    "plans": {
+      "items": [
+        "Costruire la tua split di allenamento: giorni, esercizi e serie, ripetizioni e carichi obiettivo.",
+        "Chiedere al coach di prepararti una scheda.",
+        "Caricare una scheda che ti ha dato il tuo personal trainer."
+      ]
+    },
+    "composition": {
+      "items": [
+        "Registrare le pesate e la massa grassa.",
+        "Vedere BMI, massa magra e FFMI calcolati da questi dati.",
+        "Seguire i grafici dell'andamento nelle settimane o nei mesi."
+      ]
+    },
+    "measurements": {
+      "items": [
+        "Registrare le misure col metro di spalle, petto, braccia, cosce e polpacci.",
+        "Confrontare ognuna con l'ideale per la tua struttura ossea sul grafico radar.",
+        "Vedere su quali muscoli concentrarti.",
+        "Scansionare la tua forma fisica con la fotocamera."
+      ]
+    },
+    "usage": {
+      "items": [
+        "Vedere quanto costano le funzioni AI questo mese, per funzione e per modello.",
+        "Rivedere i mesi precedenti.",
+        "I costi sono stime ai prezzi di listino del tuo provider AI."
+      ]
+    },
+    "calculators": {
+      "items": [
+        "Usare in autonomia qualsiasi calcolatore usato dal coach.",
+        "I dati partono dal tuo profilo; modificali per provare scenari diversi.",
+        "Niente di quello che fai qui viene salvato nei tuoi registri."
+      ]
+    }
+  }
+}

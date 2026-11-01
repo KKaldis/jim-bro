@@ -1,0 +1,36 @@
+{
+  "usage": {
+    "title": "AI کا استعمال",
+    "subtitle": "AI فیچرز چلانے کی لاگت، آپ کے AI فراہم کنندہ کی فہرستی قیمتوں پر۔",
+    "month": "مہینہ",
+    "current": "موجودہ",
+    "noLlm": "اس سرور پر کوئی AI ماڈل ترتیب نہیں دیا گیا، اس لیے کوچ چیٹ اور تصویر کی شناخت بند ہیں۔ انہیں چالو کرنے کے لیے سرور کے ماحول میں LLM_PROVIDER اور اس فراہم کنندہ کی API کلید سیٹ کریں۔",
+    "estCost": "تخمینی لاگت",
+    "estCostHint": "فہرستی قیمتوں پر",
+    "requests": "درخواستیں",
+    "inputTokens": "ان پٹ ٹوکن",
+    "outputTokens": "آؤٹ پٹ ٹوکن",
+    "cachedHint": "{{n}} کیش سے",
+    "bySource": "فیچر کے لحاظ سے",
+    "byModel": "ماڈل کے لحاظ سے",
+    "noUsage": "اس مہینے ابھی تک AI کا کوئی استعمال نہیں۔",
+    "dailyChart": "روزانہ ٹوکن",
+    "feature": "فیچر",
+    "cost": "تخمینی لاگت",
+    "unpriced": "اس ماڈل کی کوئی قیمت درج نہیں",
+    "inOut": "{{input}} ان پٹ · {{output}} آؤٹ پٹ",
+    "tokensCount": "{{n}} ٹوکن",
+    "requestsCount_one": "{{count}} درخواست",
+    "requestsCount_other": "{{count}} درخواستیں",
+    "kind": {
+      "llm": "AI چیٹ",
+      "image_recognition": "تصویر کی شناخت"
+    },
+    "source": {
+      "chat": "کوچ چیٹ",
+      "chat_image": "چیٹ میں تصاویر",
+      "food_scan": "خوراک کی تصویر کا اسکین",
+      "receipt_scan": "رسید کا اسکین"
+    }
+  }
+}

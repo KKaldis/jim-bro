@@ -1,0 +1,156 @@
+{
+  "lib": {
+    "toast": {
+      "verb": {
+        "log": "u regjistrua",
+        "add": "u shtua",
+        "save": "u ruajt",
+        "import": "u importua",
+        "update": "u përditësua",
+        "replace": "u përditësua",
+        "set": "u përditësua",
+        "activate": "u aktivizua",
+        "delete": "u hoq",
+        "remove": "u hoq",
+        "submit": "u dërgua"
+      },
+      "noun": {
+        "item": "Artikulli",
+        "update_profile": "Profili",
+        "update_pantry": "Qileri",
+        "import_pantry": "Qileri",
+        "log_body_comp": "Regjistrimi i trupit",
+        "delete_body_comp_entry": "Regjistrimi i trupit",
+        "update_body_comp_entry": "Regjistrimi i trupit",
+        "log_planned_meal": "Vakti",
+        "log_recipe": "Receta",
+        "update_recipe_portion": "Receta",
+        "set_recipe_favorite": "Receta",
+        "log_workout_session": "Seanca e stërvitjes",
+        "delete_workout_session": "Seanca e stërvitjes",
+        "delete_cardio_entry": "Kardio",
+        "update_cardio_entry": "Kardio",
+        "log_measurements": "Matjet",
+        "add_exercise_to_plan_day": "Ushtrimi",
+        "remove_exercise_from_plan_day": "Ushtrimi",
+        "update_plan_exercise": "Ushtrimi",
+        "replace_plan_exercise": "Ushtrimi",
+        "update_workout_plan_day": "Plani i stërvitjes"
+      },
+      "httpNoun": {
+        "meal": "Vakti",
+        "diet_plan": "Plani i dietës",
+        "workout_session": "Seanca e stërvitjes",
+        "workout_plan": "Plani i stërvitjes",
+        "body_entry": "Regjistrimi i trupit",
+        "cardio": "Kardio",
+        "measurements": "Matjet",
+        "steps": "Hapat",
+        "water": "Uji",
+        "profile": "Profili"
+      },
+      "message": "{{noun}} {{verb}}"
+    },
+    "error": {
+      "invalidInput": "Të dhëna të pavlefshme"
+    },
+    "energy": {
+      "bmr": "BMR",
+      "maintenance": "mbajtje",
+      "dailyTarget": "objektivi ditor",
+      "kcal": "kcal"
+    },
+    "gauge": {
+      "underweight": "nën peshë",
+      "normal": "normal",
+      "overweight": "mbipeshë",
+      "obese": "obez",
+      "healthy": "i shëndetshëm",
+      "veryLean": "shumë i thatë",
+      "athletic": "atletik",
+      "fit": "në formë",
+      "average": "mesatar",
+      "high": "i lartë",
+      "belowAverage": "nën mesataren",
+      "aboveAverage": "mbi mesataren",
+      "outstanding": "i jashtëzakonshëm",
+      "extremelyHigh": "jashtëzakonisht i lartë",
+      "aboveNatural": "mbi natyralen",
+      "beginner": "fillestar",
+      "intermediate": "i mesëm",
+      "advanced": "i avancuar",
+      "nearCeiling": "afër tavanit",
+      "lagging": "mbetur prapa",
+      "close": "afër",
+      "onTarget": "ideal",
+      "ahead": "përpara",
+      "aboveIdeal": "mbi",
+      "wellAboveIdeal": "tepricë"
+    },
+    "goal": {
+      "cut": "Ulje",
+      "recomp": "Rikompozim",
+      "maintain": "Mbajtje",
+      "lean_bulk": "Rritje e pastër"
+    },
+    "burn": {
+      "title": "djegia nga stërvitja",
+      "estimateHint": "Vlerësuar nga seritë e seancës (ngarkesa × përsëritjet)",
+      "kcal": "kcal"
+    },
+    "category": {
+      "body-comp": "Trupi",
+      "nutrition": "Ushqyerja",
+      "pantry": "Qileri",
+      "training": "Stërvitja",
+      "progress": "Progresi",
+      "navigation": "Navigimi",
+      "macros": "Makrot",
+      "info": "Info"
+    }
+  },
+  "components": {
+    "camera": {
+      "scanAria": "Skano barkodin",
+      "photoAria": "Bëj foto",
+      "noCameraApi": "Ky shfletues nuk ofron API kamere. Përdor ngarkimin.",
+      "previewFailed": "pamja paraprake nuk nisi: {{error}}",
+      "unavailable": "kamera nuk është e disponueshme — {{error}}",
+      "grantPermission": "Jep lejen e kamerës në shfletues dhe provo sërish, ose përdor ngarkimin.",
+      "notSupported": "Skanimi i drejtpërdrejtë nuk mbështetet këtu — bëj një foto.",
+      "stalled": "Nuk lexohet? Mbaje të qëndrueshëm dhe mbush kornizën, ose bëj një foto.",
+      "notSupportedTypeIt": "Skanimi i drejtpërdrejtë nuk mbështetet këtu — shkruaje barkodin.",
+      "stalledNoPhoto": "Nuk lexohet? Mbaje të qëndrueshëm dhe mbush kornizën.",
+      "aim": "Drejtoje kamerën e pasme te barkodi.",
+      "snapInstead": "Bëj foto në vend të kësaj",
+      "snap": "Foto"
+    },
+    "rowActions": {
+      "aria": "Veprimet e rreshtit"
+    },
+    "lock": {
+      "noModel": "Pa model AI",
+      "noLlmTitle": "Në këtë server nuk është konfiguruar asnjë model AI",
+      "noVisionTitle": "Në këtë server nuk është konfiguruar asnjë model AI që mund të analizojë imazhe",
+      "locked": "Jo i disponueshëm",
+      "lockedTitle": "Nuk është i disponueshëm për llogarinë tënde"
+    },
+    "install": {
+      "title": "Instalo {{name}}",
+      "iosSubtitle": "Shtoje në ekranin bazë për qasje të shpejtë",
+      "androidSubtitle": "Merr përvojën e aplikacionit në ekran të plotë",
+      "install": "Instalo",
+      "dismiss": "Mbyll",
+      "iosTitle": "Shto në ekranin bazë",
+      "iosIntro": "iOS nuk ofron instalim me një prekje — tre hapa të shpejtë në Safari:",
+      "iosStep1Prefix": "Prek butonin",
+      "iosStep1Share": "Ndaj",
+      "iosStep1Suffix": "në shiritin e veglave të Safari.",
+      "iosStep2Prefix": "Lëviz dhe zgjidh",
+      "iosStep2Action": "Shto në ekranin bazë",
+      "iosStep3Prefix": "Prek",
+      "iosStep3Add": "Shto",
+      "iosStep3Suffix": "— {{name}} shfaqet në ekranin bazë."
+    }
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "physique": {
+    "entry": "Camera scan",
+    "title": "Body scan",
+    "beta": "Beta",
+    "switchCamera": "Switch camera",
+    "capture": "Capture",
+    "measuring": "Measuring…",
+    "hint": "Phone upright at chest height, about 2.5 m away. Arms slightly out, fitted clothing. Capture starts by itself.",
+    "framing": {
+      "none": "Step into view",
+      "head_cut": "Head cut off: step back",
+      "feet_cut": "Feet cut off: step back",
+      "full": "Full body in frame: hold still"
+    },
+    "loading": {
+      "chunk": "Loading scanner…",
+      "download": "Downloading body-scan models",
+      "mb": "{{loaded}} / {{total}} MB",
+      "oneTime": "One-time download. It stays on this device for next time.",
+      "cached": "Loading models from this device…",
+      "init": "Starting models…",
+      "failed": "Couldn't load the body-scan models: {{error}}",
+      "retry": "Try again"
+    },
+    "result": {
+      "full": "Full body: measured in centimetres, scaled from your height.",
+      "torso": "Torso only: ratios, no centimetres.",
+      "noPerson": "Couldn't get a clean outline of you in these frames, usually because of a busy background or your arms touching your body. Try a plain wall, arms slightly out, whole body in view.",
+      "privacy": "The photo stays on this device. Nothing is uploaded.",
+      "retake": "Retake"
+    },
+    "parts": {
+      "shoulders": "Shoulders",
+      "chest": "Chest",
+      "waist": "Waist",
+      "hips": "Hips",
+      "neck": "Neck",
+      "upper_arm": "Upper arm",
+      "forearm": "Forearm",
+      "thigh": "Thigh",
+      "calf": "Calf"
+    },
+    "shapes": {
+      "v_taper": "V-taper",
+      "square": "Square",
+      "diamond": "Diamond",
+      "triangle": "Triangle",
+      "hourglass": "Hourglass",
+      "pear": "Pear",
+      "apple": "Apple",
+      "inverted_triangle": "Inverted triangle",
+      "rectangle": "Rectangle"
+    },
+    "report": {
+      "shapeUnknown": "Shape not determined",
+      "widths": "Front widths",
+      "girths": "Estimated girths",
+      "girthsNote": "Estimated from the front view with average body depth, so expect a few centimetres of error. For the numbers you log, use a tape measure.",
+      "accuracy": "Less accurate than a tape measure. A photo only sees your width, so girths are estimated and can be several centimetres off. Log tape measurements as your record; use scans to compare against earlier scans taken the same way.",
+      "ratios": "Ratios (front widths)",
+      "target": "goal {{value}}",
+      "composition": "Composition",
+      "bodyFat": "Body fat",
+      "bfSource": {
+        "user": "your last weigh-in",
+        "navy_from_photo": "Navy estimate from the photo"
+      },
+      "somatotype": "Somatotype (endo / meso / ecto)",
+      "balance": "Left / right",
+      "biggerSide": "{{pct}}% wider on the {{side}}",
+      "side": {
+        "left": "left",
+        "right": "right"
+      },
+      "priorities": "What to work on",
+      "reduceWaist": "Bring the waist down (fat loss)",
+      "method": "Method notes ({{count}})",
+      "uncalibrated": "The thresholds are first guesses and haven't been checked against tape measurements yet.",
+      "bodyShape": "Body shape",
+      "scale": "1 px = {{cmPerPx}} cm: your {{heightCm}} cm height over a {{heightPx}} px tall silhouette.",
+      "addHeight": "Add height and rescan",
+      "checkThese": "Check these",
+      "soma": {
+        "endo": "Endo",
+        "meso": "Meso",
+        "ecto": "Ecto"
+      },
+      "torso": {
+        "no_height": "Ratios only: add your height so the widths can be converted to centimetres.",
+        "head_cut": "Ratios only: the top of your head touched the edge of the frame. Step back a little, or lower the phone slightly.",
+        "feet_cut": "Ratios only: your feet were at the bottom edge of the frame. Step back until there's a little floor below your feet.",
+        "legs_hidden": "Ratios only: your knees or ankles weren't clearly visible. Make sure nothing blocks your legs and the floor around your feet is in view."
+      }
+    },
+    "perf": "{{fps}} fps · {{delegate}} · loaded in {{s}} s ({{source}})",
+    "source": {
+      "cache": "from device",
+      "network": "downloaded"
+    },
+    "gate": {
+      "title": "Your height sets the scale",
+      "why": "The photo has no ruler: your real height divided by your height in pixels gives the centimetres for every width.",
+      "male": "Male",
+      "female": "Female",
+      "height": "Height",
+      "save": "Save to my profile",
+      "skip": "Skip (ratios only)",
+      "start": "Start scan"
+    },
+    "guide": {
+      "open": "Photo tips",
+      "kicker": "Before you scan",
+      "title": "How to get accurate measurements",
+      "diagramAria": "Phone on a shelf at chest height, about 2.5 m from you, arms about 20 degrees out",
+      "done": "Got it",
+      "tips": {
+        "background": {
+          "title": "Plain background",
+          "body": "Stand in front of a plain, light wall. Patterned curtains, shelves or furniture behind you get mixed into your outline, especially around the arms."
+        },
+        "light": {
+          "title": "Even light from the front",
+          "body": "Face the light source. A bright window behind you turns you into a dark shape with blurry edges."
+        },
+        "phone": {
+          "title": "Phone upright at chest height",
+          "body": "Prop it on a shelf about 2.5 m away, not tilted up or down. Use the automatic countdown, not a mirror."
+        },
+        "frame": {
+          "title": "Whole body in frame",
+          "body": "Leave a little space above your head and below your feet. Your height is the ruler, so a cut-off head or feet means ratios only."
+        },
+        "pose": {
+          "title": "Arms about 20° out, feet hip-width",
+          "body": "Stand straight, facing the camera, with a clear gap under each armpit and between your arms and waist. Arms against your sides are measured as part of the torso."
+        },
+        "clothes": {
+          "title": "Fitted clothing",
+          "body": "Shorts and a fitted top, or swimwear. Loose fabric adds to every width. Tie long hair up so it doesn't widen your neck and shoulders."
+        },
+        "barefoot": {
+          "title": "Barefoot",
+          "body": "Shoes add height to your silhouette, which shrinks every measurement slightly."
+        },
+        "repeat": {
+          "title": "Same conditions every time",
+          "body": "Same spot, light, clothing and time of day (ideally morning, before eating). Then the change between scans is real, not setup."
+        }
+      }
+    },
+    "privacy": {
+      "badge": "On-device",
+      "badgeTitle": "The camera feed and photos are processed on this phone and never uploaded.",
+      "title": "Processed on your phone",
+      "body": "The camera feed and the photos are analysed right here on this device. Nothing is uploaded or stored, and the photo is gone when you close the scanner. Only the models are downloaded, once.",
+      "loading": "Your camera feed stays on this phone. Nothing is uploaded."
+    }
+  }
+}

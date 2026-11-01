@@ -1,0 +1,43 @@
+# Source control
+.git
+.gitignore
+.gitattributes
+
+# Local env / secrets
+.env
+.env.*
+!.env.example
+
+# Installed deps + build artifacts (rebuilt inside the image)
+**/node_modules
+**/dist
+**/.turbo
+**/.cache
+*.tsbuildinfo
+
+# Per-user runtime data (never in image)
+data/
+
+# (drizzle/ migration SQL is intentionally INCLUDED in the image so
+# `drizzle-kit migrate` can apply versioned migrations at deploy time.)
+
+# Editor + OS
+.vscode
+.idea
+*.swp
+.DS_Store
+Thumbs.db
+
+# Docs / dev-only
+README.md
+SETUP.md
+*.md
+!apps/server/**/*.md
+
+# CI
+.github
+
+# Compose / docker scaffolding (don't recurse self into the image)
+docker-compose*.yml
+Dockerfile*
+.dockerignore

@@ -1,0 +1,156 @@
+{
+  "lib": {
+    "toast": {
+      "verb": {
+        "log": "Registrazione completata",
+        "add": "Aggiunta completata",
+        "save": "Salvataggio completato",
+        "import": "Importazione completata",
+        "update": "Aggiornamento completato",
+        "replace": "Aggiornamento completato",
+        "set": "Aggiornamento completato",
+        "activate": "Attivazione completata",
+        "delete": "Rimozione completata",
+        "remove": "Rimozione completata",
+        "submit": "Invio completato"
+      },
+      "noun": {
+        "item": "Elemento",
+        "update_profile": "Profilo",
+        "update_pantry": "Dispensa",
+        "import_pantry": "Dispensa",
+        "log_body_comp": "Dati corporei",
+        "delete_body_comp_entry": "Dati corporei",
+        "update_body_comp_entry": "Dati corporei",
+        "log_planned_meal": "Pasto",
+        "log_recipe": "Ricetta",
+        "update_recipe_portion": "Ricetta",
+        "set_recipe_favorite": "Ricetta",
+        "log_workout_session": "Sessione di allenamento",
+        "delete_workout_session": "Sessione di allenamento",
+        "delete_cardio_entry": "Cardio",
+        "update_cardio_entry": "Cardio",
+        "log_measurements": "Misure",
+        "add_exercise_to_plan_day": "Esercizio",
+        "remove_exercise_from_plan_day": "Esercizio",
+        "update_plan_exercise": "Esercizio",
+        "replace_plan_exercise": "Esercizio",
+        "update_workout_plan_day": "Scheda di allenamento"
+      },
+      "httpNoun": {
+        "meal": "Pasto",
+        "diet_plan": "Piano alimentare",
+        "workout_session": "Sessione di allenamento",
+        "workout_plan": "Scheda di allenamento",
+        "body_entry": "Dati corporei",
+        "cardio": "Cardio",
+        "measurements": "Misure",
+        "steps": "Passi",
+        "water": "Acqua",
+        "profile": "Profilo"
+      },
+      "message": "{{verb}}: {{noun}}"
+    },
+    "error": {
+      "invalidInput": "Valore non valido"
+    },
+    "energy": {
+      "bmr": "BMR",
+      "maintenance": "mantenimento",
+      "dailyTarget": "obiettivo giornaliero",
+      "kcal": "kcal"
+    },
+    "gauge": {
+      "underweight": "sottopeso",
+      "normal": "normale",
+      "overweight": "sovrappeso",
+      "obese": "obesità",
+      "healthy": "sano",
+      "veryLean": "molto definito",
+      "athletic": "atletico",
+      "fit": "in forma",
+      "average": "nella media",
+      "high": "alto",
+      "belowAverage": "sotto la media",
+      "aboveAverage": "sopra la media",
+      "outstanding": "eccezionale",
+      "extremelyHigh": "estremamente alto",
+      "aboveNatural": "oltre il limite natural",
+      "beginner": "principiante",
+      "intermediate": "intermedio",
+      "advanced": "avanzato",
+      "nearCeiling": "vicino al limite",
+      "lagging": "indietro",
+      "close": "vicino",
+      "onTarget": "ideale",
+      "ahead": "avanti",
+      "aboveIdeal": "sopra",
+      "wellAboveIdeal": "eccesso"
+    },
+    "goal": {
+      "cut": "Definizione",
+      "recomp": "Ricomposizione",
+      "maintain": "Mantenimento",
+      "lean_bulk": "Massa pulita"
+    },
+    "burn": {
+      "title": "calorie bruciate in allenamento",
+      "estimateHint": "Stimate dalle serie della sessione (carico × ripetizioni)",
+      "kcal": "kcal"
+    },
+    "category": {
+      "body-comp": "Corpo",
+      "nutrition": "Alimentazione",
+      "pantry": "Dispensa",
+      "training": "Allenamento",
+      "progress": "Progressi",
+      "navigation": "Navigazione",
+      "macros": "Macro",
+      "info": "Info"
+    }
+  },
+  "components": {
+    "camera": {
+      "scanAria": "Scansiona codice a barre",
+      "photoAria": "Scatta foto",
+      "noCameraApi": "Questo browser non offre l'accesso alla fotocamera. Usa il caricamento.",
+      "previewFailed": "impossibile avviare l'anteprima: {{error}}",
+      "unavailable": "fotocamera non disponibile: {{error}}",
+      "grantPermission": "Consenti l'accesso alla fotocamera nel browser e riprova, oppure usa il caricamento.",
+      "notSupported": "La scansione dal vivo non è supportata qui: scatta una foto.",
+      "stalled": "Non riesce a leggerlo? Tieni fermo il telefono e riempi l'inquadratura, oppure scatta una foto.",
+      "notSupportedTypeIt": "La scansione dal vivo non è supportata qui: digita il codice a barre.",
+      "stalledNoPhoto": "Non riesce a leggerlo? Tieni fermo il telefono e riempi l'inquadratura.",
+      "aim": "Punta la fotocamera posteriore sul codice a barre.",
+      "snapInstead": "Scatta invece una foto",
+      "snap": "Scatta"
+    },
+    "rowActions": {
+      "aria": "Azioni della riga"
+    },
+    "lock": {
+      "noModel": "Nessun modello AI",
+      "noLlmTitle": "Nessun modello AI configurato su questo server",
+      "noVisionTitle": "Nessun modello AI in grado di analizzare immagini configurato su questo server",
+      "locked": "Non disponibile",
+      "lockedTitle": "Non disponibile per il tuo account"
+    },
+    "install": {
+      "title": "Installa {{name}}",
+      "iosSubtitle": "Aggiungi alla schermata Home per un accesso rapido",
+      "androidSubtitle": "Usa l'app a schermo intero",
+      "install": "Installa",
+      "dismiss": "Chiudi",
+      "iosTitle": "Aggiungi alla schermata Home",
+      "iosIntro": "iOS non permette l'installazione con un tocco: bastano tre passaggi in Safari:",
+      "iosStep1Prefix": "Tocca il pulsante",
+      "iosStep1Share": "Condividi",
+      "iosStep1Suffix": "nella barra degli strumenti di Safari.",
+      "iosStep2Prefix": "Scorri e scegli",
+      "iosStep2Action": "Aggiungi alla schermata Home",
+      "iosStep3Prefix": "Tocca",
+      "iosStep3Add": "Aggiungi",
+      "iosStep3Suffix": "e {{name}} comparirà nella tua schermata Home."
+    }
+  }
+}

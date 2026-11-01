@@ -1,0 +1,343 @@
+{
+  "cards": {
+    "common": {
+      "item": "item"
+    },
+    "macros": {
+      "protein": "protein",
+      "fat": "fat",
+      "carbs": "carbs",
+      "fiber": "fiber"
+    },
+    "energy": {
+      "atTdee": "at TDEE",
+      "vsTdee": "{{sign}}{{pct}}% vs TDEE"
+    },
+    "dayTag": {
+      "today": "Today",
+      "openToday": "Open today",
+      "openDate": "Open {{date}}"
+    },
+    "day": {
+      "macros": "Macros"
+    },
+    "targets": {
+      "targetMacros": "target macros",
+      "dailyTarget": "Daily target"
+    },
+    "meal": {
+      "preview": "Meal preview"
+    },
+    "bmi": {
+      "healthyRange": "Healthy range for your height: {{low}}–{{high}} kg"
+    },
+    "ffmi": {
+      "normalized": "Normalized"
+    },
+    "bodyFat": {
+      "methodEstimate": "{{method}} estimate"
+    },
+    "body": {
+      "bodyFat": "Body fat",
+      "weight": "Weight",
+      "leanMass": "Lean mass",
+      "composition": "Body composition",
+      "kgLean": "{{kg}} kg lean",
+      "asOf": "as of ",
+      "trend": "Trend",
+      "vsPriorDays_one": "vs prior {{count}} day",
+      "vsPriorDays_other": "vs prior {{count}} days"
+    },
+    "food": {
+      "title": "Food",
+      "per100": "{{kcal}} kcal / 100 {{unit}}",
+      "onHand": "{{qty}} {{unit}} on hand"
+    },
+    "product": {
+      "title": "Product",
+      "matches": "Product matches",
+      "per100g": "{{kcal}} kcal / 100 g",
+      "incomplete": "macros incomplete",
+      "found_one": "{{count}} found",
+      "found_other": "{{count}} found",
+      "foundAvg_one": "{{count}} found · avg {{kcal}} kcal",
+      "foundAvg_other": "{{count}} found · avg {{kcal}} kcal",
+      "show": "Show products",
+      "hide": "Hide products",
+      "unnamed": "(unnamed)"
+    },
+    "substitute": {
+      "title": "Substitutes",
+      "options_one": "{{count}} option",
+      "options_other": "{{count}} options"
+    },
+    "training": {
+      "burn": "Training burn",
+      "estimatedTotal": "estimated total",
+      "activity": "activity"
+    },
+    "maxPotential": {
+      "title": "Max natural potential",
+      "atBodyFat": "at {{pct}}% body fat",
+      "maxWeight": "Max weight",
+      "maxLeanMass": "Max lean mass",
+      "leanToGain": "Lean mass to gain",
+      "leanToGainPct": "Lean mass to gain · {{pct}}% of potential",
+      "chest": "Chest",
+      "neck": "Neck",
+      "bicep": "Bicep",
+      "forearm": "Forearm",
+      "thigh": "Thigh",
+      "calf": "Calf",
+      "ceilingNote": "Lifetime drug-free ceiling — a reference, not a near-term target.",
+      "howClose": "How close you are",
+      "pctOfCeiling": "{{pct}}% of your natural ceiling"
+    },
+    "strength": {
+      "repsShort": "reps",
+      "level": {
+        "title": "Strength level",
+        "beginner": "Beginner",
+        "novice": "Novice",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced",
+        "elite": "Elite",
+        "strongerThan": "Stronger than {{pct}}% of lifters",
+        "ratio": "{{ratio}}× bodyweight",
+        "nextLevel": "+{{remaining}} {{unit}} to {{level}}"
+      },
+      "oneRepMax": {
+        "title": "One-rep max",
+        "from": "from {{weight}} kg × {{reps}}",
+        "estimated": "Estimated 1RM",
+        "epley": "Epley {{value}} kg",
+        "brzycki": "Brzycki {{value}} kg",
+        "repTable": "Load per rep count (% of 1RM)"
+      },
+      "powerlifting": {
+        "title": "Powerlifting score",
+        "total": "Total {{total}} kg",
+        "wilks": "Wilks",
+        "dots": "DOTS",
+        "ipfgl": "IPF GL",
+        "breakdown": "{{parts}} kg"
+      },
+      "symmetry": {
+        "title": "Strength symmetry",
+        "balanced": "Balance across lifts",
+        "lagging": "{{lift}} is lagging — prioritize it"
+      },
+      "plates": {
+        "title": "Barbell loading",
+        "target": "Target {{target}} {{unit}}",
+        "perSide": "Per side",
+        "barOnly": "Just the bar — nothing to load",
+        "loaded": "Loads to exactly {{loaded}} {{unit}}",
+        "closest": "Closest: {{loaded}} {{unit}}"
+      }
+    },
+    "progress": {
+      "title": "Progress",
+      "lastDays_one": "last {{count}} day",
+      "lastDays_other": "last {{count}} days",
+      "avgWeight": "avg weight",
+      "waist": "Waist"
+    },
+    "sets": {
+      "title": "Recent sets",
+      "next": "next: {{kg}} kg",
+      "set": "set"
+    },
+    "shopping": {
+      "title": "Shopping list",
+      "days_one": "{{count}} day",
+      "days_other": "{{count}} days",
+      "items_one": "{{count}} item",
+      "items_other": "{{count}} items",
+      "nothingToBuy": "Nothing to buy — pantry covers the plan."
+    },
+    "sources": {
+      "title": "Sources",
+      "count_one": "{{count}} source",
+      "count_other": "{{count}} sources",
+      "show": "Show sources",
+      "hide": "Hide sources",
+      "source": "source"
+    },
+    "proportions": {
+      "title": "Ideal proportions",
+      "method": {
+        "grecian_ideal": "Grecian ideal",
+        "hourglass_frame": "Hourglass frame"
+      },
+      "score": "Proportion score",
+      "adonis": "Shoulder : waist",
+      "whtr": "Waist : height",
+      "ideal": "Ideal",
+      "you": "You",
+      "needThree": "Add at least 3 measurements to see your proportion radar.",
+      "focus": "Focus:",
+      "reduceWaist": "Trim waist",
+      "status": {
+        "lagging": "Lagging",
+        "close": "Close",
+        "on_target": "On target",
+        "ahead": "Ahead",
+        "above_ideal": "Above ideal"
+      },
+      "parts": {
+        "shoulders": "Shoulders",
+        "chest": "Chest",
+        "waist": "Waist",
+        "hips": "Hips",
+        "arm": "Arm",
+        "forearm": "Forearm",
+        "neck": "Neck",
+        "thigh": "Thigh",
+        "calf": "Calf"
+      }
+    },
+    "bodyShape": {
+      "title": "Body shape",
+      "whr": "Waist : hip",
+      "risk": {
+        "low": "low risk",
+        "moderate": "moderate risk",
+        "high": "high risk"
+      },
+      "adonis": "Shoulder : waist",
+      "chestTaper": "Chest : waist",
+      "alsoFits": "Also fits:",
+      "shapes": {
+        "hourglass": "Hourglass",
+        "bottom_hourglass": "Bottom hourglass",
+        "top_hourglass": "Top hourglass",
+        "spoon": "Spoon",
+        "triangle": "Triangle (pear)",
+        "inverted_triangle": "Inverted triangle",
+        "rectangle": "Rectangle",
+        "v_taper": "V-taper",
+        "trapezoid": "Trapezoid",
+        "oval": "Oval",
+        "unclassified": "Between shapes"
+      },
+      "desc": {
+        "hourglass": "Bust and hips are balanced with a clearly defined waist.",
+        "bottom_hourglass": "A defined waist with hips a little fuller than the bust.",
+        "top_hourglass": "A defined waist with the bust a little fuller than the hips.",
+        "spoon": "Hips noticeably fuller than the bust, with a 'shelf' at the high hip.",
+        "triangle": "Hips wider than the upper body, with a softer waist.",
+        "inverted_triangle": "Upper body wider than the hips.",
+        "rectangle": "Shoulders/chest, waist and hips are close in size — a straight silhouette.",
+        "v_taper": "Chest well over the hips and waist — the classic athletic taper.",
+        "trapezoid": "Chest and hips balanced with a waist clearly narrower than both.",
+        "oval": "The waist is the widest point of the torso.",
+        "unclassified": "Your measurements sit between the standard shape rules."
+      }
+    },
+    "macroSplit": {
+      "title": "Macro split",
+      "shares": "{{p}}% protein · {{c}}% carbs · {{f}}% fat",
+      "leanBasis": "Protein based on {{mass}} lean mass",
+      "bodyweightBasis": "Protein based on bodyweight",
+      "carbsFloored": "Protein and fat alone exceed the target, so carbs are at zero."
+    },
+    "protein": {
+      "title": "Daily protein",
+      "gPerDay": "g / day",
+      "perBodyweight": "{{v}} g per {{unit}} of bodyweight",
+      "perMeal": "Per meal",
+      "perMealValue": "{{g}} g × {{n}}",
+      "basedOn": "Based on",
+      "bodyweight": "bodyweight",
+      "rda": "RDA minimum"
+    },
+    "deficit": {
+      "title": "Calorie deficit",
+      "belowMaintenance": "{{kcal}} kcal below maintenance",
+      "maintenance": "Maintenance",
+      "perWeek": "Loss per week",
+      "toLose": "To lose",
+      "timeToGoal": "Time to goal",
+      "weeksValue": "{{n}} wk",
+      "capped": "Capped at the minimum intake — the timeline assumes it."
+    },
+    "idealWeight": {
+      "title": "Ideal weight",
+      "average": "Average of four formulas",
+      "healthyBmi": "Healthy BMI range"
+    },
+    "hrZones": {
+      "title": "Heart rate zones",
+      "karvonen": "Karvonen",
+      "percentMax": "% of max",
+      "max": "max heart rate",
+      "maxEstimated": "max heart rate (estimated)",
+      "zone": "Zone {{n}}",
+      "names": {
+        "z1": "Recovery",
+        "z2": "Aerobic base",
+        "z3": "Tempo",
+        "z4": "Threshold",
+        "z5": "VO₂max"
+      }
+    },
+    "leanMass": {
+      "composition": "Lean mass is everything that isn't fat: muscle, bone, organs and water.",
+      "title": "Lean body mass",
+      "fromBodyFat": "From body fat",
+      "fromFormula": "Boer estimate",
+      "pctOfWeight": "{{pct}}% of bodyweight",
+      "fatMass": "Fat mass"
+    },
+    "water": {
+      "title": "Daily water",
+      "glasses": "about {{n}} glasses of 250 ml",
+      "base": "Base (35 ml/kg)",
+      "exercise": "Exercise",
+      "hot": "Hot weather",
+      "efsa": "EFSA total, food included"
+    },
+    "steps": {
+      "title": "Steps to calories",
+      "steps": "{{n}} steps",
+      "gross": "{{kcal}} kcal including resting burn",
+      "distance": "Distance",
+      "time": "Walking time",
+      "minutes": "{{n}} min",
+      "per1000": "Per 1,000 steps",
+      "goal": "Daily step goal",
+      "pctOfGoal": "{{pct}}% of goal"
+    },
+    "rpe": {
+      "title": "RPE",
+      "set": "{{reps}} reps @ RPE {{rpe}}",
+      "e1rm": "estimated 1RM",
+      "pctOf1rm": "% of 1RM",
+      "rir": "Reps in reserve",
+      "target": "{{reps}} @ RPE {{rpe}}",
+      "loadsAt": "Loads at RPE {{rpe}}",
+      "reps": "{{n}} reps"
+    },
+    "warmup": {
+      "title": "Warm-up sets",
+      "to": "To {{reps}} × {{load}} {{unit}}",
+      "topSet": "Top set",
+      "emptyBar": "Empty bar",
+      "setN": "Set {{n}} · {{pct}}%",
+      "perSide": "{{plates}} {{unit}} per side"
+    },
+    "volume": {
+      "title": "Training volume",
+      "sessions": "{{n}}× a week",
+      "perSession": "{{v}} per session · weekly tonnage",
+      "weeklySets": "Weekly sets (target {{min}}–{{max}})",
+      "weeklySetsPlain": "Weekly sets",
+      "verdict": {
+        "under": "low",
+        "ok": "in range",
+        "over": "high"
+      }
+    }
+  }
+}

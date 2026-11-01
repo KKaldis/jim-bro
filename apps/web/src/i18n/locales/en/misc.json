@@ -1,0 +1,156 @@
+{
+  "lib": {
+    "toast": {
+      "verb": {
+        "log": "logged",
+        "add": "added",
+        "save": "saved",
+        "import": "imported",
+        "update": "updated",
+        "replace": "updated",
+        "set": "updated",
+        "activate": "activated",
+        "delete": "removed",
+        "remove": "removed",
+        "submit": "submitted"
+      },
+      "noun": {
+        "item": "Item",
+        "update_profile": "Profile",
+        "update_pantry": "Pantry",
+        "import_pantry": "Pantry",
+        "log_body_comp": "Body entry",
+        "delete_body_comp_entry": "Body entry",
+        "update_body_comp_entry": "Body entry",
+        "log_planned_meal": "Meal",
+        "log_recipe": "Recipe",
+        "update_recipe_portion": "Recipe",
+        "set_recipe_favorite": "Recipe",
+        "log_workout_session": "Workout session",
+        "delete_workout_session": "Workout session",
+        "delete_cardio_entry": "Cardio",
+        "update_cardio_entry": "Cardio",
+        "log_measurements": "Measurements",
+        "add_exercise_to_plan_day": "Exercise",
+        "remove_exercise_from_plan_day": "Exercise",
+        "update_plan_exercise": "Exercise",
+        "replace_plan_exercise": "Exercise",
+        "update_workout_plan_day": "Workout plan"
+      },
+      "httpNoun": {
+        "meal": "Meal",
+        "diet_plan": "Diet plan",
+        "workout_session": "Workout session",
+        "workout_plan": "Workout plan",
+        "body_entry": "Body entry",
+        "cardio": "Cardio",
+        "measurements": "Measurements",
+        "steps": "Steps",
+        "water": "Water",
+        "profile": "Profile"
+      },
+      "message": "{{noun}} {{verb}}"
+    },
+    "error": {
+      "invalidInput": "Invalid input"
+    },
+    "energy": {
+      "bmr": "BMR",
+      "maintenance": "maintenance",
+      "dailyTarget": "daily target",
+      "kcal": "kcal"
+    },
+    "gauge": {
+      "underweight": "underweight",
+      "normal": "normal",
+      "overweight": "overweight",
+      "obese": "obese",
+      "healthy": "healthy",
+      "veryLean": "very lean",
+      "athletic": "athletic",
+      "fit": "fit",
+      "average": "average",
+      "high": "high",
+      "belowAverage": "below average",
+      "aboveAverage": "above average",
+      "outstanding": "outstanding",
+      "extremelyHigh": "extremely high",
+      "aboveNatural": "above natural",
+      "beginner": "beginner",
+      "intermediate": "intermediate",
+      "advanced": "advanced",
+      "nearCeiling": "near ceiling",
+      "lagging": "lagging",
+      "close": "close",
+      "onTarget": "ideal",
+      "ahead": "ahead",
+      "aboveIdeal": "above",
+      "wellAboveIdeal": "excess"
+    },
+    "goal": {
+      "cut": "Cutting",
+      "recomp": "Recomp",
+      "maintain": "Maintaining",
+      "lean_bulk": "Lean bulk"
+    },
+    "burn": {
+      "title": "training burn",
+      "estimateHint": "Estimated from the session's sets (load × reps)",
+      "kcal": "kcal"
+    },
+    "category": {
+      "body-comp": "Body",
+      "nutrition": "Nutrition",
+      "pantry": "Pantry",
+      "training": "Training",
+      "progress": "Progress",
+      "navigation": "Navigation",
+      "macros": "Macros",
+      "info": "Info"
+    }
+  },
+  "components": {
+    "camera": {
+      "scanAria": "Scan barcode",
+      "photoAria": "Take photo",
+      "noCameraApi": "This browser doesn't expose a camera API. Use upload instead.",
+      "previewFailed": "couldn't start preview: {{error}}",
+      "unavailable": "camera unavailable — {{error}}",
+      "grantPermission": "Grant camera permission in your browser and retry, or use upload instead.",
+      "notSupported": "Live scanning isn't supported here — snap a photo instead.",
+      "stalled": "Can't read it? Hold steady and fill the frame, or snap a photo.",
+      "notSupportedTypeIt": "Live scanning isn't supported here — type the barcode instead.",
+      "stalledNoPhoto": "Can't read it? Hold steady and fill the frame.",
+      "aim": "Point the rear camera at the barcode.",
+      "snapInstead": "Snap photo instead",
+      "snap": "Snap"
+    },
+    "rowActions": {
+      "aria": "Row actions"
+    },
+    "lock": {
+      "noModel": "No AI model",
+      "noLlmTitle": "No AI model is configured on this server",
+      "noVisionTitle": "No vision-capable AI model is configured on this server",
+      "locked": "Unavailable",
+      "lockedTitle": "Not available on your account"
+    },
+    "install": {
+      "title": "Install {{name}}",
+      "iosSubtitle": "Add to Home Screen for quick access",
+      "androidSubtitle": "Get the full-screen app experience",
+      "install": "Install",
+      "dismiss": "Dismiss",
+      "iosTitle": "Add to Home Screen",
+      "iosIntro": "iOS doesn't expose a one-tap install — three quick steps in Safari:",
+      "iosStep1Prefix": "Tap the",
+      "iosStep1Share": "Share",
+      "iosStep1Suffix": "button in Safari's toolbar.",
+      "iosStep2Prefix": "Scroll and choose",
+      "iosStep2Action": "Add to Home Screen",
+      "iosStep3Prefix": "Tap",
+      "iosStep3Add": "Add",
+      "iosStep3Suffix": "— {{name}} lands on your home screen."
+    }
+  }
+}

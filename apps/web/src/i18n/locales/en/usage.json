@@ -1,0 +1,36 @@
+{
+  "usage": {
+    "title": "AI usage",
+    "subtitle": "What the AI features cost to run, at your AI provider's list prices.",
+    "month": "Month",
+    "current": "current",
+    "noLlm": "No AI model is configured on this server, so the coach chat and photo recognition are off. Set LLM_PROVIDER and that provider's API key in the server environment to turn them on.",
+    "estCost": "Estimated cost",
+    "estCostHint": "At list prices",
+    "requests": "Requests",
+    "inputTokens": "Input tokens",
+    "outputTokens": "Output tokens",
+    "cachedHint": "{{n}} from cache",
+    "bySource": "By feature",
+    "byModel": "By model",
+    "noUsage": "No AI usage this month yet.",
+    "dailyChart": "Tokens per day",
+    "feature": "Feature",
+    "cost": "Est. cost",
+    "unpriced": "No price listed for this model",
+    "inOut": "{{input}} in · {{output}} out",
+    "tokensCount": "{{n}} tokens",
+    "requestsCount_one": "{{count}} request",
+    "requestsCount_other": "{{count}} requests",
+    "kind": {
+      "llm": "AI chat",
+      "image_recognition": "Image recognition"
+    },
+    "source": {
+      "chat": "Coach chat",
+      "chat_image": "Photos in chat",
+      "food_scan": "Food photo scan",
+      "receipt_scan": "Receipt scan"
+    }
+  }
+}

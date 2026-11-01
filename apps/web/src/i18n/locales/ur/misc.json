@@ -1,0 +1,156 @@
+{
+  "lib": {
+    "toast": {
+      "verb": {
+        "log": "لاگ ہو گیا",
+        "add": "شامل ہو گیا",
+        "save": "محفوظ ہو گیا",
+        "import": "امپورٹ ہو گیا",
+        "update": "اپ ڈیٹ ہو گیا",
+        "replace": "اپ ڈیٹ ہو گیا",
+        "set": "اپ ڈیٹ ہو گیا",
+        "activate": "فعال ہو گیا",
+        "delete": "ہٹا دیا گیا",
+        "remove": "ہٹا دیا گیا",
+        "submit": "جمع ہو گیا"
+      },
+      "noun": {
+        "item": "آئٹم",
+        "update_profile": "پروفائل",
+        "update_pantry": "پینٹری",
+        "import_pantry": "پینٹری",
+        "log_body_comp": "جسمانی اندراج",
+        "delete_body_comp_entry": "جسمانی اندراج",
+        "update_body_comp_entry": "جسمانی اندراج",
+        "log_planned_meal": "کھانا",
+        "log_recipe": "ترکیب",
+        "update_recipe_portion": "ترکیب",
+        "set_recipe_favorite": "ترکیب",
+        "log_workout_session": "ورک آؤٹ سیشن",
+        "delete_workout_session": "ورک آؤٹ سیشن",
+        "delete_cardio_entry": "کارڈیو",
+        "update_cardio_entry": "کارڈیو",
+        "log_measurements": "پیمائشیں",
+        "add_exercise_to_plan_day": "ایکسرسائز",
+        "remove_exercise_from_plan_day": "ایکسرسائز",
+        "update_plan_exercise": "ایکسرسائز",
+        "replace_plan_exercise": "ایکسرسائز",
+        "update_workout_plan_day": "ورک آؤٹ پلان"
+      },
+      "httpNoun": {
+        "meal": "کھانا",
+        "diet_plan": "ڈائٹ پلان",
+        "workout_session": "ورک آؤٹ سیشن",
+        "workout_plan": "ورک آؤٹ پلان",
+        "body_entry": "جسمانی اندراج",
+        "cardio": "کارڈیو",
+        "measurements": "پیمائشیں",
+        "steps": "قدم",
+        "water": "پانی",
+        "profile": "پروفائل"
+      },
+      "message": "{{noun}}: {{verb}}"
+    },
+    "error": {
+      "invalidInput": "غلط اندراج"
+    },
+    "energy": {
+      "bmr": "BMR",
+      "maintenance": "مینٹیننس",
+      "dailyTarget": "روزانہ ہدف",
+      "kcal": "kcal"
+    },
+    "gauge": {
+      "underweight": "کم وزن",
+      "normal": "نارمل",
+      "overweight": "زیادہ وزن",
+      "obese": "موٹاپا",
+      "healthy": "صحت مند",
+      "veryLean": "بہت دبلا",
+      "athletic": "ایتھلیٹک",
+      "fit": "فٹ",
+      "average": "اوسط",
+      "high": "زیادہ",
+      "belowAverage": "اوسط سے کم",
+      "aboveAverage": "اوسط سے زیادہ",
+      "outstanding": "شاندار",
+      "extremelyHigh": "بہت زیادہ",
+      "aboveNatural": "قدرتی حد سے زیادہ",
+      "beginner": "ابتدائی",
+      "intermediate": "درمیانہ",
+      "advanced": "ماہر",
+      "nearCeiling": "حد کے قریب",
+      "lagging": "پیچھے",
+      "close": "قریب",
+      "onTarget": "مثالی",
+      "ahead": "آگے",
+      "aboveIdeal": "زیادہ",
+      "wellAboveIdeal": "حد سے زیادہ"
+    },
+    "goal": {
+      "cut": "کٹنگ",
+      "recomp": "ری کمپ",
+      "maintain": "مینٹیننس",
+      "lean_bulk": "لین بلک"
+    },
+    "burn": {
+      "title": "ٹریننگ برن",
+      "estimateHint": "سیشن کے سیٹس (وزن × ریپس) سے اندازہ",
+      "kcal": "kcal"
+    },
+    "category": {
+      "body-comp": "جسم",
+      "nutrition": "غذائیت",
+      "pantry": "پینٹری",
+      "training": "ٹریننگ",
+      "progress": "پیش رفت",
+      "navigation": "نیویگیشن",
+      "macros": "میکروز",
+      "info": "معلومات"
+    }
+  },
+  "components": {
+    "camera": {
+      "scanAria": "بارکوڈ اسکین کریں",
+      "photoAria": "تصویر لیں",
+      "noCameraApi": "یہ براؤزر کیمرہ API فراہم نہیں کرتا۔ اس کے بجائے اپ لوڈ استعمال کریں۔",
+      "previewFailed": "پریویو شروع نہیں ہو سکا: {{error}}",
+      "unavailable": "کیمرہ دستیاب نہیں — {{error}}",
+      "grantPermission": "اپنے براؤزر میں کیمرے کی اجازت دیں اور دوبارہ کوشش کریں، یا اس کے بجائے اپ لوڈ استعمال کریں۔",
+      "notSupported": "یہاں لائیو اسکیننگ سپورٹ نہیں — اس کے بجائے تصویر لیں۔",
+      "stalled": "پڑھا نہیں جا رہا؟ ہاتھ ساکن رکھیں اور فریم بھر دیں، یا تصویر لیں۔",
+      "notSupportedTypeIt": "یہاں لائیو اسکیننگ سپورٹ نہیں — اس کے بجائے بارکوڈ ٹائپ کریں۔",
+      "stalledNoPhoto": "پڑھا نہیں جا رہا؟ ہاتھ ساکن رکھیں اور فریم بھر دیں۔",
+      "aim": "پچھلا کیمرہ بارکوڈ کی طرف کریں۔",
+      "snapInstead": "اس کے بجائے تصویر لیں",
+      "snap": "تصویر لیں"
+    },
+    "rowActions": {
+      "aria": "قطار کے اختیارات"
+    },
+    "lock": {
+      "noModel": "کوئی AI ماڈل نہیں",
+      "noLlmTitle": "اس سرور پر کوئی AI ماڈل ترتیب نہیں دیا گیا",
+      "noVisionTitle": "اس سرور پر تصاویر سمجھنے والا کوئی AI ماڈل ترتیب نہیں دیا گیا",
+      "locked": "دستیاب نہیں",
+      "lockedTitle": "آپ کے اکاؤنٹ پر دستیاب نہیں"
+    },
+    "install": {
+      "title": "{{name}} انسٹال کریں",
+      "iosSubtitle": "فوری رسائی کے لیے ہوم اسکرین پر شامل کریں",
+      "androidSubtitle": "مکمل اسکرین ایپ کا تجربہ حاصل کریں",
+      "install": "انسٹال کریں",
+      "dismiss": "بند کریں",
+      "iosTitle": "ہوم اسکرین پر شامل کریں",
+      "iosIntro": "iOS ایک ٹیپ میں انسٹال کی سہولت نہیں دیتا — Safari میں تین آسان مراحل:",
+      "iosStep1Prefix": "Safari کے ٹول بار میں",
+      "iosStep1Share": "شیئر",
+      "iosStep1Suffix": "بٹن پر ٹیپ کریں۔",
+      "iosStep2Prefix": "اسکرول کر کے منتخب کریں",
+      "iosStep2Action": "ہوم اسکرین پر شامل کریں",
+      "iosStep3Prefix": "ٹیپ کریں",
+      "iosStep3Add": "شامل کریں",
+      "iosStep3Suffix": "— {{name}} آپ کی ہوم اسکرین پر آ جائے گا۔"
+    }
+  }
+}

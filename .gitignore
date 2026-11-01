@@ -1,0 +1,38 @@
+# Bun / Node
+node_modules/
+.bun/
+*.tsbuildinfo
+
+# Secrets
+.env
+.env.local
+secrets
+secrets.env
+
+# Per-user data (do not commit user state to source control)
+# Anchored to repo root so it doesn't swallow packages/shared/src/data/ (committed generated data).
+/data/users/
+/data/
+/muscle-groups-icons/
+
+# Generated OpenAPI spec (intermediate for Orval codegen; rebuilt by gen:api)
+apps/web/openapi.json
+
+# Web build output (rebuilt in Docker via `npm run web:build`; never commit)
+apps/web/dist/
+
+# OS
+Thumbs.db
+.DS_Store
+
+#db-backups
+*.dump
+
+#reports/logs
+/reports/
+.VSCodeCounter
+# Python (any scripts): envs and caches
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/

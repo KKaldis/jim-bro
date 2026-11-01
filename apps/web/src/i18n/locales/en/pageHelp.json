@@ -1,0 +1,96 @@
+{
+  "pageHelp": {
+    "aria": "What can I do here?",
+    "heading": "On this page you can",
+    "dashboard": {
+      "items": [
+        "See today's calories, macros and what's left against your targets.",
+        "Check planned training, steps, water and calories burned.",
+        "Use the arrows at the top to move between days."
+      ]
+    },
+    "nutrition": {
+      "items": [
+        "See everything you ate on the selected day, meal by meal.",
+        "Compare your totals with your calorie and macro targets.",
+        "Add food by hand, or just tell the coach what you ate.",
+        "Edit or delete any logged item.",
+        "Switch the range to see trends over weeks or months."
+      ]
+    },
+    "pantry": {
+      "items": [
+        "Keep a catalogue of your foods and supplements with their macros.",
+        "Add items by hand or scan a barcode.",
+        "Track what you have on hand.",
+        "Import a receipt or grocery photo through the chat."
+      ]
+    },
+    "recipes": {
+      "items": [
+        "Save recipes you make often, or import one from a link.",
+        "See macros per serving.",
+        "Log a whole recipe, or a few servings, as a meal in one go."
+      ]
+    },
+    "diet": {
+      "items": [
+        "Create multi-day meal plans with daily targets.",
+        "Set a weekly schedule for which plan day you follow.",
+        "Log a planned meal in one tap.",
+        "Get a shopping list of what's missing from your pantry."
+      ]
+    },
+    "training": {
+      "items": [
+        "Log sessions: sets, reps, weight and effort.",
+        "Start from a workout plan or train freestyle.",
+        "Get the coach's suggestion for what to lift next time.",
+        "Move between days to review past sessions."
+      ]
+    },
+    "progress": {
+      "items": [
+        "See the history of each exercise.",
+        "Follow your estimated one-rep max and strength trends.",
+        "Change the range to compare weeks or months."
+      ]
+    },
+    "plans": {
+      "items": [
+        "Build your training split: days, exercises and target sets, reps and weight.",
+        "Ask the coach to make a plan for you.",
+        "Upload a plan your trainer gave you."
+      ]
+    },
+    "composition": {
+      "items": [
+        "Log weigh-ins and body fat.",
+        "See BMI, lean mass and FFMI worked out from them.",
+        "Follow trend charts over weeks or months."
+      ]
+    },
+    "measurements": {
+      "items": [
+        "Log tape measurements of shoulders, chest, arms, thighs and calves.",
+        "Compare each one with the ideal for your frame on the radar chart.",
+        "See which muscles to focus on.",
+        "Scan your shape with the camera."
+      ]
+    },
+    "usage": {
+      "items": [
+        "See what the AI features cost this month, by feature and by model.",
+        "Look back at earlier months.",
+        "Costs are estimates at your AI provider's list prices."
+      ]
+    },
+    "calculators": {
+      "items": [
+        "Run any calculator the coach uses, yourself.",
+        "Inputs start from your profile; change them to try what-ifs.",
+        "Nothing here is saved to your logs."
+      ]
+    }
+  }
+}

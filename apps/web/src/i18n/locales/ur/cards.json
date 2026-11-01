@@ -1,0 +1,343 @@
+{
+  "cards": {
+    "common": {
+      "item": "آئٹم"
+    },
+    "macros": {
+      "protein": "پروٹین",
+      "fat": "چکنائی",
+      "carbs": "کاربز",
+      "fiber": "فائبر"
+    },
+    "energy": {
+      "atTdee": "TDEE پر",
+      "vsTdee": "TDEE کے مقابلے میں {{sign}}{{pct}}%"
+    },
+    "dayTag": {
+      "today": "آج",
+      "openToday": "آج کھولیں",
+      "openDate": "{{date}} کھولیں"
+    },
+    "day": {
+      "macros": "میکروز"
+    },
+    "targets": {
+      "targetMacros": "ہدف میکروز",
+      "dailyTarget": "یومیہ ہدف"
+    },
+    "meal": {
+      "preview": "کھانے کا جائزہ"
+    },
+    "bmi": {
+      "healthyRange": "آپ کے قد کے لیے صحت مند حد: {{low}}–{{high}} kg"
+    },
+    "ffmi": {
+      "normalized": "معیاری"
+    },
+    "bodyFat": {
+      "methodEstimate": "{{method}} تخمینہ"
+    },
+    "body": {
+      "bodyFat": "جسمانی چکنائی",
+      "weight": "وزن",
+      "leanMass": "لِین ماس",
+      "composition": "جسمانی ساخت",
+      "kgLean": "{{kg}} kg لِین",
+      "asOf": "بتاریخ ",
+      "trend": "رجحان",
+      "vsPriorDays_one": "پچھلے {{count}} دن کے مقابلے میں",
+      "vsPriorDays_other": "پچھلے {{count}} دنوں کے مقابلے میں"
+    },
+    "food": {
+      "title": "غذا",
+      "per100": "{{kcal}} kcal / 100 {{unit}}",
+      "onHand": "{{qty}} {{unit}} موجود"
+    },
+    "product": {
+      "title": "پروڈکٹ",
+      "matches": "ملتی جلتی پروڈکٹس",
+      "per100g": "{{kcal}} kcal / 100 g",
+      "incomplete": "میکروز نامکمل",
+      "found_one": "{{count}} ملا",
+      "found_other": "{{count}} ملے",
+      "foundAvg_one": "{{count}} ملا · اوسط {{kcal}} kcal",
+      "foundAvg_other": "{{count}} ملے · اوسط {{kcal}} kcal",
+      "show": "پروڈکٹس دکھائیں",
+      "hide": "پروڈکٹس چھپائیں",
+      "unnamed": "(بے نام)"
+    },
+    "substitute": {
+      "title": "متبادل",
+      "options_one": "{{count}} آپشن",
+      "options_other": "{{count}} آپشنز"
+    },
+    "training": {
+      "burn": "ٹریننگ میں جلی کیلوریز",
+      "estimatedTotal": "تخمینی کل",
+      "activity": "سرگرمی"
+    },
+    "maxPotential": {
+      "title": "زیادہ سے زیادہ قدرتی صلاحیت",
+      "atBodyFat": "{{pct}}% جسمانی چکنائی پر",
+      "maxWeight": "زیادہ سے زیادہ وزن",
+      "maxLeanMass": "زیادہ سے زیادہ لِین ماس",
+      "leanToGain": "حاصل کرنے کے لیے لِین ماس",
+      "leanToGainPct": "حاصل کرنے کے لیے لِین ماس · صلاحیت کا {{pct}}%",
+      "chest": "سینہ",
+      "neck": "گردن",
+      "bicep": "بائسیپ",
+      "forearm": "فور آرم",
+      "thigh": "ران",
+      "calf": "پنڈلی",
+      "ceilingNote": "زندگی بھر کی بغیر ادویات کی حد — ایک حوالہ، قریبی ہدف نہیں۔",
+      "howClose": "آپ کتنے قریب ہیں",
+      "pctOfCeiling": "آپ کی قدرتی حد کا {{pct}}%"
+    },
+    "strength": {
+      "repsShort": "ریپس",
+      "level": {
+        "title": "طاقت کی سطح",
+        "beginner": "ابتدائی",
+        "novice": "نوآموز",
+        "intermediate": "درمیانی",
+        "advanced": "ماہر",
+        "elite": "ایلیٹ",
+        "strongerThan": "{{pct}}% لفٹرز سے زیادہ طاقتور",
+        "ratio": "{{ratio}}× جسمانی وزن",
+        "nextLevel": "{{level}} تک +{{remaining}} {{unit}}"
+      },
+      "oneRepMax": {
+        "title": "ون ریپ میکس",
+        "from": "{{weight}} kg × {{reps}} سے",
+        "estimated": "تخمینی 1RM",
+        "epley": "Epley {{value}} kg",
+        "brzycki": "Brzycki {{value}} kg",
+        "repTable": "ریپس کی تعداد کے لحاظ سے وزن (1RM کا %)"
+      },
+      "powerlifting": {
+        "title": "پاورلفٹنگ اسکور",
+        "total": "کل {{total}} kg",
+        "wilks": "Wilks",
+        "dots": "DOTS",
+        "ipfgl": "IPF GL",
+        "breakdown": "{{parts}} kg"
+      },
+      "symmetry": {
+        "title": "طاقت کا توازن",
+        "balanced": "لفٹس کے درمیان توازن",
+        "lagging": "{{lift}} پیچھے ہے — اسے ترجیح دیں"
+      },
+      "plates": {
+        "title": "باربیل لوڈنگ",
+        "target": "ہدف {{target}} {{unit}}",
+        "perSide": "فی طرف",
+        "barOnly": "صرف بار — لوڈ کرنے کو کچھ نہیں",
+        "loaded": "بالکل {{loaded}} {{unit}} بنتا ہے",
+        "closest": "قریب ترین: {{loaded}} {{unit}}"
+      }
+    },
+    "progress": {
+      "title": "پیش رفت",
+      "lastDays_one": "پچھلا {{count}} دن",
+      "lastDays_other": "پچھلے {{count}} دن",
+      "avgWeight": "اوسط وزن",
+      "waist": "کمر"
+    },
+    "sets": {
+      "title": "حالیہ سیٹس",
+      "next": "اگلا: {{kg}} kg",
+      "set": "سیٹ"
+    },
+    "shopping": {
+      "title": "خریداری کی فہرست",
+      "days_one": "{{count}} دن",
+      "days_other": "{{count}} دن",
+      "items_one": "{{count}} آئٹم",
+      "items_other": "{{count}} آئٹمز",
+      "nothingToBuy": "خریدنے کو کچھ نہیں — پینٹری پلان کے لیے کافی ہے۔"
+    },
+    "sources": {
+      "title": "ذرائع",
+      "count_one": "{{count}} ذریعہ",
+      "count_other": "{{count}} ذرائع",
+      "show": "ذرائع دکھائیں",
+      "hide": "ذرائع چھپائیں",
+      "source": "ذریعہ"
+    },
+    "proportions": {
+      "title": "مثالی تناسب",
+      "method": {
+        "grecian_ideal": "یونانی مثالی",
+        "hourglass_frame": "آور گلاس ساخت"
+      },
+      "score": "تناسب اسکور",
+      "adonis": "کندھے : کمر",
+      "whtr": "کمر : قد",
+      "ideal": "مثالی",
+      "you": "آپ",
+      "needThree": "اپنا تناسب ریڈار دیکھنے کے لیے کم از کم 3 پیمائشیں شامل کریں۔",
+      "focus": "توجہ:",
+      "reduceWaist": "کمر کم کریں",
+      "status": {
+        "lagging": "پیچھے",
+        "close": "قریب",
+        "on_target": "ہدف پر",
+        "ahead": "آگے",
+        "above_ideal": "مثالی سے زیادہ"
+      },
+      "parts": {
+        "shoulders": "کندھے",
+        "chest": "سینہ",
+        "waist": "کمر",
+        "hips": "کولہے",
+        "arm": "بازو",
+        "forearm": "فور آرم",
+        "neck": "گردن",
+        "thigh": "ران",
+        "calf": "پنڈلی"
+      }
+    },
+    "bodyShape": {
+      "title": "جسمانی شکل",
+      "whr": "کمر : کولہا",
+      "risk": {
+        "low": "کم خطرہ",
+        "moderate": "درمیانہ خطرہ",
+        "high": "زیادہ خطرہ"
+      },
+      "adonis": "کندھے : کمر",
+      "chestTaper": "سینہ : کمر",
+      "alsoFits": "یہ بھی موزوں:",
+      "shapes": {
+        "hourglass": "آور گلاس",
+        "bottom_hourglass": "نچلا آور گلاس",
+        "top_hourglass": "اوپری آور گلاس",
+        "spoon": "چمچ",
+        "triangle": "مثلث (ناشپاتی)",
+        "inverted_triangle": "الٹا مثلث",
+        "rectangle": "مستطیل",
+        "v_taper": "V شکل",
+        "trapezoid": "ذوزنقہ",
+        "oval": "بیضوی",
+        "unclassified": "شکلوں کے درمیان"
+      },
+      "desc": {
+        "hourglass": "سینہ اور کولہے متوازن ہیں اور کمر واضح طور پر نمایاں ہے۔",
+        "bottom_hourglass": "نمایاں کمر، اور کولہے سینے سے کچھ بھرے ہوئے۔",
+        "top_hourglass": "نمایاں کمر، اور سینہ کولہوں سے کچھ بھرا ہوا۔",
+        "spoon": "کولہے سینے سے واضح طور پر بھرے ہوئے، اور کولہے کے اوپری حصے پر 'ابھار'۔",
+        "triangle": "کولہے جسم کے اوپری حصے سے چوڑے، اور کمر کم نمایاں۔",
+        "inverted_triangle": "جسم کا اوپری حصہ کولہوں سے چوڑا۔",
+        "rectangle": "کندھے/سینہ، کمر اور کولہے تقریباً ایک جیسے سائز کے — سیدھا خاکہ۔",
+        "v_taper": "سینہ کولہوں اور کمر سے کافی چوڑا — کلاسک ایتھلیٹک شکل۔",
+        "trapezoid": "سینہ اور کولہے متوازن، اور کمر دونوں سے واضح طور پر پتلی۔",
+        "oval": "کمر دھڑ کا سب سے چوڑا حصہ ہے۔",
+        "unclassified": "آپ کی پیمائشیں معیاری شکلوں کے اصولوں کے درمیان ہیں۔"
+      }
+    },
+    "macroSplit": {
+      "title": "میکرو تقسیم",
+      "shares": "{{p}}٪ پروٹین · {{c}}٪ کاربوہائیڈریٹس · {{f}}٪ چکنائی",
+      "leanBasis": "پروٹین {{mass}} چربی سے پاک وزن پر مبنی",
+      "bodyweightBasis": "پروٹین جسمانی وزن پر مبنی",
+      "carbsFloored": "صرف پروٹین اور چکنائی ہی ہدف سے زیادہ ہیں، اس لیے کاربوہائیڈریٹس صفر ہیں۔"
+    },
+    "protein": {
+      "title": "روزانہ پروٹین",
+      "gPerDay": "گرام / دن",
+      "perBodyweight": "فی {{unit}} جسمانی وزن {{v}} گرام",
+      "perMeal": "فی کھانا",
+      "perMealValue": "{{g}} گرام × {{n}}",
+      "basedOn": "بنیاد",
+      "bodyweight": "جسمانی وزن",
+      "rda": "کم از کم RDA"
+    },
+    "deficit": {
+      "title": "کیلوری خسارہ",
+      "belowMaintenance": "مینٹیننس سے {{kcal}} کیلوری کم",
+      "maintenance": "مینٹیننس",
+      "perWeek": "ہفتہ وار کمی",
+      "toLose": "کم کرنا ہے",
+      "timeToGoal": "ہدف تک وقت",
+      "weeksValue": "{{n}} ہفتے",
+      "capped": "کم از کم مقدار پر محدود — ٹائم لائن اسی کو مانتی ہے۔"
+    },
+    "idealWeight": {
+      "title": "مثالی وزن",
+      "average": "چار فارمولوں کا اوسط",
+      "healthyBmi": "صحت مند BMI حد"
+    },
+    "hrZones": {
+      "title": "دل کی دھڑکن کے زونز",
+      "karvonen": "کارونن",
+      "percentMax": "زیادہ سے زیادہ کا ٪",
+      "max": "زیادہ سے زیادہ دھڑکن",
+      "maxEstimated": "زیادہ سے زیادہ دھڑکن (اندازہ)",
+      "zone": "زون {{n}}",
+      "names": {
+        "z1": "بحالی",
+        "z2": "ایروبک بنیاد",
+        "z3": "ٹیمپو",
+        "z4": "تھریش ہولڈ",
+        "z5": "VO₂max"
+      }
+    },
+    "leanMass": {
+      "composition": "لین ماس وہ سب کچھ ہے جو چربی نہیں: پٹھے، ہڈیاں، اعضا اور پانی۔",
+      "title": "لین باڈی ماس",
+      "fromBodyFat": "چربی کے فیصد سے",
+      "fromFormula": "Boer اندازہ",
+      "pctOfWeight": "جسمانی وزن کا {{pct}}%",
+      "fatMass": "چربی کا وزن"
+    },
+    "water": {
+      "title": "روزانہ پانی",
+      "glasses": "تقریباً 250 ml کے {{n}} گلاس",
+      "base": "بنیادی (35 ml/kg)",
+      "exercise": "ورزش",
+      "hot": "گرم موسم",
+      "efsa": "EFSA کل، خوراک سمیت"
+    },
+    "steps": {
+      "title": "قدموں سے کیلوریز",
+      "steps": "{{n}} قدم",
+      "gross": "{{kcal}} kcal آرام کی حالت کی کھپت سمیت",
+      "distance": "فاصلہ",
+      "time": "چلنے کا وقت",
+      "minutes": "{{n}} منٹ",
+      "per1000": "فی 1,000 قدم",
+      "goal": "روزانہ قدموں کا ہدف",
+      "pctOfGoal": "ہدف کا {{pct}}%"
+    },
+    "rpe": {
+      "title": "RPE",
+      "set": "{{reps}} ریپس @ RPE {{rpe}}",
+      "e1rm": "اندازاً 1RM",
+      "pctOf1rm": "1RM کا %",
+      "rir": "ریزرو میں ریپس",
+      "target": "{{reps}} @ RPE {{rpe}}",
+      "loadsAt": "RPE {{rpe}} پر وزن",
+      "reps": "{{n}} ریپس"
+    },
+    "warmup": {
+      "title": "وارم اپ سیٹس",
+      "to": "{{reps}} × {{load}} {{unit}} تک",
+      "topSet": "ٹاپ سیٹ",
+      "emptyBar": "خالی بار",
+      "setN": "سیٹ {{n}} · {{pct}}%",
+      "perSide": "ہر طرف {{plates}} {{unit}}"
+    },
+    "volume": {
+      "title": "ٹریننگ والیوم",
+      "sessions": "ہفتے میں {{n}} بار",
+      "perSession": "فی سیشن {{v}} · ہفتہ وار کل وزن",
+      "weeklySets": "ہفتہ وار سیٹس (ہدف {{min}}–{{max}})",
+      "weeklySetsPlain": "ہفتہ وار سیٹس",
+      "verdict": {
+        "under": "کم",
+        "ok": "درست",
+        "over": "زیادہ"
+      }
+    }
+  }
+}

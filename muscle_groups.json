@@ -1,0 +1,38 @@
+{
+  "shoulders": ["Anterior Deltoid", "Lateral Deltoid", "Posterior Deltoid"],
+  "chest": ["Pectoralis Major (Clavicular Head)", "Pectoralis Major (Sternal Head)"],
+  "arms_and_forearms": [
+    "Biceps Brachii",
+    "Brachialis",
+    "Brachioradialis",
+    "Forearm Flexors (Grouped)",
+    "Forearm Extensors (Grouped)",
+    "Triceps Brachii"
+  ],
+  "core": ["Rectus Abdominis", "External Obliques", "Internal Obliques"],
+  "back": [
+    "Trapezius (Upper, Middle, and Lower fibers)",
+    "Latissimus Dorsi",
+    "Infraspinatus",
+    "Teres Major",
+    "Rhomboids (Deep to Trapezius)",
+    "Erector Spinae"
+  ],
+  "hips_and_glutes": ["Gluteus Medius", "Gluteus Maximus"],
+  "legs_anterior": [
+    "Rectus Femoris (Quadriceps)",
+    "Vastus Lateralis (Quadriceps)",
+    "Vastus Medialis (Quadriceps)",
+    "Sartorius",
+    "Gracilis",
+    "Tensor Fasciae Latae",
+    "Tibialis Anterior"
+  ],
+  "legs_posterior": [
+    "Biceps Femoris (Hamstrings)",
+    "Semitendinosus (Hamstrings)",
+    "Semimembranosus (Hamstrings)",
+    "Gastrocnemius (Lateral and Medial Heads / Calves)",
+    "Soleus"
+  ]
+}

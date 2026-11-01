@@ -1,0 +1,36 @@
+{
+  "usage": {
+    "title": "AI-gebruik",
+    "subtitle": "Wat de AI-functies kosten, tegen de lijstprijzen van je AI-provider.",
+    "month": "Maand",
+    "current": "huidige",
+    "noLlm": "Er is geen AI-model ingesteld op deze server, dus de coachchat en fotoherkenning staan uit. Stel LLM_PROVIDER en de API-sleutel van die provider in de serveromgeving in om ze aan te zetten.",
+    "estCost": "Geschatte kosten",
+    "estCostHint": "Tegen lijstprijzen",
+    "requests": "Verzoeken",
+    "inputTokens": "Invoertokens",
+    "outputTokens": "Uitvoertokens",
+    "cachedHint": "{{n}} uit cache",
+    "bySource": "Per functie",
+    "byModel": "Per model",
+    "noUsage": "Nog geen AI-gebruik deze maand.",
+    "dailyChart": "Tokens per dag",
+    "feature": "Functie",
+    "cost": "Geschatte kosten",
+    "unpriced": "Geen prijs bekend voor dit model",
+    "inOut": "{{input}} in · {{output}} uit",
+    "tokensCount": "{{n}} tokens",
+    "requestsCount_one": "{{count}} verzoek",
+    "requestsCount_other": "{{count}} verzoeken",
+    "kind": {
+      "llm": "AI-chat",
+      "image_recognition": "Beeldherkenning"
+    },
+    "source": {
+      "chat": "Coachchat",
+      "chat_image": "Foto's in chat",
+      "food_scan": "Scan van eten",
+      "receipt_scan": "Kassabonscan"
+    }
+  }
+}

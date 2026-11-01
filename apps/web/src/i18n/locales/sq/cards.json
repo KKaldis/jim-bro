@@ -1,0 +1,343 @@
+{
+  "cards": {
+    "common": {
+      "item": "artikull"
+    },
+    "macros": {
+      "protein": "proteina",
+      "fat": "yndyrë",
+      "carbs": "karbohidrate",
+      "fiber": "fibra"
+    },
+    "energy": {
+      "atTdee": "në nivelin e TDEE",
+      "vsTdee": "{{sign}}{{pct}}% kundrejt TDEE"
+    },
+    "dayTag": {
+      "today": "Sot",
+      "openToday": "Hap sot",
+      "openDate": "Hap {{date}}"
+    },
+    "day": {
+      "macros": "Makrot"
+    },
+    "targets": {
+      "targetMacros": "makrot e synuara",
+      "dailyTarget": "Objektivi ditor"
+    },
+    "meal": {
+      "preview": "Pamje paraprake e vaktit"
+    },
+    "bmi": {
+      "healthyRange": "Diapazoni i shëndetshëm për gjatësinë tënde: {{low}}–{{high}} kg"
+    },
+    "ffmi": {
+      "normalized": "I normalizuar"
+    },
+    "bodyFat": {
+      "methodEstimate": "Vlerësim {{method}}"
+    },
+    "body": {
+      "bodyFat": "Yndyra trupore",
+      "weight": "Pesha",
+      "leanMass": "Masa e ligët",
+      "composition": "Përbërja e trupit",
+      "kgLean": "{{kg}} kg masë e ligët",
+      "asOf": "më ",
+      "trend": "Tendenca",
+      "vsPriorDays_one": "kundrejt {{count}} ditës së mëparshme",
+      "vsPriorDays_other": "kundrejt {{count}} ditëve të mëparshme"
+    },
+    "food": {
+      "title": "Ushqim",
+      "per100": "{{kcal}} kcal / 100 {{unit}}",
+      "onHand": "{{qty}} {{unit}} në dispozicion"
+    },
+    "product": {
+      "title": "Produkt",
+      "matches": "Produkte që përputhen",
+      "per100g": "{{kcal}} kcal / 100 g",
+      "incomplete": "makrot të paplota",
+      "found_one": "{{count}} u gjet",
+      "found_other": "{{count}} u gjetën",
+      "foundAvg_one": "{{count}} u gjet · mes. {{kcal}} kcal",
+      "foundAvg_other": "{{count}} u gjetën · mes. {{kcal}} kcal",
+      "show": "Shfaq produktet",
+      "hide": "Fshih produktet",
+      "unnamed": "(pa emër)"
+    },
+    "substitute": {
+      "title": "Zëvendësime",
+      "options_one": "{{count}} opsion",
+      "options_other": "{{count}} opsione"
+    },
+    "training": {
+      "burn": "Djegia nga stërvitja",
+      "estimatedTotal": "totali i vlerësuar",
+      "activity": "aktiviteti"
+    },
+    "maxPotential": {
+      "title": "Potenciali maksimal natyral",
+      "atBodyFat": "me {{pct}}% yndyrë trupore",
+      "maxWeight": "Pesha maks.",
+      "maxLeanMass": "Masa e ligët maks.",
+      "leanToGain": "Masë e ligët për të fituar",
+      "leanToGainPct": "Masë e ligët për të fituar · {{pct}}% e potencialit",
+      "chest": "Gjoksi",
+      "neck": "Qafa",
+      "bicep": "Biceps",
+      "forearm": "Parakrahu",
+      "thigh": "Kofsha",
+      "calf": "Pulpa",
+      "ceilingNote": "Kufiri i jetës pa doping — një pikë referimi, jo objektiv afatshkurtër.",
+      "howClose": "Sa afër je",
+      "pctOfCeiling": "{{pct}}% e kufirit tënd natyral"
+    },
+    "strength": {
+      "repsShort": "përs.",
+      "level": {
+        "title": "Niveli i forcës",
+        "beginner": "Fillestar",
+        "novice": "I ri",
+        "intermediate": "Mesatar",
+        "advanced": "I avancuar",
+        "elite": "Elitë",
+        "strongerThan": "Më i fortë se {{pct}}% e ngritësve",
+        "ratio": "{{ratio}}× pesha trupore",
+        "nextLevel": "+{{remaining}} {{unit}} deri te {{level}}"
+      },
+      "oneRepMax": {
+        "title": "Maksimumi me një përsëritje",
+        "from": "nga {{weight}} kg × {{reps}}",
+        "estimated": "1RM i vlerësuar",
+        "epley": "Epley {{value}} kg",
+        "brzycki": "Brzycki {{value}} kg",
+        "repTable": "Ngarkesa sipas numrit të përsëritjeve (% e 1RM)"
+      },
+      "powerlifting": {
+        "title": "Pikët e powerlifting",
+        "total": "Totali {{total}} kg",
+        "wilks": "Wilks",
+        "dots": "DOTS",
+        "ipfgl": "IPF GL",
+        "breakdown": "{{parts}} kg"
+      },
+      "symmetry": {
+        "title": "Simetria e forcës",
+        "balanced": "Ekuilibri mes ngritjeve",
+        "lagging": "{{lift}} ka mbetur prapa — jepi përparësi"
+      },
+      "plates": {
+        "title": "Ngarkimi i shufrës",
+        "target": "Objektivi {{target}} {{unit}}",
+        "perSide": "Për anë",
+        "barOnly": "Vetëm shufra — asgjë për të ngarkuar",
+        "loaded": "Ngarkohet saktësisht {{loaded}} {{unit}}",
+        "closest": "Më e afërta: {{loaded}} {{unit}}"
+      }
+    },
+    "progress": {
+      "title": "Progresi",
+      "lastDays_one": "{{count}} dita e fundit",
+      "lastDays_other": "{{count}} ditët e fundit",
+      "avgWeight": "pesha mes.",
+      "waist": "Beli"
+    },
+    "sets": {
+      "title": "Setet e fundit",
+      "next": "tjetri: {{kg}} kg",
+      "set": "set"
+    },
+    "shopping": {
+      "title": "Lista e blerjeve",
+      "days_one": "{{count}} ditë",
+      "days_other": "{{count}} ditë",
+      "items_one": "{{count}} artikull",
+      "items_other": "{{count}} artikuj",
+      "nothingToBuy": "Asgjë për të blerë — depoja e mbulon planin."
+    },
+    "sources": {
+      "title": "Burimet",
+      "count_one": "{{count}} burim",
+      "count_other": "{{count}} burime",
+      "show": "Shfaq burimet",
+      "hide": "Fshih burimet",
+      "source": "burim"
+    },
+    "proportions": {
+      "title": "Proporcionet ideale",
+      "method": {
+        "grecian_ideal": "Ideali grek",
+        "hourglass_frame": "Trup orë rëre"
+      },
+      "score": "Pikët e proporcioneve",
+      "adonis": "Shpatulla : bel",
+      "whtr": "Bel : gjatësi",
+      "ideal": "Ideali",
+      "you": "Ti",
+      "needThree": "Shto të paktën 3 matje për të parë radarin e proporcioneve.",
+      "focus": "Fokusi:",
+      "reduceWaist": "Ngushto belin",
+      "status": {
+        "lagging": "Prapa",
+        "close": "Afër",
+        "on_target": "Në objektiv",
+        "ahead": "Përpara",
+        "above_ideal": "Mbi idealin"
+      },
+      "parts": {
+        "shoulders": "Shpatullat",
+        "chest": "Gjoksi",
+        "waist": "Beli",
+        "hips": "Ijët",
+        "arm": "Krahu",
+        "forearm": "Parakrahu",
+        "neck": "Qafa",
+        "thigh": "Kofsha",
+        "calf": "Pulpa"
+      }
+    },
+    "bodyShape": {
+      "title": "Forma e trupit",
+      "whr": "Bel : ijë",
+      "risk": {
+        "low": "rrezik i ulët",
+        "moderate": "rrezik i moderuar",
+        "high": "rrezik i lartë"
+      },
+      "adonis": "Shpatulla : bel",
+      "chestTaper": "Gjoks : bel",
+      "alsoFits": "Përshtatet edhe me:",
+      "shapes": {
+        "hourglass": "Orë rëre",
+        "bottom_hourglass": "Orë rëre e poshtme",
+        "top_hourglass": "Orë rëre e sipërme",
+        "spoon": "Lugë",
+        "triangle": "Trekëndësh (dardhë)",
+        "inverted_triangle": "Trekëndësh i përmbysur",
+        "rectangle": "Drejtkëndësh",
+        "v_taper": "Formë V",
+        "trapezoid": "Trapez",
+        "oval": "Oval",
+        "unclassified": "Mes formave"
+      },
+      "desc": {
+        "hourglass": "Gjoksi dhe ijët janë të balancuara, me bel qartë të përcaktuar.",
+        "bottom_hourglass": "Bel i përcaktuar, me ijë pak më të plota se gjoksi.",
+        "top_hourglass": "Bel i përcaktuar, me gjoks pak më të plotë se ijët.",
+        "spoon": "Ijët dukshëm më të plota se gjoksi, me një \"raft\" në pjesën e sipërme të ijëve.",
+        "triangle": "Ijët më të gjera se pjesa e sipërme e trupit, me bel më të butë.",
+        "inverted_triangle": "Pjesa e sipërme e trupit më e gjerë se ijët.",
+        "rectangle": "Shpatullat/gjoksi, beli dhe ijët kanë përmasa të afërta — siluetë e drejtë.",
+        "v_taper": "Gjoksi shumë më i gjerë se ijët dhe beli — ngushtimi klasik atletik.",
+        "trapezoid": "Gjoksi dhe ijët të balancuara, me bel qartë më të ngushtë se të dyja.",
+        "oval": "Beli është pika më e gjerë e trupit.",
+        "unclassified": "Matjet e tua bien mes rregullave standarde të formave."
+      }
+    },
+    "macroSplit": {
+      "title": "Ndarja e makrove",
+      "shares": "{{p}}% proteina · {{c}}% karbohidrate · {{f}}% yndyrë",
+      "leanBasis": "Proteina bazuar në {{mass}} masë të dobët",
+      "bodyweightBasis": "Proteina bazuar në peshën trupore",
+      "carbsFloored": "Proteina dhe yndyra vetëm e kalojnë objektivin, ndaj karbohidratet janë zero."
+    },
+    "protein": {
+      "title": "Proteina ditore",
+      "gPerDay": "g / ditë",
+      "perBodyweight": "{{v}} g për {{unit}} peshë trupore",
+      "perMeal": "Për vakt",
+      "perMealValue": "{{g}} g × {{n}}",
+      "basedOn": "Bazuar në",
+      "bodyweight": "peshën trupore",
+      "rda": "Minimumi RDA"
+    },
+    "deficit": {
+      "title": "Deficiti kalorik",
+      "belowMaintenance": "{{kcal}} kcal nën mirëmbajtjen",
+      "maintenance": "Mirëmbajtja",
+      "perWeek": "Humbje në javë",
+      "toLose": "Për të humbur",
+      "timeToGoal": "Koha deri te objektivi",
+      "weeksValue": "{{n}} javë",
+      "capped": "Kufizuar në marrjen minimale — afati e merr si të mirëqenë."
+    },
+    "idealWeight": {
+      "title": "Pesha ideale",
+      "average": "Mesatarja e katër formulave",
+      "healthyBmi": "Intervali i shëndetshëm i BMI-së"
+    },
+    "hrZones": {
+      "title": "Zonat e rrahjeve të zemrës",
+      "karvonen": "Karvonen",
+      "percentMax": "% e maksimumit",
+      "max": "rrahjet maksimale",
+      "maxEstimated": "rrahjet maksimale (vlerësim)",
+      "zone": "Zona {{n}}",
+      "names": {
+        "z1": "Rikuperim",
+        "z2": "Bazë aerobike",
+        "z3": "Tempo",
+        "z4": "Prag",
+        "z5": "VO₂max"
+      }
+    },
+    "leanMass": {
+      "composition": "Masa pa yndyrë është gjithçka që nuk është yndyrë: muskuj, kocka, organe dhe ujë.",
+      "title": "Masa e ligët e trupit",
+      "fromBodyFat": "Nga % e yndyrës",
+      "fromFormula": "Vlerësim Boer",
+      "pctOfWeight": "{{pct}}% e peshës trupore",
+      "fatMass": "Masa yndyrore"
+    },
+    "water": {
+      "title": "Uji ditor",
+      "glasses": "rreth {{n}} gota 250 ml",
+      "base": "Baza (35 ml/kg)",
+      "exercise": "Stërvitje",
+      "hot": "Mot i nxehtë",
+      "efsa": "Totali EFSA, përfshirë ushqimin"
+    },
+    "steps": {
+      "title": "Hapat në kalori",
+      "steps": "{{n}} hapa",
+      "gross": "{{kcal}} kcal përfshirë djegien në pushim",
+      "distance": "Distanca",
+      "time": "Koha e ecjes",
+      "minutes": "{{n}} min",
+      "per1000": "Për 1.000 hapa",
+      "goal": "Objektivi ditor i hapave",
+      "pctOfGoal": "{{pct}}% e objektivit"
+    },
+    "rpe": {
+      "title": "RPE",
+      "set": "{{reps}} përs. @ RPE {{rpe}}",
+      "e1rm": "1RM i vlerësuar",
+      "pctOf1rm": "% e 1RM",
+      "rir": "Përsëritje në rezervë",
+      "target": "{{reps}} @ RPE {{rpe}}",
+      "loadsAt": "Ngarkesat në RPE {{rpe}}",
+      "reps": "{{n}} përs."
+    },
+    "warmup": {
+      "title": "Setet e ngrohjes",
+      "to": "Deri te {{reps}} × {{load}} {{unit}}",
+      "topSet": "Seti kryesor",
+      "emptyBar": "Shufër bosh",
+      "setN": "Seti {{n}} · {{pct}}%",
+      "perSide": "{{plates}} {{unit}} për anë"
+    },
+    "volume": {
+      "title": "Vëllimi i stërvitjes",
+      "sessions": "{{n}}× në javë",
+      "perSession": "{{v}} për seancë · tonazhi javor",
+      "weeklySets": "Sete javore (synimi {{min}}–{{max}})",
+      "weeklySetsPlain": "Sete javore",
+      "verdict": {
+        "under": "pak",
+        "ok": "në rregull",
+        "over": "shumë"
+      }
+    }
+  }
+}

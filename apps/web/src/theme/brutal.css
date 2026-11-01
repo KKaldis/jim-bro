@@ -1,0 +1,136 @@
+/* "Brutal" style (neo-brutalism), opt-in via <html data-style="brutal"> — set
+   by ThemeProvider from the user menu. Square corners, heavy ink outlines and
+   hard offset shadows with no blur; pressing something removes its shadow and
+   shifts it into the gap (the `brutal:` variant, see button.tsx). Like
+   soft.css, only tokens change here, plus the outline weight, square corners
+   and solid fills below.
+
+   The palette keeps the base hues (palette.css: blue primary, green / amber /
+   red status, purple chart) but pushes chroma up for flat, poster-like fills,
+   with amber as the loud secondary. `.dark[data-style="brutal"]` outranks
+   `.dark` and `[data-style="brutal"]`, so the dark block must redefine
+   everything the light block does. */
+
+[data-style="brutal"] {
+  --background: oklch(0.97 0.02 250);
+  --foreground: oklch(0.16 0.035 262);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.16 0.035 262);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.16 0.035 262);
+  --primary: oklch(0.56 0.27 262);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.86 0.18 85);
+  --secondary-foreground: oklch(0.16 0.035 262);
+  --muted: oklch(0.93 0.035 250);
+  --muted-foreground: oklch(0.42 0.05 258);
+  --accent: oklch(0.89 0.11 230);
+  --accent-foreground: oklch(0.16 0.035 262);
+  --destructive: oklch(0.6 0.26 27);
+  --destructive-foreground: oklch(1 0 0);
+  --success: oklch(0.68 0.23 145);
+  --warning: oklch(0.8 0.19 75);
+  --info: oklch(0.65 0.2 235);
+  --border: oklch(0.85 0.04 255);
+  --input: oklch(0.85 0.04 255);
+  --ring: oklch(0.56 0.27 262);
+
+  --chart-1: oklch(0.56 0.27 262);
+  --chart-2: oklch(0.68 0.23 145);
+  --chart-3: oklch(0.8 0.19 75);
+  --chart-4: oklch(0.6 0.26 27);
+  --chart-5: oklch(0.58 0.27 310);
+}
+
+.dark[data-style="brutal"] {
+  --background: oklch(0.16 0.035 262);
+  --foreground: oklch(0.97 0.015 250);
+  --card: oklch(0.21 0.045 262);
+  --card-foreground: oklch(0.97 0.015 250);
+  --popover: oklch(0.21 0.045 262);
+  --popover-foreground: oklch(0.97 0.015 250);
+  --primary: oklch(0.78 0.19 222);
+  --primary-foreground: oklch(0.16 0.035 262);
+  --secondary: oklch(0.85 0.18 88);
+  --secondary-foreground: oklch(0.16 0.035 262);
+  --muted: oklch(0.25 0.05 262);
+  --muted-foreground: oklch(0.74 0.04 250);
+  --accent: oklch(0.32 0.1 262);
+  --accent-foreground: oklch(0.97 0.015 250);
+  --destructive: oklch(0.68 0.25 27);
+  --destructive-foreground: oklch(0.16 0.035 262);
+  --success: oklch(0.79 0.23 145);
+  --warning: oklch(0.85 0.18 80);
+  --info: oklch(0.76 0.17 230);
+  --border: oklch(0.34 0.05 262);
+  --input: oklch(0.34 0.05 262);
+  --ring: oklch(0.78 0.19 222);
+
+  --chart-1: oklch(0.72 0.22 262);
+  --chart-2: oklch(0.79 0.23 145);
+  --chart-3: oklch(0.85 0.18 80);
+  --chart-4: oklch(0.68 0.25 27);
+  --chart-5: oklch(0.72 0.24 310);
+}
+
+[data-style="brutal"] {
+  /* Outlines and shadows share one ink color. */
+  --ink: var(--foreground);
+  --radius: 0px;
+  --edge: var(--ink);
+
+  --elevation-surface: 5px 5px 0 0 var(--ink);
+  --elevation-tile: 3px 3px 0 0 var(--ink);
+  --elevation-control: 3px 3px 0 0 var(--ink);
+  --elevation-pressed: 0 0 #0000;
+  --elevation-field: 0 0 #0000;
+  --elevation-well: 0 0 #0000;
+  --elevation-overlay: 7px 7px 0 0 var(--ink);
+}
+
+/* Everything goes square, not just what reads --radius: pills, avatars,
+   progress bars, chat bubbles, rounded-2xl panels. This file is unlayered,
+   so it beats Tailwind's layered rounded-* utilities. Mark an element
+   data-keep-round if it must stay round. */
+[data-style="brutal"] [class*="rounded"]:not([data-keep-round]),
+[data-style="brutal"] *:not(.no-scrollbar)::-webkit-scrollbar-thumb {
+  border-radius: 0;
+}
+
+/* Surface outlines go heavy. border-edge marks exactly the raised/sunken
+   surfaces (dividers use plain --border and stay 1px). */
+[data-style="brutal"] .border-edge {
+  border-width: 2px;
+}
+
+/* The round progress gauges (WaterRing, StepsRing) stay round but get the
+   same heavy ink outline and hard tile shadow as the surfaces around them.
+   The inset outline replaces their 1px ring-border (both are box-shadows). */
+[data-style="brutal"] .gauge-ring {
+  box-shadow:
+    inset 0 0 0 2px var(--ink),
+    var(--elevation-tile);
+}
+/* The calorie arc is an open SVG path, so the outline is a wider stroke under
+   its track, and the shadow a hard drop-shadow of that stroke. */
+[data-style="brutal"] .gauge-arc-outline {
+  stroke: var(--ink);
+  filter: drop-shadow(3px 3px 0 var(--ink));
+}
+
+/* Solid fills only. Decorative bg-linear-* washes collapse to their starting
+   color, and the shimmer / shine sweeps (styles.css) are dropped. Chart
+   gradients that encode value zones are data and stay. */
+[data-style="brutal"] [class*="bg-linear-"],
+[data-style="brutal"] [class*="bg-radial"],
+[data-style="brutal"] [class*="bg-conic"] {
+  background-image: none;
+  background-color: var(--tw-gradient-from);
+}
+[data-style="brutal"] :is(.skeleton-shimmer, .tool-chip-bling, .scroll-latest-pill)::after {
+  display: none;
+}
+/* The soft glow blobs behind page headers are blurred washes; drop them. */
+[data-style="brutal"] .blur-3xl {
+  display: none;
+}

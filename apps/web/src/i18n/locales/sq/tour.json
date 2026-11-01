@@ -1,0 +1,83 @@
+{
+  "tour": {
+    "menuItem": "Turi i aplikacionit",
+    "skip": "Kapërce",
+    "start": "Më trego",
+    "next": "Tjetër",
+    "back": "Prapa",
+    "done": "U krye",
+    "setUpProfile": "Plotëso profilin",
+    "progress": "Hapi {{current}} nga {{total}}",
+    "language": "Gjuha",
+    "steps": {
+      "welcome": {
+        "title": "Mirë se vjen në {{brand}}",
+        "body": "{{agent}} është trajneri yt AI për fitnes dhe ushqyerje. Ky tur njëminutësh të tregon si funksionon aplikacioni."
+      },
+      "chat": {
+        "title": "Thjesht fol me të",
+        "body": "Tregoji {{agent}} çfarë hëngre, si u stërvite ose çfarë synon, me fjalët e tua. Bashkëngjit një foto të pjatës ose të etiketës ushqyese, ose përdor mikrofonin."
+      },
+      "confirm": {
+        "title": "Ti konfirmon, ai bën punën",
+        "body": "Kur trajneri regjistron ose ndryshon diçka, hap një formular të plotësuar tashmë. Kontrolloje dhe prek Ruaj. Asgjë nuk ruhet pa miratimin tënd."
+      },
+      "screens": {
+        "title": "Të dhënat e tua, në katër ekrane",
+        "body": "Çdo gjë që regjistron trajneri shfaqet në këto ekrane, dhe mund të ndryshosh çdo gjë me dorë. Le t'i hedhim një sy të shpejtë secilit."
+      },
+      "day": {
+        "title": "Zgjidh ditën",
+        "body": "Çdo gjë që regjistron shkon te dita e zgjedhur. Prek këtu për të parë ditët e kaluara ose për të regjistruar diçka për dje."
+      },
+      "menu": {
+        "title": "Profili dhe cilësimet",
+        "body": "Profili yt përcakton objektivat e kalorive dhe makrove. Ky menu ka edhe përdorimin e AI, kalkulatorët, temën dhe këtë tur nëse do ta shohësh sërish."
+      },
+      "dashboard": {
+        "title": "Dita e sotme me një shikim",
+        "body": "Unaza e kalorive, makrot, objektivi kundrejt të ngrënës dhe asaj që mbetet, stërvitja e planifikuar, hapat, uji dhe kaloritë e djegura. Përdor shigjetat lart për të lëvizur mes ditëve."
+      },
+      "foodLog": {
+        "title": "Regjistri i ushqimit",
+        "body": "Çdo gjë që hëngre ditën e zgjedhur, vakt pas vakti, me totalet kundrejt objektivave. Shto ushqim vetë ose thjesht tregoji trajnerit."
+      },
+      "pantry": {
+        "title": "Qileri",
+        "body": "Katalogu yt i ushqimeve dhe suplementeve, me makro, barkode dhe atë që ke në dispozicion. Skano një barkod, ose importo një faturë apo foto të blerjeve përmes bisedës."
+      },
+      "recipes": {
+        "title": "Recetat",
+        "body": "Ruaj recetat që bën shpesh, ose importo një nga një link. Regjistro një recetë të plotë, ose vetëm disa racione, si vakt me një hap."
+      },
+      "diet": {
+        "title": "Planet e dietës",
+        "body": "Plane vaktesh shumëditore me objektiva ditorë dhe orar javor. Regjistro një vakt të planifikuar me një prekje, ose merr listën e blerjeve për atë që mungon në qiler."
+      },
+      "training": {
+        "title": "Stërvitja",
+        "body": "Regjistro seancat: sete, përsëritje, peshë dhe intensitet, nga një plan ose të lira. Pasi regjistron, trajneri sugjeron çfarë të ngresh herën tjetër."
+      },
+      "progress": {
+        "title": "Progresi",
+        "body": "Historiku për çdo ushtrim, maksimumi i vlerësuar me një përsëritje dhe trendet e forcës, që të shohësh si po forcohesh."
+      },
+      "plans": {
+        "title": "Planet e stërvitjes",
+        "body": "Ndarja e stërvitjes: ditët, ushtrimet dhe setet, përsëritjet e pesha e synuar. Ndërto një këtu, kërkoji trajnerit të bëjë një, ose ngarko planin që të dha trajneri yt."
+      },
+      "bodyComposition": {
+        "title": "Përbërja e trupit",
+        "body": "Peshimet dhe yndyra trupore, plus vlerat e llogaritura prej tyre: BMI, masa e ligët dhe FFMI. Grafikët e trendit tregojnë si ndryshojnë gjatë javëve ose muajve."
+      },
+      "bodyMeasurements": {
+        "title": "Matjet",
+        "body": "Regjistro matjet me metër të shpatullave, gjoksit, krahëve, kofshëve dhe pulpave. Një grafik radar krahason secilën me idealin për trupin tënd dhe tregon në cilët muskuj të fokusohesh. Mund të skanosh edhe formën e trupit me kamerë."
+      },
+      "finish": {
+        "title": "Gjithçka gati",
+        "body": "Fillo duke plotësuar profilin (objektivin, gjatësinë, peshën dhe aktivitetin) që objektivat të të përshtaten. Ose thjesht përshëndet {{agent}}."
+      }
+    }
+  }
+}

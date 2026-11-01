@@ -1,0 +1,224 @@
+{
+  "calculators": {
+    "title": "Calcolatori",
+    "subtitle": "Fai tu qualsiasi calcolo: i valori sono precompilati dal tuo profilo, modificali liberamente per esplorare.",
+    "fillIn": "Compila i valori qui sopra per vedere il risultato.",
+    "select": "Seleziona…",
+    "pickExercise": "Scegli un esercizio",
+    "searchExercises": "Cerca esercizi…",
+    "noMatches": "Nessun risultato",
+    "sections": {
+      "body": "Corpo e composizione",
+      "energy": "Energia e nutrizione",
+      "strength": "Forza",
+      "cardio": "Cardio e allenamento"
+    },
+    "units": {
+      "years": "anni",
+      "min": "min",
+      "reps": "rip."
+    },
+    "opt": {
+      "navy": "Navy (metro)",
+      "deurenberg": "Deurenberg (BMI)",
+      "epley": "Epley",
+      "brzycki": "Brzycki",
+      "average": "Media",
+      "raw": "Raw",
+      "equipped": "Equipaggiato",
+      "loss025": "0.25%",
+      "loss05": "0.5%",
+      "loss075": "0.75%",
+      "loss1": "1%",
+      "army": "Esercito (vita)",
+      "temperate": "Temperato",
+      "hot": "Caldo",
+      "paceSlow": "Lento",
+      "paceBrisk": "Svelto"
+    },
+    "info": {
+      "wrist": "Circonferenza: avvolgi il metro attorno al punto più stretto del polso, appena sotto l'osso della mano.",
+      "ankle": "Circonferenza: avvolgi il metro attorno al punto più stretto appena sopra il malleolo.",
+      "bmrBodyFat": "Facoltativo. Con la massa grassa viene usata la formula di Katch-McArdle, più precisa.",
+      "oneRepMaxExercise": "È solo un'etichetta: la stima dell'1RM usa la stessa formula per qualsiasi esercizio (carico × ripetizioni).",
+      "strengthPerf": "Inserisci direttamente il tuo 1RM, oppure la tua serie migliore (carico + ripetizioni) per stimarlo. Per gli esercizi a corpo libero valutati a ripetizioni, inserisci solo le ripetizioni.",
+      "restingHr": "Misurata da seduto o sdraiato dopo qualche minuto di riposo, idealmente al mattino.",
+      "maxHr": "Facoltativa. Lascia vuoto per stimarla dall'età (208 − 0,7 × età).",
+      "shoulders": "Circonferenza: avvolgi il metro attorno a entrambe le spalle nel punto più largo (sopra i deltoidi), braccia rilassate lungo i fianchi.",
+      "waistNarrowest": "Circonferenza: avvolgi il metro attorno al punto più stretto della vita, rilassato dopo aver espirato. Non tirare dentro la pancia.",
+      "highHip": "Circonferenza: avvolgi il metro attorno al corpo circa 18 cm sotto il punto vita naturale, all'altezza della parte alta delle ossa del bacino.",
+      "chest": "Circonferenza: avvolgi il metro attorno al petto all'altezza dei capezzoli, sotto le ascelle, braccia rilassate, dopo una normale espirazione.",
+      "bust": "Circonferenza: avvolgi il metro attorno al punto più pieno del seno, indossando un reggiseno aderente (non imbottito), con il metro in piano tutto intorno.",
+      "hip": "Circonferenza: avvolgi il metro attorno al punto più largo di fianchi e glutei, piedi uniti, metro in piano.",
+      "armFlexed": "Circonferenza: contrai forte il bicipite e avvolgi il metro attorno al punto più alto del braccio.",
+      "forearm": "Circonferenza: chiudi il pugno, braccio teso, e avvolgi il metro attorno al punto più largo dell'avambraccio vicino al gomito.",
+      "neck": "Circonferenza: avvolgi il metro attorno al collo appena sotto il pomo d'Adamo, leggermente inclinato verso il basso davanti.",
+      "thigh": "Circonferenza: in piedi, avvolgi il metro attorno alla parte alta della coscia nel punto più largo, appena sotto i glutei.",
+      "calf": "Circonferenza: in piedi con il peso su entrambi i piedi, avvolgi il metro attorno al punto più largo del polpaccio.",
+      "height": "Linea retta: stai a piedi nudi contro un muro e misura dal pavimento alla sommità della testa.",
+      "waistNavy": "Circonferenza: avvolgi il metro attorno alla vita, in piano: all'altezza dell'ombelico per gli uomini, nel punto più stretto per le donne. Rilassato, dopo aver espirato.",
+      "potentialCurrent": "Facoltativo. Con peso e massa grassa attuali, il risultato mostra quanto la tua massa magra è vicina al limite.",
+      "lossRate": "Lo 0,5–1% del peso corporeo a settimana è sostenibile per la maggior parte delle persone; chi è più magro dovrebbe restare verso il valore basso.",
+      "abdomenArmy": "Circonferenza — orizzontale intorno alla vita all'altezza dell'ombelico, per uomini e donne. Rilassato, dopo l'espirazione.",
+      "rpe": "Sforzo percepito: 10 = niente in riserva, 9 = ancora una ripetizione, 8 = ancora due, e così via."
+    },
+    "fields": {
+      "weight": "Peso",
+      "height": "Altezza",
+      "sex": "Sesso",
+      "bodyFat": "Massa grassa",
+      "neck": "Collo",
+      "waist": "Vita",
+      "hip": "Fianchi",
+      "wrist": "Polso",
+      "ankle": "Caviglia",
+      "targetBodyFat": "Massa grassa obiettivo",
+      "age": "Età",
+      "activity": "Livello di attività",
+      "goal": "Obiettivo",
+      "method": "Metodo",
+      "liftWeight": "Carico sollevato",
+      "reps": "Ripetizioni",
+      "formula": "Formula",
+      "exercise": "Esercizio",
+      "exerciseOptional": "Esercizio (facoltativo)",
+      "bodyweight": "Peso corporeo",
+      "oneRepMax": "1RM",
+      "bestSetWeight": "Carico serie migliore",
+      "bestSetReps": "Ripetizioni serie migliore",
+      "squat": "Squat",
+      "bench": "Panca",
+      "deadlift": "Stacco",
+      "equipment": "Attrezzatura",
+      "lift1": "Alzata 1",
+      "lift2": "Alzata 2",
+      "lift3": "Alzata 3",
+      "targetWeight": "Carico obiettivo",
+      "barWeight": "Peso del bilanciere",
+      "restingHr": "Frequenza cardiaca a riposo",
+      "maxHr": "Frequenza cardiaca massima",
+      "activityType": "Attività",
+      "duration": "Durata",
+      "avgLoad": "Carico medio",
+      "repsPerSet": "Ripetizioni per serie",
+      "setsCount": "Serie",
+      "shoulders": "Spalle",
+      "chestOrBust": "Petto / seno",
+      "chest": "Petto",
+      "bust": "Seno",
+      "armFlexed": "Braccio (contratto)",
+      "forearm": "Avambraccio",
+      "thigh": "Coscia",
+      "calf": "Polpaccio",
+      "highHip": "Fianchi alti",
+      "currentWeight": "Peso attuale",
+      "currentBodyFat": "Massa grassa attuale",
+      "goalWeight": "Peso obiettivo",
+      "lossRate": "Perdita settimanale (% del peso corporeo)",
+      "abdomen": "Vita all'ombelico",
+      "exerciseMin": "Allenamento",
+      "climate": "Clima",
+      "rpe": "RPE",
+      "targetReps": "Ripetizioni obiettivo",
+      "targetRpe": "RPE obiettivo",
+      "topSetWeight": "Peso della serie top",
+      "topSetReps": "Ripetizioni della serie top",
+      "exercise1": "Esercizio 1",
+      "exercise2": "Esercizio 2",
+      "exercise3": "Esercizio 3",
+      "load": "Carico",
+      "sessionsPerWeek": "Sedute a settimana",
+      "steps": "Passi",
+      "pace": "Andatura"
+    },
+    "bmi": {
+      "title": "BMI",
+      "desc": "Indice di massa corporea e intervallo di peso sano per la tua altezza."
+    },
+    "bodyFat": {
+      "title": "Massa grassa",
+      "desc": "Stima la % di massa grassa dalle misure col metro (Navy) o da BMI + età (Deurenberg)."
+    },
+    "ffmi": {
+      "title": "FFMI / Massa magra",
+      "desc": "La tua massa magra (muscoli, ossa, organi e acqua) e la massa grassa, più l'indice di massa magra: quanta massa magra hai in rapporto alla tua altezza."
+    },
+    "maxPotential": {
+      "title": "Potenziale muscolare massimo",
+      "desc": "Limite di massa magra natural in base alla tua struttura ossea (Casey Butt)."
+    },
+    "bmr": {
+      "title": "BMR / TDEE / macro",
+      "desc": "Metabolismo basale, dispendio giornaliero e obiettivo di macro per il tuo scopo."
+    },
+    "oneRepMax": {
+      "title": "Massimale (1RM)",
+      "desc": "Stima il tuo 1RM per qualsiasi esercizio da una serie submassimale (carico × ripetizioni), con tabella ripetizioni-carico."
+    },
+    "strengthLevel": {
+      "title": "Standard di forza",
+      "desc": "Classifica un'alzata da Principiante → Élite rispetto agli standard della popolazione."
+    },
+    "powerlifting": {
+      "title": "Punteggio powerlifting",
+      "desc": "Punteggi Wilks, DOTS e IPF GoodLift dal tuo totale."
+    },
+    "symmetry": {
+      "title": "Equilibrio delle alzate",
+      "desc": "Quanto sono equilibrate le tue alzate: individua il movimento che resta indietro."
+    },
+    "plateRacking": {
+      "title": "Caricamento dischi",
+      "desc": "Quali dischi caricare per lato per arrivare al carico obiettivo."
+    },
+    "vo2max": {
+      "title": "VO₂max e zone cardio",
+      "desc": "Stima della forma aerobica dalla tua frequenza cardiaca a riposo, più la frequenza massima e cinque zone di allenamento."
+    },
+    "resistanceKcal": {
+      "title": "Calorie con i pesi",
+      "desc": "Calorie dal lavoro svolto: dipendono da carico × ripetizioni × serie, non solo dal tempo.",
+      "volume": "{{volume}} kg di volume totale"
+    },
+    "trainingKcal": {
+      "title": "Calorie bruciate in allenamento",
+      "desc": "Calorie stimate bruciate in una sessione (basate sui MET, da attività + durata)."
+    },
+    "idealProportions": {
+      "title": "Proporzioni ideali",
+      "desc": "Le tue misure confrontate con le proporzioni ideali classiche, scalate sul tuo polso: scopri quali parti del corpo restano indietro. Ogni valore è una circonferenza: avvolgi il metro, aderente ma senza stringere. Tocca (i) per sapere dove misurare."
+    },
+    "bodyShape": {
+      "title": "Forma del corpo",
+      "desc": "Classifica la forma del tuo corpo da seno o petto, vita e fianchi, più il rapporto vita-fianchi. Ogni valore è una circonferenza: avvolgi il metro, aderente e in piano. Tocca (i) per sapere dove misurare."
+    },
+    "calorieDeficit": {
+      "title": "Deficit calorico",
+      "desc": "Le calorie giornaliere per raggiungere un peso obiettivo a un ritmo sicuro, e quante settimane servono."
+    },
+    "idealWeight": {
+      "title": "Peso ideale",
+      "desc": "Il peso ideale per la tua altezza secondo quattro formule classiche, accanto all'intervallo di BMI sano."
+    },
+    "waterIntake": {
+      "title": "Fabbisogno d'acqua",
+      "desc": "Quanto bere al giorno in base a peso, allenamento e clima."
+    },
+    "rpe": {
+      "title": "Convertitore RPE",
+      "desc": "Trasforma una serie a un dato RPE in un massimale stimato e nel carico per la serie successiva."
+    },
+    "warmup": {
+      "title": "Serie di riscaldamento",
+      "desc": "Una progressione di serie di riscaldamento fino alla serie top, con i dischi per ciascuna."
+    },
+    "trainingVolume": {
+      "title": "Volume di allenamento",
+      "desc": "Tonnellaggio e serie allenanti settimanali per gruppo muscolare di una seduta."
+    },
+    "stepCalories": {
+      "title": "Passi in calorie",
+      "desc": "Calorie e distanza da un numero di passi, più un obiettivo di passi giornaliero."
+    }
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "calculators": {
+    "title": "Kalkulatorët",
+    "subtitle": "Bëj vetë çdo llogaritje — të plotësuara nga profili yt, ndrysho çfarëdo për të eksploruar.",
+    "fillIn": "Plotëso vlerat më sipër për të parë rezultatin.",
+    "select": "Zgjidh…",
+    "pickExercise": "Zgjidh një ushtrim",
+    "searchExercises": "Kërko ushtrime…",
+    "noMatches": "Asnjë përputhje",
+    "sections": {
+      "body": "Trupi dhe përbërja",
+      "energy": "Energjia dhe ushqyerja",
+      "strength": "Forca",
+      "cardio": "Kardio dhe stërvitja"
+    },
+    "units": {
+      "years": "vjeç",
+      "min": "min",
+      "reps": "përs."
+    },
+    "opt": {
+      "navy": "Navy (shirit)",
+      "deurenberg": "Deurenberg (BMI)",
+      "epley": "Epley",
+      "brzycki": "Brzycki",
+      "average": "Mesatarja",
+      "raw": "Raw",
+      "equipped": "Me pajisje",
+      "loss025": "0.25%",
+      "loss05": "0.5%",
+      "loss075": "0.75%",
+      "loss1": "1%",
+      "army": "Ushtria (beli)",
+      "temperate": "I butë",
+      "hot": "I nxehtë",
+      "paceSlow": "I ngadaltë",
+      "paceBrisk": "I shpejtë"
+    },
+    "info": {
+      "wrist": "Perimetri — mbështill shiritin rreth pikës më të ngushtë të kyçit, pak poshtë kockës së dorës.",
+      "ankle": "Perimetri — mbështill shiritin rreth pikës më të ngushtë pak mbi kockën e kyçit të këmbës.",
+      "bmrBodyFat": "Opsionale. Me yndyrën trupore përdoret formula më e saktë Katch-McArdle.",
+      "oneRepMaxExercise": "Vetëm një etiketë — vlerësimi i 1RM përdor të njëjtën formulë për çdo ngritje (pesha × përsëritjet).",
+      "strengthPerf": "Fut drejtpërdrejt 1RM-në tënde, ose setin më të mirë (pesha + përsëritjet) për ta vlerësuar. Për ushtrimet me peshën e trupit që vlerësohen me përsëritje, fut vetëm përsëritjet.",
+      "restingHr": "Matur ulur ose shtrirë pas disa minutash pushim, mundësisht në mëngjes.",
+      "maxHr": "Opsionale. Lëre bosh për ta vlerësuar nga mosha (208 − 0.7 × mosha).",
+      "shoulders": "Perimetri — mbështill shiritin rreth të dy shpatullave në pikën më të gjerë (mbi deltoidet), me krahët të lirshëm anash.",
+      "waistNarrowest": "Perimetri — mbështill shiritin rreth pikës më të ngushtë të belit, i relaksuar pas nxjerrjes së frymës. Mos e tërhiq barkun.",
+      "highHip": "Perimetri — mbështill shiritin rreth trupit rreth 18 cm (7 in) poshtë belit natyral, rreth majës së kockave të legenit.",
+      "chest": "Perimetri — mbështill shiritin rreth gjoksit në nivelin e thithkave, nën sqetulla, me krahët të lirshëm, pas një nxjerrjeje normale të frymës.",
+      "bust": "Perimetri — mbështill shiritin rreth pjesës më të plotë të gjoksit, me një sytjena të puthitur (pa mbushje), shiriti në nivel gjatë gjithë rrethit.",
+      "hip": "Perimetri — mbështill shiritin rreth pjesës më të gjerë të ijëve dhe vitheve, këmbët bashkë, shiriti në nivel.",
+      "armFlexed": "Perimetri — tendos fort bicepsin dhe mbështill shiritin rreth majës së krahut.",
+      "forearm": "Perimetri — shtrëngo grushtin, krahu drejt, dhe mbështill shiritin rreth pjesës më të gjerë të parakrahut pranë bërrylit.",
+      "neck": "Perimetri — mbështill shiritin rreth qafës pak poshtë mollës së Adamit, lehtësisht të pjerrët poshtë përpara.",
+      "thigh": "Perimetri — në këmbë, mbështill shiritin rreth pjesës së sipërme të kofshës në pikën më të gjerë, pak poshtë vitheve.",
+      "calf": "Perimetri — në këmbë me peshën në të dy këmbët, mbështill shiritin rreth pjesës më të gjerë të pulpës.",
+      "height": "Vijë e drejtë — qëndro zbathur pranë murit dhe mat nga dyshemeja deri në majë të kokës.",
+      "waistNavy": "Perimetri — mbështill shiritin rreth belit, në nivel: te kërthiza për burrat, në pikën më të ngushtë për gratë. I relaksuar, pas nxjerrjes së frymës.",
+      "potentialCurrent": "Opsionale. Me peshën dhe yndyrën trupore aktuale, rezultati tregon sa afër kufirit është masa jote e ligët.",
+      "lossRate": "0,5–1% e peshës trupore në javë është e qëndrueshme për shumicën; njerëzit më të dobët duhet të qëndrojnë afër vlerës së ulët.",
+      "abdomenArmy": "Perimetri — horizontalisht rreth belit në nivelin e kërthizës, për burra dhe gra. I relaksuar, pas nxjerrjes së frymës.",
+      "rpe": "Shkalla e lodhjes së perceptuar: 10 = asgjë në rezervë, 9 = edhe një përsëritje, 8 = edhe dy, e kështu me radhë."
+    },
+    "fields": {
+      "weight": "Pesha",
+      "height": "Gjatësia",
+      "sex": "Gjinia",
+      "bodyFat": "Yndyra trupore",
+      "neck": "Qafa",
+      "waist": "Beli",
+      "hip": "Ijët",
+      "wrist": "Kyçi i dorës",
+      "ankle": "Kyçi i këmbës",
+      "targetBodyFat": "Yndyra trupore e synuar",
+      "age": "Mosha",
+      "activity": "Niveli i aktivitetit",
+      "goal": "Qëllimi",
+      "method": "Metoda",
+      "liftWeight": "Pesha e ngritur",
+      "reps": "Përsëritjet",
+      "formula": "Formula",
+      "exercise": "Ushtrimi",
+      "exerciseOptional": "Ushtrimi (opsionale)",
+      "bodyweight": "Pesha trupore",
+      "oneRepMax": "1RM",
+      "bestSetWeight": "Pesha e setit më të mirë",
+      "bestSetReps": "Përsëritjet e setit më të mirë",
+      "squat": "Squat",
+      "bench": "Bench",
+      "deadlift": "Deadlift",
+      "equipment": "Pajisjet",
+      "lift1": "Ngritja 1",
+      "lift2": "Ngritja 2",
+      "lift3": "Ngritja 3",
+      "targetWeight": "Pesha e synuar",
+      "barWeight": "Pesha e shufrës",
+      "restingHr": "Rrahjet e zemrës në qetësi",
+      "maxHr": "Rrahjet maksimale të zemrës",
+      "activityType": "Aktiviteti",
+      "duration": "Kohëzgjatja",
+      "avgLoad": "Ngarkesa mesatare",
+      "repsPerSet": "Përsëritje për set",
+      "setsCount": "Setet",
+      "shoulders": "Shpatullat",
+      "chestOrBust": "Gjoksi",
+      "chest": "Gjoksi",
+      "bust": "Gjoksi (femra)",
+      "armFlexed": "Krahu (i tendosur)",
+      "forearm": "Parakrahu",
+      "thigh": "Kofsha",
+      "calf": "Pulpa",
+      "highHip": "Ija e sipërme",
+      "currentWeight": "Pesha aktuale",
+      "currentBodyFat": "Yndyra trupore aktuale",
+      "goalWeight": "Pesha e synuar",
+      "lossRate": "Humbje në javë (% e peshës trupore)",
+      "abdomen": "Beli te kërthiza",
+      "exerciseMin": "Stërvitje",
+      "climate": "Klima",
+      "rpe": "RPE",
+      "targetReps": "Përsëritjet e synuara",
+      "targetRpe": "RPE e synuar",
+      "topSetWeight": "Pesha e setit kryesor",
+      "topSetReps": "Përsëritjet e setit kryesor",
+      "exercise1": "Ushtrimi 1",
+      "exercise2": "Ushtrimi 2",
+      "exercise3": "Ushtrimi 3",
+      "load": "Ngarkesa",
+      "sessionsPerWeek": "Seanca në javë",
+      "steps": "Hapa",
+      "pace": "Ritmi i ecjes"
+    },
+    "bmi": {
+      "title": "BMI",
+      "desc": "Indeksi i masës trupore dhe diapazoni i peshës së shëndetshme për gjatësinë tënde."
+    },
+    "bodyFat": {
+      "title": "Yndyra trupore",
+      "desc": "Vlerëso % e yndyrës trupore nga matjet me shirit (Navy) ose nga BMI + mosha (Deurenberg)."
+    },
+    "ffmi": {
+      "title": "FFMI / Masa pa yndyrë",
+      "desc": "Masa jote pa yndyrë — muskuj, kocka, organe dhe ujë — dhe masa yndyrore, plus indeksi i masës pa yndyrë: sa masë të ligët ke për gjatësinë tënde."
+    },
+    "maxPotential": {
+      "title": "Potenciali maksimal muskulor",
+      "desc": "Kufiri i masës së ligët pa doping sipas strukturës së trupit (Casey Butt)."
+    },
+    "bmr": {
+      "title": "BMR / TDEE / makrot",
+      "desc": "Metabolizmi bazal, djegia ditore dhe një objektiv makrosh për qëllimin tënd."
+    },
+    "oneRepMax": {
+      "title": "Maksimumi me një përsëritje",
+      "desc": "Vlerëso 1RM-në tënde për çdo ngritje nga një set nënmaksimal (pesha × përsëritjet), me tabelë ngarkesash sipas përsëritjeve."
+    },
+    "strengthLevel": {
+      "title": "Standardet e forcës",
+      "desc": "Rendit një ngritje nga Fillestar → Elitë kundrejt standardeve të popullsisë."
+    },
+    "powerlifting": {
+      "title": "Pikët e powerlifting",
+      "desc": "Pikët Wilks, DOTS dhe IPF GoodLift nga totali yt."
+    },
+    "symmetry": {
+      "title": "Simetria e ngritjeve",
+      "desc": "Sa të balancuara janë ngritjet e tua — dallo lëvizjen që mbetet prapa."
+    },
+    "plateRacking": {
+      "title": "Ngarkimi i disqeve",
+      "desc": "Cilat disqe të vendosësh në secilën anë për të arritur peshën e synuar."
+    },
+    "vo2max": {
+      "title": "VO₂max dhe zonat e rrahjeve",
+      "desc": "Vlerësim i formës aerobike nga rrahjet e zemrës në qetësi, plus rrahjet maksimale dhe pesë zona stërvitjeje."
+    },
+    "resistanceKcal": {
+      "title": "Djegia nga stërvitja me rezistencë",
+      "desc": "Kaloritë nga puna e kryer — rriten me ngarkesën × përsëritjet × setet, jo vetëm me kohën.",
+      "volume": "{{volume}} kg volum total"
+    },
+    "trainingKcal": {
+      "title": "Kaloritë e djegura nga stërvitja",
+      "desc": "Kaloritë e vlerësuara të djegura në një seancë (bazuar në MET, nga aktiviteti + kohëzgjatja)."
+    },
+    "idealProportions": {
+      "title": "Proporcionet ideale",
+      "desc": "Matjet e tua me shirit kundrejt proporcioneve ideale klasike të shkallëzuara sipas kyçit të dorës — shiko cilat pjesë të trupit mbeten prapa. Çdo vlerë është perimetër: mbështill shiritin rreth, i puthitur por pa shtrënguar. Prek (i) për të parë ku të matësh."
+    },
+    "bodyShape": {
+      "title": "Forma e trupit",
+      "desc": "Klasifiko formën e trupit nga gjoksi, beli dhe ijët — plus raportin bel-ijë. Çdo vlerë është perimetër: mbështill shiritin rreth, i puthitur dhe në nivel. Prek (i) për të parë ku të matësh."
+    },
+    "calorieDeficit": {
+      "title": "Deficiti kalorik",
+      "desc": "Kaloritë ditore për të arritur peshën e synuar me ritëm të sigurt, dhe sa javë duhen."
+    },
+    "idealWeight": {
+      "title": "Pesha ideale",
+      "desc": "Pesha ideale për gjatësinë tënde sipas katër formulave klasike, pranë intervalit të shëndetshëm të BMI-së."
+    },
+    "waterIntake": {
+      "title": "Marrja e ujit",
+      "desc": "Sa ujë të pish në ditë sipas peshës, stërvitjes dhe klimës."
+    },
+    "rpe": {
+      "title": "Konvertuesi RPE",
+      "desc": "Kthe një set me RPE në maksimum të vlerësuar dhe në ngarkesën për setin tjetër."
+    },
+    "warmup": {
+      "title": "Setet e ngrohjes",
+      "desc": "Një shkallëzim setesh ngrohjeje deri te seti kryesor, me disqet për secilin."
+    },
+    "trainingVolume": {
+      "title": "Vëllimi i stërvitjes",
+      "desc": "Tonazhi dhe setet e forta javore për grup muskulor për një seancë."
+    },
+    "stepCalories": {
+      "title": "Hapat në kalori",
+      "desc": "Kaloritë dhe distanca nga numri i hapave, plus një objektiv ditor hapash."
+    }
+  }
+}

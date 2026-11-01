@@ -1,0 +1,156 @@
+{
+  "lib": {
+    "toast": {
+      "verb": {
+        "log": "gelogd",
+        "add": "toegevoegd",
+        "save": "opgeslagen",
+        "import": "geïmporteerd",
+        "update": "bijgewerkt",
+        "replace": "bijgewerkt",
+        "set": "bijgewerkt",
+        "activate": "geactiveerd",
+        "delete": "verwijderd",
+        "remove": "verwijderd",
+        "submit": "verzonden"
+      },
+      "noun": {
+        "item": "Item",
+        "update_profile": "Profiel",
+        "update_pantry": "Voorraad",
+        "import_pantry": "Voorraad",
+        "log_body_comp": "Lichaamsmeting",
+        "delete_body_comp_entry": "Lichaamsmeting",
+        "update_body_comp_entry": "Lichaamsmeting",
+        "log_planned_meal": "Maaltijd",
+        "log_recipe": "Recept",
+        "update_recipe_portion": "Recept",
+        "set_recipe_favorite": "Recept",
+        "log_workout_session": "Trainingssessie",
+        "delete_workout_session": "Trainingssessie",
+        "delete_cardio_entry": "Cardio",
+        "update_cardio_entry": "Cardio",
+        "log_measurements": "Metingen",
+        "add_exercise_to_plan_day": "Oefening",
+        "remove_exercise_from_plan_day": "Oefening",
+        "update_plan_exercise": "Oefening",
+        "replace_plan_exercise": "Oefening",
+        "update_workout_plan_day": "Trainingsschema"
+      },
+      "httpNoun": {
+        "meal": "Maaltijd",
+        "diet_plan": "Voedingsschema",
+        "workout_session": "Trainingssessie",
+        "workout_plan": "Trainingsschema",
+        "body_entry": "Lichaamsmeting",
+        "cardio": "Cardio",
+        "measurements": "Metingen",
+        "steps": "Stappen",
+        "water": "Water",
+        "profile": "Profiel"
+      },
+      "message": "{{noun}} {{verb}}"
+    },
+    "error": {
+      "invalidInput": "Ongeldige invoer"
+    },
+    "energy": {
+      "bmr": "BMR",
+      "maintenance": "onderhoud",
+      "dailyTarget": "dagdoel",
+      "kcal": "kcal"
+    },
+    "gauge": {
+      "underweight": "ondergewicht",
+      "normal": "normaal",
+      "overweight": "overgewicht",
+      "obese": "obesitas",
+      "healthy": "gezond",
+      "veryLean": "zeer slank",
+      "athletic": "atletisch",
+      "fit": "fit",
+      "average": "gemiddeld",
+      "high": "hoog",
+      "belowAverage": "onder gemiddeld",
+      "aboveAverage": "boven gemiddeld",
+      "outstanding": "uitzonderlijk",
+      "extremelyHigh": "extreem hoog",
+      "aboveNatural": "boven natuurlijk",
+      "beginner": "beginner",
+      "intermediate": "gemiddeld",
+      "advanced": "gevorderd",
+      "nearCeiling": "bijna plafond",
+      "lagging": "blijft achter",
+      "close": "dichtbij",
+      "onTarget": "ideaal",
+      "ahead": "voor",
+      "aboveIdeal": "boven",
+      "wellAboveIdeal": "ruim boven"
+    },
+    "goal": {
+      "cut": "Cutten",
+      "recomp": "Recomp",
+      "maintain": "Onderhouden",
+      "lean_bulk": "Lean bulk"
+    },
+    "burn": {
+      "title": "trainingsverbranding",
+      "estimateHint": "Geschat op basis van de sets van de sessie (gewicht × reps)",
+      "kcal": "kcal"
+    },
+    "category": {
+      "body-comp": "Lichaam",
+      "nutrition": "Voeding",
+      "pantry": "Voorraad",
+      "training": "Training",
+      "progress": "Voortgang",
+      "navigation": "Navigatie",
+      "macros": "Macro's",
+      "info": "Info"
+    }
+  },
+  "components": {
+    "camera": {
+      "scanAria": "Barcode scannen",
+      "photoAria": "Foto maken",
+      "noCameraApi": "Deze browser biedt geen camera-API. Gebruik in plaats daarvan uploaden.",
+      "previewFailed": "kon voorbeeld niet starten: {{error}}",
+      "unavailable": "camera niet beschikbaar — {{error}}",
+      "grantPermission": "Geef je browser toestemming voor de camera en probeer opnieuw, of gebruik uploaden.",
+      "notSupported": "Live scannen wordt hier niet ondersteund — maak in plaats daarvan een foto.",
+      "stalled": "Lukt het niet? Houd stil en vul het kader, of maak een foto.",
+      "notSupportedTypeIt": "Live scannen wordt hier niet ondersteund — typ de barcode in.",
+      "stalledNoPhoto": "Lukt het niet? Houd stil en vul het kader.",
+      "aim": "Richt de achtercamera op de barcode.",
+      "snapInstead": "Maak liever een foto",
+      "snap": "Foto"
+    },
+    "rowActions": {
+      "aria": "Rijacties"
+    },
+    "lock": {
+      "noModel": "Geen AI-model",
+      "noLlmTitle": "Er is geen AI-model ingesteld op deze server",
+      "noVisionTitle": "Er is geen AI-model met beeldherkenning ingesteld op deze server",
+      "locked": "Niet beschikbaar",
+      "lockedTitle": "Niet beschikbaar voor je account"
+    },
+    "install": {
+      "title": "{{name}} installeren",
+      "iosSubtitle": "Zet op je beginscherm voor snelle toegang",
+      "androidSubtitle": "Gebruik de app op volledig scherm",
+      "install": "Installeren",
+      "dismiss": "Sluiten",
+      "iosTitle": "Zet op beginscherm",
+      "iosIntro": "iOS heeft geen installatie met één tik — drie snelle stappen in Safari:",
+      "iosStep1Prefix": "Tik op de knop",
+      "iosStep1Share": "Deel",
+      "iosStep1Suffix": "in de werkbalk van Safari.",
+      "iosStep2Prefix": "Scrol en kies",
+      "iosStep2Action": "Zet op beginscherm",
+      "iosStep3Prefix": "Tik op",
+      "iosStep3Add": "Voeg toe",
+      "iosStep3Suffix": "— {{name}} staat nu op je beginscherm."
+    }
+  }
+}

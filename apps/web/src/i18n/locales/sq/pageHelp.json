@@ -1,0 +1,96 @@
+{
+  "pageHelp": {
+    "aria": "Çfarë mund të bëj këtu?",
+    "heading": "Në këtë faqe mund të",
+    "dashboard": {
+      "items": [
+        "Shohësh kaloritë dhe makrot e sotme, si dhe sa të mbetet nga objektivat.",
+        "Kontrollosh stërvitjen e planifikuar, hapat, ujin dhe kaloritë e djegura.",
+        "Përdorësh shigjetat lart për të kaluar nga një ditë në tjetrën."
+      ]
+    },
+    "nutrition": {
+      "items": [
+        "Shohësh gjithçka që hëngre në ditën e zgjedhur, vakt pas vakti.",
+        "Krahasosh totalet me objektivat e kalorive dhe makrove.",
+        "Shtosh ushqim me dorë, ose thjesht t'i tregosh trajnerit çfarë hëngre.",
+        "Ndryshosh ose fshish çdo element të regjistruar.",
+        "Ndryshosh periudhën për të parë tendencat për javë ose muaj."
+      ]
+    },
+    "pantry": {
+      "items": [
+        "Mbash një katalog të ushqimeve dhe suplementeve me makrot e tyre.",
+        "Shtosh artikuj me dorë ose të skanosh një barkod.",
+        "Ndjekësh çfarë ke në dispozicion.",
+        "Importosh një faturë ose foto të blerjeve përmes bisedës."
+      ]
+    },
+    "recipes": {
+      "items": [
+        "Ruash recetat që gatuan shpesh, ose të importosh një nga një lidhje.",
+        "Shohësh makrot për racion.",
+        "Regjistrosh një recetë të plotë, ose disa racione, si vakt me një hap."
+      ]
+    },
+    "diet": {
+      "items": [
+        "Krijosh plane ushqimore shumëditore me objektiva ditore.",
+        "Caktosh një orar javor se cilën ditë të planit ndjek.",
+        "Regjistrosh një vakt të planifikuar me një prekje.",
+        "Marrësh një listë blerjesh me atë që mungon në qiler."
+      ]
+    },
+    "training": {
+      "items": [
+        "Regjistrosh seanca: sete, përsëritje, peshë dhe intensitet.",
+        "Nisësh nga një plan stërvitjeje ose të stërvitesh lirshëm.",
+        "Marrësh sugjerimin e trajnerit për çfarë të ngresh herën tjetër.",
+        "Kalosh nëpër ditë për të rishikuar seancat e kaluara."
+      ]
+    },
+    "progress": {
+      "items": [
+        "Shohësh historikun e çdo ushtrimi.",
+        "Ndjekësh maksimumin e vlerësuar për një përsëritje dhe tendencat e forcës.",
+        "Ndryshosh periudhën për të krahasuar javë ose muaj."
+      ]
+    },
+    "plans": {
+      "items": [
+        "Ndërtosh ndarjen e stërvitjes: ditë, ushtrime dhe sete, përsëritje e peshë objektiv.",
+        "I kërkosh trajnerit të të bëjë një plan.",
+        "Ngarkosh një plan që të ka dhënë trajneri yt."
+      ]
+    },
+    "composition": {
+      "items": [
+        "Regjistrosh peshimet dhe yndyrën trupore.",
+        "Shohësh BMI-në, masën e lirë nga yndyra dhe FFMI-në të llogaritura prej tyre.",
+        "Ndjekësh grafikët e tendencës për javë ose muaj."
+      ]
+    },
+    "measurements": {
+      "items": [
+        "Regjistrosh matjet me metër të shpatullave, gjoksit, krahëve, kofshëve dhe pulpave.",
+        "Krahasosh secilën me idealin për strukturën tënde në grafikun radar.",
+        "Shohësh në cilët muskuj të përqendrohesh.",
+        "Skanosh formën e trupit me kamerë."
+      ]
+    },
+    "usage": {
+      "items": [
+        "Shohësh sa kushtojnë veçoritë AI këtë muaj, sipas veçorisë dhe modelit.",
+        "Shikosh muajt e mëparshëm.",
+        "Mbash parasysh që kostot janë vlerësime sipas çmimeve zyrtare të ofruesit tënd të AI."
+      ]
+    },
+    "calculators": {
+      "items": [
+        "Përdorësh vetë çdo llogaritës që përdor trajneri.",
+        "Të dhënat nisin nga profili yt; ndryshoji për të provuar skenarë.",
+        "Asgjë këtu nuk ruhet në regjistrat e tu."
+      ]
+    }
+  }
+}

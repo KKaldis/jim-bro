@@ -1,0 +1,83 @@
+{
+  "tour": {
+    "menuItem": "Tour dell'app",
+    "skip": "Salta",
+    "start": "Mostrami",
+    "next": "Avanti",
+    "back": "Indietro",
+    "done": "Fatto",
+    "setUpProfile": "Imposta il mio profilo",
+    "progress": "Passo {{current}} di {{total}}",
+    "language": "Lingua",
+    "steps": {
+      "welcome": {
+        "title": "Benvenuto in {{brand}}",
+        "body": "{{agent}} è il tuo coach AI per allenamento e alimentazione. Questo tour di un minuto ti mostra come funziona l'app."
+      },
+      "chat": {
+        "title": "Parlagli e basta",
+        "body": "Racconta a {{agent}} cosa hai mangiato, come ti sei allenato o qual è il tuo obiettivo, con parole tue. Allega la foto di un piatto o di un'etichetta nutrizionale, oppure usa il microfono."
+      },
+      "confirm": {
+        "title": "Tu confermi, lui fa il lavoro",
+        "body": "Quando il coach registra o modifica qualcosa, apre un modulo già compilato. Controllalo e tocca Salva. Nulla viene salvato senza il tuo OK."
+      },
+      "screens": {
+        "title": "I tuoi dati, in quattro schermate",
+        "body": "Tutto ciò che il coach registra finisce in queste schermate, e puoi modificare qualsiasi cosa a mano. Diamo una rapida occhiata a ciascuna."
+      },
+      "day": {
+        "title": "Scegli il giorno",
+        "body": "Tutto ciò che registri va nel giorno selezionato. Tocca qui per guardare indietro o per registrare qualcosa di ieri."
+      },
+      "menu": {
+        "title": "Profilo e impostazioni",
+        "body": "Il tuo profilo definisce gli obiettivi di calorie e macro. In questo menu trovi anche l'utilizzo AI, calcolatori, tema e questo tour, se vuoi rivederlo."
+      },
+      "dashboard": {
+        "title": "Oggi a colpo d'occhio",
+        "body": "L'anello delle calorie, i macro, obiettivo vs mangiato vs rimanente, l'allenamento previsto, passi, acqua e calorie bruciate. Usa le frecce in alto per spostarti tra i giorni."
+      },
+      "foodLog": {
+        "title": "Diario alimentare",
+        "body": "Tutto ciò che hai mangiato nel giorno selezionato, pasto per pasto, con i totali rispetto ai tuoi obiettivi. Aggiungi tu gli alimenti o dillo semplicemente al coach."
+      },
+      "pantry": {
+        "title": "Dispensa",
+        "body": "Il tuo catalogo personale di alimenti e integratori, con macro, codici a barre e quantità disponibili. Scansiona un codice a barre, oppure importa uno scontrino o la foto della spesa tramite la chat."
+      },
+      "recipes": {
+        "title": "Ricette",
+        "body": "Salva le ricette che prepari spesso, o importane una da un link. Registra come pasto una ricetta intera, o solo alcune porzioni, in un colpo solo."
+      },
+      "diet": {
+        "title": "Piani alimentari",
+        "body": "Piani pasti su più giorni con obiettivi giornalieri e programma settimanale. Registra un pasto pianificato con un tocco, o ottieni la lista della spesa di ciò che manca in dispensa."
+      },
+      "training": {
+        "title": "Allenamento",
+        "body": "Registra le tue sessioni: serie, ripetizioni, carico e sforzo, da una scheda o a ruota libera. Dopo la registrazione, il coach ti suggerisce cosa sollevare la volta successiva."
+      },
+      "progress": {
+        "title": "Progressi",
+        "body": "Storico di ogni esercizio, massimale stimato e andamento della forza, così vedi quanto stai diventando più forte."
+      },
+      "plans": {
+        "title": "Schede di allenamento",
+        "body": "La tua split di allenamento: giorni, esercizi e obiettivi di serie, ripetizioni e carico. Creane una qui, chiedi al coach di farla, oppure carica la scheda che ti ha dato il tuo personal trainer."
+      },
+      "bodyComposition": {
+        "title": "Composizione corporea",
+        "body": "Pesate e massa grassa, più i valori calcolati da questi: BMI, massa magra e FFMI. I grafici mostrano come cambiano nel corso di settimane o mesi."
+      },
+      "bodyMeasurements": {
+        "title": "Misure",
+        "body": "Registra le misure prese col metro di spalle, petto, braccia, cosce e polpacci. Un grafico radar confronta ciascuna con l'ideale per la tua struttura e mostra su quali muscoli concentrarti. Puoi anche scansionare la tua forma con la fotocamera."
+      },
+      "finish": {
+        "title": "Tutto pronto",
+        "body": "Inizia compilando il tuo profilo (obiettivo, altezza, peso e attività) così gli obiettivi sono su misura per te. Oppure saluta semplicemente {{agent}}."
+      }
+    }
+  }
+}

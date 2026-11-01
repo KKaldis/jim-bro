@@ -1,0 +1,89 @@
+/* Base theme ("flat"): color + elevation tokens for light and dark.
+   Components never reference raw colors or shadow values — they use the
+   Tailwind utilities mapped from these in styles.css (bg-card, border-edge,
+   shadow-surface, …). A new look is a new file that overrides these tokens
+   under a [data-style] selector (see soft.css). */
+
+:root {
+  --background: oklch(0.99 0.002 247);
+  --foreground: oklch(0.18 0.02 250);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.18 0.02 250);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.18 0.02 250);
+  --primary: oklch(0.55 0.21 256);
+  --primary-foreground: oklch(0.99 0.002 247);
+  --secondary: oklch(0.96 0.005 247);
+  --secondary-foreground: oklch(0.22 0.02 250);
+  --muted: oklch(0.96 0.005 247);
+  --muted-foreground: oklch(0.5 0.02 250);
+  --accent: oklch(0.96 0.005 247);
+  --accent-foreground: oklch(0.22 0.02 250);
+  --destructive: oklch(0.58 0.22 27);
+  --destructive-foreground: oklch(0.99 0.002 247);
+  --success: oklch(0.62 0.18 145);
+  --warning: oklch(0.72 0.18 75);
+  --info: oklch(0.6 0.14 235);
+  --border: oklch(0.91 0.01 250);
+  --input: oklch(0.91 0.01 250);
+  --ring: oklch(0.55 0.21 256);
+  --radius: 0.625rem;
+
+  --chart-1: oklch(0.55 0.21 256);
+  --chart-2: oklch(0.62 0.18 145);
+  --chart-3: oklch(0.72 0.18 75);
+  --chart-4: oklch(0.58 0.22 27);
+  --chart-5: oklch(0.55 0.18 310);
+
+  /* Outline of a raised or sunken surface (cards, fields, overlays). Kept
+     separate from --border, which also draws dividers, so a style can drop
+     surface outlines while keeping dividers. */
+  --edge: var(--border);
+
+  /* Elevation, by role:
+     surface — cards and panels sitting on the page
+     tile    — smaller cards nested inside a surface (stat tiles, option cards)
+     control — buttons, chips, unselected toggles
+     pressed — the selected toggle / active tab / pushed button
+     field   — text inputs, selects, textareas
+     well    — grouped list containers recessed into a card
+     overlay — popovers, menus, dialogs, toasts, tooltips */
+  --elevation-surface: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --elevation-tile: 0 0 #0000;
+  --elevation-control: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --elevation-pressed: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --elevation-field: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --elevation-well: 0 0 #0000;
+  --elevation-overlay: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.dark {
+  --background: oklch(0.16 0.01 250);
+  --foreground: oklch(0.92 0.01 247);
+  --card: oklch(0.21 0.015 250);
+  --card-foreground: oklch(0.92 0.01 247);
+  --popover: oklch(0.21 0.015 250);
+  --popover-foreground: oklch(0.92 0.01 247);
+  --primary: oklch(0.8 0.15 225);
+  --primary-foreground: oklch(0.16 0.01 250);
+  --secondary: oklch(0.26 0.015 250);
+  --secondary-foreground: oklch(0.92 0.01 247);
+  --muted: oklch(0.26 0.015 250);
+  --muted-foreground: oklch(0.65 0.015 250);
+  --accent: oklch(0.26 0.015 250);
+  --accent-foreground: oklch(0.92 0.01 247);
+  --destructive: oklch(0.65 0.21 27);
+  --destructive-foreground: oklch(0.98 0.005 247);
+  --success: oklch(0.7 0.18 145);
+  --warning: oklch(0.78 0.16 75);
+  --info: oklch(0.72 0.14 235);
+  --border: oklch(0.3 0.015 250);
+  --input: oklch(0.3 0.015 250);
+  --ring: oklch(0.72 0.14 225);
+
+  --chart-1: oklch(0.7 0.16 256);
+  --chart-2: oklch(0.7 0.18 145);
+  --chart-3: oklch(0.78 0.16 75);
+  --chart-4: oklch(0.65 0.21 27);
+  --chart-5: oklch(0.68 0.16 310);
+}

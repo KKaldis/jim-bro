@@ -1,0 +1,343 @@
+{
+  "cards": {
+    "common": {
+      "item": "item"
+    },
+    "macros": {
+      "protein": "eiwit",
+      "fat": "vet",
+      "carbs": "koolhydraten",
+      "fiber": "vezels"
+    },
+    "energy": {
+      "atTdee": "op TDEE",
+      "vsTdee": "{{sign}}{{pct}}% t.o.v. TDEE"
+    },
+    "dayTag": {
+      "today": "Vandaag",
+      "openToday": "Open vandaag",
+      "openDate": "Open {{date}}"
+    },
+    "day": {
+      "macros": "Macro's"
+    },
+    "targets": {
+      "targetMacros": "doelmacro's",
+      "dailyTarget": "Dagdoel"
+    },
+    "meal": {
+      "preview": "Voorbeeld maaltijd"
+    },
+    "bmi": {
+      "healthyRange": "Gezond bereik voor je lengte: {{low}}–{{high}} kg"
+    },
+    "ffmi": {
+      "normalized": "Genormaliseerd"
+    },
+    "bodyFat": {
+      "methodEstimate": "Schatting {{method}}"
+    },
+    "body": {
+      "bodyFat": "Vetpercentage",
+      "weight": "Gewicht",
+      "leanMass": "Vetvrije massa",
+      "composition": "Lichaamssamenstelling",
+      "kgLean": "{{kg}} kg vetvrij",
+      "asOf": "per ",
+      "trend": "Trend",
+      "vsPriorDays_one": "t.o.v. vorige {{count}} dag",
+      "vsPriorDays_other": "t.o.v. vorige {{count}} dagen"
+    },
+    "food": {
+      "title": "Voeding",
+      "per100": "{{kcal}} kcal / 100 {{unit}}",
+      "onHand": "{{qty}} {{unit}} op voorraad"
+    },
+    "product": {
+      "title": "Product",
+      "matches": "Gevonden producten",
+      "per100g": "{{kcal}} kcal / 100 g",
+      "incomplete": "macro's onvolledig",
+      "found_one": "{{count}} gevonden",
+      "found_other": "{{count}} gevonden",
+      "foundAvg_one": "{{count}} gevonden · gem. {{kcal}} kcal",
+      "foundAvg_other": "{{count}} gevonden · gem. {{kcal}} kcal",
+      "show": "Producten tonen",
+      "hide": "Producten verbergen",
+      "unnamed": "(naamloos)"
+    },
+    "substitute": {
+      "title": "Alternatieven",
+      "options_one": "{{count}} optie",
+      "options_other": "{{count}} opties"
+    },
+    "training": {
+      "burn": "Trainingsverbranding",
+      "estimatedTotal": "geschat totaal",
+      "activity": "activiteit"
+    },
+    "maxPotential": {
+      "title": "Max. natuurlijk potentieel",
+      "atBodyFat": "bij {{pct}}% vetpercentage",
+      "maxWeight": "Max. gewicht",
+      "maxLeanMass": "Max. vetvrije massa",
+      "leanToGain": "Nog te winnen vetvrije massa",
+      "leanToGainPct": "Nog te winnen vetvrije massa · {{pct}}% van potentieel",
+      "chest": "Borst",
+      "neck": "Nek",
+      "bicep": "Biceps",
+      "forearm": "Onderarm",
+      "thigh": "Bovenbeen",
+      "calf": "Kuit",
+      "ceilingNote": "Natuurlijk plafond over je hele leven — een referentie, geen doel op korte termijn.",
+      "howClose": "Hoe dichtbij je zit",
+      "pctOfCeiling": "{{pct}}% van je natuurlijke plafond"
+    },
+    "strength": {
+      "repsShort": "reps",
+      "level": {
+        "title": "Krachtniveau",
+        "beginner": "Beginner",
+        "novice": "Novice",
+        "intermediate": "Gemiddeld",
+        "advanced": "Gevorderd",
+        "elite": "Elite",
+        "strongerThan": "Sterker dan {{pct}}% van de lifters",
+        "ratio": "{{ratio}}× lichaamsgewicht",
+        "nextLevel": "+{{remaining}} {{unit}} tot {{level}}"
+      },
+      "oneRepMax": {
+        "title": "One-rep max",
+        "from": "uit {{weight}} kg × {{reps}}",
+        "estimated": "Geschatte 1RM",
+        "epley": "Epley {{value}} kg",
+        "brzycki": "Brzycki {{value}} kg",
+        "repTable": "Gewicht per aantal reps (% van 1RM)"
+      },
+      "powerlifting": {
+        "title": "Powerlifting-score",
+        "total": "Total {{total}} kg",
+        "wilks": "Wilks",
+        "dots": "DOTS",
+        "ipfgl": "IPF GL",
+        "breakdown": "{{parts}} kg"
+      },
+      "symmetry": {
+        "title": "Krachtbalans",
+        "balanced": "Balans tussen lifts",
+        "lagging": "{{lift}} blijft achter — geef deze voorrang"
+      },
+      "plates": {
+        "title": "Stang laden",
+        "target": "Doel {{target}} {{unit}}",
+        "perSide": "Per kant",
+        "barOnly": "Alleen de stang — niets te laden",
+        "loaded": "Komt precies op {{loaded}} {{unit}}",
+        "closest": "Dichtstbij: {{loaded}} {{unit}}"
+      }
+    },
+    "progress": {
+      "title": "Voortgang",
+      "lastDays_one": "afgelopen {{count}} dag",
+      "lastDays_other": "afgelopen {{count}} dagen",
+      "avgWeight": "gem. gewicht",
+      "waist": "Taille"
+    },
+    "sets": {
+      "title": "Recente sets",
+      "next": "volgende: {{kg}} kg",
+      "set": "set"
+    },
+    "shopping": {
+      "title": "Boodschappenlijst",
+      "days_one": "{{count}} dag",
+      "days_other": "{{count}} dagen",
+      "items_one": "{{count}} item",
+      "items_other": "{{count}} items",
+      "nothingToBuy": "Niets te kopen — je voorraad dekt het plan."
+    },
+    "sources": {
+      "title": "Bronnen",
+      "count_one": "{{count}} bron",
+      "count_other": "{{count}} bronnen",
+      "show": "Bronnen tonen",
+      "hide": "Bronnen verbergen",
+      "source": "bron"
+    },
+    "proportions": {
+      "title": "Ideale verhoudingen",
+      "method": {
+        "grecian_ideal": "Grieks ideaal",
+        "hourglass_frame": "Zandloperfiguur"
+      },
+      "score": "Verhoudingsscore",
+      "adonis": "Schouder : taille",
+      "whtr": "Taille : lengte",
+      "ideal": "Ideaal",
+      "you": "Jij",
+      "needThree": "Voeg minstens 3 metingen toe om je verhoudingsradar te zien.",
+      "focus": "Focus:",
+      "reduceWaist": "Taille verkleinen",
+      "status": {
+        "lagging": "Blijft achter",
+        "close": "Dichtbij",
+        "on_target": "Op doel",
+        "ahead": "Voor",
+        "above_ideal": "Boven ideaal"
+      },
+      "parts": {
+        "shoulders": "Schouders",
+        "chest": "Borst",
+        "waist": "Taille",
+        "hips": "Heupen",
+        "arm": "Arm",
+        "forearm": "Onderarm",
+        "neck": "Nek",
+        "thigh": "Bovenbeen",
+        "calf": "Kuit"
+      }
+    },
+    "bodyShape": {
+      "title": "Lichaamsvorm",
+      "whr": "Taille : heup",
+      "risk": {
+        "low": "laag risico",
+        "moderate": "matig risico",
+        "high": "hoog risico"
+      },
+      "adonis": "Schouder : taille",
+      "chestTaper": "Borst : taille",
+      "alsoFits": "Past ook bij:",
+      "shapes": {
+        "hourglass": "Zandloper",
+        "bottom_hourglass": "Zandloper (onder)",
+        "top_hourglass": "Zandloper (boven)",
+        "spoon": "Lepel",
+        "triangle": "Driehoek (peer)",
+        "inverted_triangle": "Omgekeerde driehoek",
+        "rectangle": "Rechthoek",
+        "v_taper": "V-vorm",
+        "trapezoid": "Trapezium",
+        "oval": "Ovaal",
+        "unclassified": "Tussen vormen in"
+      },
+      "desc": {
+        "hourglass": "Buste en heupen zijn in balans, met een duidelijk getailleerde taille.",
+        "bottom_hourglass": "Een getailleerde taille met heupen iets voller dan de buste.",
+        "top_hourglass": "Een getailleerde taille met de buste iets voller dan de heupen.",
+        "spoon": "Heupen duidelijk voller dan de buste, met een 'richel' bij de hoge heup.",
+        "triangle": "Heupen breder dan het bovenlichaam, met een minder uitgesproken taille.",
+        "inverted_triangle": "Bovenlichaam breder dan de heupen.",
+        "rectangle": "Schouders/borst, taille en heupen zijn ongeveer even breed — een recht silhouet.",
+        "v_taper": "Borst ruim breder dan heupen en taille — de klassieke atletische V-vorm.",
+        "trapezoid": "Borst en heupen in balans, met een taille die duidelijk smaller is dan beide.",
+        "oval": "De taille is het breedste punt van de romp.",
+        "unclassified": "Je maten vallen tussen de standaardregels voor vormen in."
+      }
+    },
+    "macroSplit": {
+      "title": "Macroverdeling",
+      "shares": "{{p}}% eiwit · {{c}}% koolhydraten · {{f}}% vet",
+      "leanBasis": "Eiwit op basis van {{mass}} vetvrije massa",
+      "bodyweightBasis": "Eiwit op basis van lichaamsgewicht",
+      "carbsFloored": "Eiwit en vet samen overschrijden het doel al, dus koolhydraten staan op nul."
+    },
+    "protein": {
+      "title": "Dagelijks eiwit",
+      "gPerDay": "g / dag",
+      "perBodyweight": "{{v}} g per {{unit}} lichaamsgewicht",
+      "perMeal": "Per maaltijd",
+      "perMealValue": "{{g}} g × {{n}}",
+      "basedOn": "Gebaseerd op",
+      "bodyweight": "lichaamsgewicht",
+      "rda": "ADH-minimum"
+    },
+    "deficit": {
+      "title": "Calorietekort",
+      "belowMaintenance": "{{kcal}} kcal onder onderhoud",
+      "maintenance": "Onderhoud",
+      "perWeek": "Verlies per week",
+      "toLose": "Te verliezen",
+      "timeToGoal": "Tijd tot doel",
+      "weeksValue": "{{n}} wk",
+      "capped": "Begrensd op de minimale inname — de tijdlijn gaat daarvan uit."
+    },
+    "idealWeight": {
+      "title": "Ideaal gewicht",
+      "average": "Gemiddelde van vier formules",
+      "healthyBmi": "Gezond BMI-bereik"
+    },
+    "hrZones": {
+      "title": "Hartslagzones",
+      "karvonen": "Karvonen",
+      "percentMax": "% van max",
+      "max": "maximale hartslag",
+      "maxEstimated": "maximale hartslag (geschat)",
+      "zone": "Zone {{n}}",
+      "names": {
+        "z1": "Herstel",
+        "z2": "Aerobe basis",
+        "z3": "Tempo",
+        "z4": "Drempel",
+        "z5": "VO₂max"
+      }
+    },
+    "leanMass": {
+      "composition": "Vetvrije massa is alles wat geen vet is: spieren, botten, organen en water.",
+      "title": "Vetvrije massa",
+      "fromBodyFat": "Uit vetpercentage",
+      "fromFormula": "Boer-schatting",
+      "pctOfWeight": "{{pct}}% van lichaamsgewicht",
+      "fatMass": "Vetmassa"
+    },
+    "water": {
+      "title": "Water per dag",
+      "glasses": "ongeveer {{n}} glazen van 250 ml",
+      "base": "Basis (35 ml/kg)",
+      "exercise": "Training",
+      "hot": "Warm weer",
+      "efsa": "EFSA-totaal, inclusief voeding"
+    },
+    "steps": {
+      "title": "Stappen naar calorieën",
+      "steps": "{{n}} stappen",
+      "gross": "{{kcal}} kcal inclusief rustverbruik",
+      "distance": "Afstand",
+      "time": "Wandeltijd",
+      "minutes": "{{n}} min",
+      "per1000": "Per 1.000 stappen",
+      "goal": "Dagelijks stappendoel",
+      "pctOfGoal": "{{pct}}% van doel"
+    },
+    "rpe": {
+      "title": "RPE",
+      "set": "{{reps}} herh. @ RPE {{rpe}}",
+      "e1rm": "geschatte 1RM",
+      "pctOf1rm": "% van 1RM",
+      "rir": "Herhalingen in reserve",
+      "target": "{{reps}} @ RPE {{rpe}}",
+      "loadsAt": "Gewichten bij RPE {{rpe}}",
+      "reps": "{{n}} herh."
+    },
+    "warmup": {
+      "title": "Opwarmsets",
+      "to": "Naar {{reps}} × {{load}} {{unit}}",
+      "topSet": "Topset",
+      "emptyBar": "Lege stang",
+      "setN": "Set {{n}} · {{pct}}%",
+      "perSide": "{{plates}} {{unit}} per kant"
+    },
+    "volume": {
+      "title": "Trainingsvolume",
+      "sessions": "{{n}}× per week",
+      "perSession": "{{v}} per training · tonnage per week",
+      "weeklySets": "Sets per week (doel {{min}}–{{max}})",
+      "weeklySetsPlain": "Sets per week",
+      "verdict": {
+        "under": "laag",
+        "ok": "goed",
+        "over": "hoog"
+      }
+    }
+  }
+}

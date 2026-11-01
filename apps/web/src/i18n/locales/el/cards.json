@@ -1,0 +1,343 @@
+{
+  "cards": {
+    "common": {
+      "item": "στοιχείο"
+    },
+    "macros": {
+      "protein": "πρωτεΐνη",
+      "fat": "λίπος",
+      "carbs": "υδατάνθρακες",
+      "fiber": "ίνες"
+    },
+    "energy": {
+      "atTdee": "στο TDEE",
+      "vsTdee": "{{sign}}{{pct}}% έναντι TDEE"
+    },
+    "dayTag": {
+      "today": "Σήμερα",
+      "openToday": "Άνοιγμα σήμερα",
+      "openDate": "Άνοιγμα {{date}}"
+    },
+    "day": {
+      "macros": "Μακροθρεπτικά"
+    },
+    "targets": {
+      "targetMacros": "μακροθρεπτικά στόχου",
+      "dailyTarget": "Ημερήσιος στόχος"
+    },
+    "meal": {
+      "preview": "Προεπισκόπηση γεύματος"
+    },
+    "bmi": {
+      "healthyRange": "Υγιές εύρος για το ύψος σου: {{low}}–{{high}} kg"
+    },
+    "ffmi": {
+      "normalized": "Κανονικοποιημένο"
+    },
+    "bodyFat": {
+      "methodEstimate": "εκτίμηση {{method}}"
+    },
+    "body": {
+      "bodyFat": "Λίπος σώματος",
+      "weight": "Βάρος",
+      "leanMass": "Άπαχη μάζα",
+      "composition": "Σύσταση σώματος",
+      "kgLean": "{{kg}} kg άπαχη",
+      "asOf": "από ",
+      "trend": "Τάση",
+      "vsPriorDays_one": "έναντι προηγούμενης {{count}} ημέρας",
+      "vsPriorDays_other": "έναντι προηγούμενων {{count}} ημερών"
+    },
+    "food": {
+      "title": "Τρόφιμο",
+      "per100": "{{kcal}} kcal / 100 {{unit}}",
+      "onHand": "{{qty}} {{unit}} διαθέσιμα"
+    },
+    "product": {
+      "title": "Προϊόν",
+      "matches": "Αντιστοιχίες προϊόντων",
+      "per100g": "{{kcal}} kcal / 100 g",
+      "incomplete": "ελλιπή μακροθρεπτικά",
+      "found_one": "{{count}} βρέθηκε",
+      "found_other": "{{count}} βρέθηκαν",
+      "foundAvg_one": "{{count}} βρέθηκε · μ.ό. {{kcal}} kcal",
+      "foundAvg_other": "{{count}} βρέθηκαν · μ.ό. {{kcal}} kcal",
+      "show": "Εμφάνιση προϊόντων",
+      "hide": "Απόκρυψη προϊόντων",
+      "unnamed": "(χωρίς όνομα)"
+    },
+    "substitute": {
+      "title": "Εναλλακτικές",
+      "options_one": "{{count}} επιλογή",
+      "options_other": "{{count}} επιλογές"
+    },
+    "training": {
+      "burn": "Κάψιμο προπόνησης",
+      "estimatedTotal": "εκτιμώμενο σύνολο",
+      "activity": "δραστηριότητα"
+    },
+    "maxPotential": {
+      "title": "Μέγιστο φυσικό δυναμικό",
+      "atBodyFat": "στο {{pct}}% λίπος σώματος",
+      "maxWeight": "Μέγιστο βάρος",
+      "maxLeanMass": "Μέγιστη άπαχη μάζα",
+      "leanToGain": "Άπαχη μάζα προς απόκτηση",
+      "leanToGainPct": "Άπαχη μάζα προς απόκτηση · {{pct}}% του δυναμικού",
+      "chest": "Στήθος",
+      "neck": "Λαιμός",
+      "bicep": "Δικέφαλος",
+      "forearm": "Αντιβράχιο",
+      "thigh": "Μηρός",
+      "calf": "Γάμπα",
+      "ceilingNote": "Ισόβιο όριο χωρίς φάρμακα — σημείο αναφοράς, όχι βραχυπρόθεσμος στόχος.",
+      "howClose": "Πόσο κοντά είσαι",
+      "pctOfCeiling": "{{pct}}% του φυσικού σου ορίου"
+    },
+    "strength": {
+      "repsShort": "επαν.",
+      "level": {
+        "title": "Επίπεδο δύναμης",
+        "beginner": "Αρχάριος",
+        "novice": "Πρωτάρης",
+        "intermediate": "Μεσαίος",
+        "advanced": "Προχωρημένος",
+        "elite": "Κορυφαίος",
+        "strongerThan": "Πιο δυνατός από το {{pct}}% των αθλουμένων",
+        "ratio": "{{ratio}}× του σωματικού βάρους",
+        "nextLevel": "+{{remaining}} {{unit}} για {{level}}"
+      },
+      "oneRepMax": {
+        "title": "Μέγιστη επανάληψη (1RM)",
+        "from": "από {{weight}} kg × {{reps}}",
+        "estimated": "Εκτιμώμενο 1RM",
+        "epley": "Epley {{value}} kg",
+        "brzycki": "Brzycki {{value}} kg",
+        "repTable": "Φορτίο ανά αριθμό επαναλήψεων (% του 1RM)"
+      },
+      "powerlifting": {
+        "title": "Σκορ powerlifting",
+        "total": "Σύνολο {{total}} kg",
+        "wilks": "Wilks",
+        "dots": "DOTS",
+        "ipfgl": "IPF GL",
+        "breakdown": "{{parts}} kg"
+      },
+      "symmetry": {
+        "title": "Συμμετρία δύναμης",
+        "balanced": "Ισορροπία μεταξύ των ασκήσεων",
+        "lagging": "Η {{lift}} υστερεί — δώσε της προτεραιότητα"
+      },
+      "plates": {
+        "title": "Φόρτωση μπάρας",
+        "target": "Στόχος {{target}} {{unit}}",
+        "perSide": "Ανά πλευρά",
+        "barOnly": "Μόνο η μπάρα — τίποτα προς φόρτωση",
+        "loaded": "Φορτώνει ακριβώς στα {{loaded}} {{unit}}",
+        "closest": "Πλησιέστερο: {{loaded}} {{unit}}"
+      }
+    },
+    "progress": {
+      "title": "Πρόοδος",
+      "lastDays_one": "τελευταία {{count}} ημέρα",
+      "lastDays_other": "τελευταίες {{count}} ημέρες",
+      "avgWeight": "μέσο βάρος",
+      "waist": "Μέση"
+    },
+    "sets": {
+      "title": "Πρόσφατα σετ",
+      "next": "επόμενο: {{kg}} kg",
+      "set": "σετ"
+    },
+    "shopping": {
+      "title": "Λίστα αγορών",
+      "days_one": "{{count}} ημέρα",
+      "days_other": "{{count}} ημέρες",
+      "items_one": "{{count}} στοιχείο",
+      "items_other": "{{count}} στοιχεία",
+      "nothingToBuy": "Τίποτα προς αγορά — η αποθήκη καλύπτει το πλάνο."
+    },
+    "sources": {
+      "title": "Πηγές",
+      "count_one": "{{count}} πηγή",
+      "count_other": "{{count}} πηγές",
+      "show": "Εμφάνιση πηγών",
+      "hide": "Απόκρυψη πηγών",
+      "source": "πηγή"
+    },
+    "proportions": {
+      "title": "Ιδανικές αναλογίες",
+      "method": {
+        "grecian_ideal": "Ελληνικό ιδεώδες",
+        "hourglass_frame": "Κλεψύδρα"
+      },
+      "score": "Σκορ αναλογιών",
+      "adonis": "Ώμοι : μέση",
+      "whtr": "Μέση : ύψος",
+      "ideal": "Ιδανικό",
+      "you": "Εσύ",
+      "needThree": "Πρόσθεσε τουλάχιστον 3 μετρήσεις για να δεις το διάγραμμα αναλογιών.",
+      "focus": "Εστίαση:",
+      "reduceWaist": "Μείωση μέσης",
+      "status": {
+        "lagging": "Υστερεί",
+        "close": "Κοντά",
+        "on_target": "Στον στόχο",
+        "ahead": "Πάνω από τον στόχο",
+        "above_ideal": "Πάνω από το ιδανικό"
+      },
+      "parts": {
+        "shoulders": "Ώμοι",
+        "chest": "Στήθος",
+        "waist": "Μέση",
+        "hips": "Γοφοί",
+        "arm": "Μπράτσο",
+        "forearm": "Πήχης",
+        "neck": "Λαιμός",
+        "thigh": "Μηρός",
+        "calf": "Γάμπα"
+      }
+    },
+    "bodyShape": {
+      "title": "Σχήμα σώματος",
+      "whr": "Μέση : γοφοί",
+      "risk": {
+        "low": "χαμηλός κίνδυνος",
+        "moderate": "μέτριος κίνδυνος",
+        "high": "υψηλός κίνδυνος"
+      },
+      "adonis": "Ώμοι : μέση",
+      "chestTaper": "Στήθος : μέση",
+      "alsoFits": "Ταιριάζει επίσης:",
+      "shapes": {
+        "hourglass": "Κλεψύδρα",
+        "bottom_hourglass": "Κλεψύδρα (κάτω)",
+        "top_hourglass": "Κλεψύδρα (πάνω)",
+        "spoon": "Κουτάλι",
+        "triangle": "Τρίγωνο (αχλάδι)",
+        "inverted_triangle": "Ανεστραμμένο τρίγωνο",
+        "rectangle": "Ορθογώνιο",
+        "v_taper": "Σχήμα V",
+        "trapezoid": "Τραπέζιο",
+        "oval": "Οβάλ",
+        "unclassified": "Ανάμεσα σε σχήματα"
+      },
+      "desc": {
+        "hourglass": "Στήθος και γοφοί ισορροπημένα, με καθαρά διαγραμμένη μέση.",
+        "bottom_hourglass": "Διαγραμμένη μέση, με γοφούς λίγο πιο γεμάτους από το στήθος.",
+        "top_hourglass": "Διαγραμμένη μέση, με στήθος λίγο πιο γεμάτο από τους γοφούς.",
+        "spoon": "Γοφοί αισθητά πιο γεμάτοι από το στήθος, με «σκαλοπάτι» στο πάνω ισχίο.",
+        "triangle": "Γοφοί φαρδύτεροι από τον κορμό, με πιο μαλακή μέση.",
+        "inverted_triangle": "Ο πάνω κορμός είναι φαρδύτερος από τους γοφούς.",
+        "rectangle": "Ώμοι/στήθος, μέση και γοφοί κοντά σε μέγεθος — ίσια σιλουέτα.",
+        "v_taper": "Στήθος αρκετά φαρδύτερο από γοφούς και μέση — η κλασική αθλητική κωνικότητα.",
+        "trapezoid": "Στήθος και γοφοί ισορροπημένα, με μέση αισθητά στενότερη.",
+        "oval": "Η μέση είναι το φαρδύτερο σημείο του κορμού.",
+        "unclassified": "Οι μετρήσεις σου πέφτουν ανάμεσα στους τυπικούς κανόνες."
+      }
+    },
+    "macroSplit": {
+      "title": "Κατανομή μακροθρεπτικών",
+      "shares": "{{p}}% πρωτεΐνη · {{c}}% υδατάνθρακες · {{f}}% λίπος",
+      "leanBasis": "Πρωτεΐνη βάσει {{mass}} άλιπης μάζας",
+      "bodyweightBasis": "Πρωτεΐνη βάσει σωματικού βάρους",
+      "carbsFloored": "Η πρωτεΐνη και το λίπος μόνα τους ξεπερνούν τον στόχο, οπότε οι υδατάνθρακες είναι μηδέν."
+    },
+    "protein": {
+      "title": "Ημερήσια πρωτεΐνη",
+      "gPerDay": "g / ημέρα",
+      "perBodyweight": "{{v}} g ανά {{unit}} σωματικού βάρους",
+      "perMeal": "Ανά γεύμα",
+      "perMealValue": "{{g}} g × {{n}}",
+      "basedOn": "Βάση",
+      "bodyweight": "σωματικό βάρος",
+      "rda": "Ελάχιστο RDA"
+    },
+    "deficit": {
+      "title": "Θερμιδικό έλλειμμα",
+      "belowMaintenance": "{{kcal}} kcal κάτω από τη συντήρηση",
+      "maintenance": "Συντήρηση",
+      "perWeek": "Απώλεια ανά εβδομάδα",
+      "toLose": "Προς απώλεια",
+      "timeToGoal": "Χρόνος ως τον στόχο",
+      "weeksValue": "{{n}} εβδ.",
+      "capped": "Περιορίστηκε στην ελάχιστη πρόσληψη — το χρονοδιάγραμμα βασίζεται σε αυτήν."
+    },
+    "idealWeight": {
+      "title": "Ιδανικό βάρος",
+      "average": "Μέσος όρος τεσσάρων τύπων",
+      "healthyBmi": "Υγιές εύρος BMI"
+    },
+    "hrZones": {
+      "title": "Ζώνες καρδιακών παλμών",
+      "karvonen": "Karvonen",
+      "percentMax": "% του μέγιστου",
+      "max": "μέγιστοι παλμοί",
+      "maxEstimated": "μέγιστοι παλμοί (εκτίμηση)",
+      "zone": "Ζώνη {{n}}",
+      "names": {
+        "z1": "Αποκατάσταση",
+        "z2": "Αερόβια βάση",
+        "z3": "Ρυθμός",
+        "z4": "Κατώφλι",
+        "z5": "VO₂max"
+      }
+    },
+    "leanMass": {
+      "composition": "Άλιπη μάζα είναι ό,τι δεν είναι λίπος: μύες, οστά, όργανα και νερό.",
+      "title": "Άλιπη μάζα σώματος",
+      "fromBodyFat": "Από το ποσοστό λίπους",
+      "fromFormula": "Εκτίμηση Boer",
+      "pctOfWeight": "{{pct}}% του σωματικού βάρους",
+      "fatMass": "Λιπώδης μάζα"
+    },
+    "water": {
+      "title": "Ημερήσιο νερό",
+      "glasses": "περίπου {{n}} ποτήρια των 250 ml",
+      "base": "Βάση (35 ml/kg)",
+      "exercise": "Άσκηση",
+      "hot": "Ζέστη",
+      "efsa": "Σύνολο EFSA, μαζί με την τροφή"
+    },
+    "steps": {
+      "title": "Βήματα σε θερμίδες",
+      "steps": "{{n}} βήματα",
+      "gross": "{{kcal}} kcal μαζί με την καύση ηρεμίας",
+      "distance": "Απόσταση",
+      "time": "Χρόνος περπατήματος",
+      "minutes": "{{n}} λεπτά",
+      "per1000": "Ανά 1.000 βήματα",
+      "goal": "Ημερήσιος στόχος βημάτων",
+      "pctOfGoal": "{{pct}}% του στόχου"
+    },
+    "rpe": {
+      "title": "RPE",
+      "set": "{{reps}} επαν. @ RPE {{rpe}}",
+      "e1rm": "εκτιμώμενο 1RM",
+      "pctOf1rm": "% του 1RM",
+      "rir": "Επαναλήψεις σε απόθεμα",
+      "target": "{{reps}} @ RPE {{rpe}}",
+      "loadsAt": "Φορτία σε RPE {{rpe}}",
+      "reps": "{{n}} επαν."
+    },
+    "warmup": {
+      "title": "Σετ προθέρμανσης",
+      "to": "Έως {{reps}} × {{load}} {{unit}}",
+      "topSet": "Κορυφαίο σετ",
+      "emptyBar": "Άδεια μπάρα",
+      "setN": "Σετ {{n}} · {{pct}}%",
+      "perSide": "{{plates}} {{unit}} ανά πλευρά"
+    },
+    "volume": {
+      "title": "Όγκος προπόνησης",
+      "sessions": "{{n}}× την εβδομάδα",
+      "perSession": "{{v}} ανά προπόνηση · εβδομαδιαίο φορτίο",
+      "weeklySets": "Εβδομαδιαία σετ (στόχος {{min}}–{{max}})",
+      "weeklySetsPlain": "Εβδομαδιαία σετ",
+      "verdict": {
+        "under": "λίγα",
+        "ok": "εντός",
+        "over": "πολλά"
+      }
+    }
+  }
+}

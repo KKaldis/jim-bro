@@ -1,0 +1,224 @@
+{
+  "calculators": {
+    "title": "Calculators",
+    "subtitle": "Run any calculation yourself — prefilled from your profile, edit anything to explore.",
+    "fillIn": "Fill in the values above to see your result.",
+    "select": "Select…",
+    "pickExercise": "Pick an exercise",
+    "searchExercises": "Search exercises…",
+    "noMatches": "No matches",
+    "sections": {
+      "body": "Body & composition",
+      "energy": "Energy & nutrition",
+      "strength": "Strength",
+      "cardio": "Cardio & training"
+    },
+    "units": {
+      "years": "yr",
+      "min": "min",
+      "reps": "reps"
+    },
+    "opt": {
+      "navy": "Navy (tape)",
+      "deurenberg": "Deurenberg (BMI)",
+      "epley": "Epley",
+      "brzycki": "Brzycki",
+      "average": "Average",
+      "raw": "Raw",
+      "equipped": "Equipped",
+      "loss025": "0.25%",
+      "loss05": "0.5%",
+      "loss075": "0.75%",
+      "loss1": "1%",
+      "army": "Army (waist)",
+      "temperate": "Temperate",
+      "hot": "Hot",
+      "paceSlow": "Slow",
+      "paceBrisk": "Brisk"
+    },
+    "info": {
+      "wrist": "Circumference — wrap the tape around the narrowest point of the wrist, just below the hand bone.",
+      "ankle": "Circumference — wrap the tape around the narrowest point just above the ankle bone.",
+      "bmrBodyFat": "Optional. With body fat, the more accurate Katch-McArdle formula is used.",
+      "oneRepMaxExercise": "Just a label — the 1RM estimate is the same formula for any lift (weight × reps).",
+      "strengthPerf": "Enter your 1RM directly, or a best set (weight + reps) to estimate it. For bodyweight moves scored by reps, enter reps only.",
+      "restingHr": "Measured seated or lying after a few minutes of rest, ideally in the morning.",
+      "maxHr": "Optional. Leave blank to estimate from age (208 − 0.7 × age).",
+      "shoulders": "Circumference — wrap the tape all the way around both shoulders at their widest point (over the deltoids), arms relaxed at your sides.",
+      "waistNarrowest": "Circumference — wrap the tape around the narrowest point of the waist, relaxed after breathing out. Don't suck in.",
+      "highHip": "Circumference — wrap the tape around the body about 18 cm (7 in) below your natural waist, around the top of the hip bones.",
+      "chest": "Circumference — wrap the tape around the chest at nipple level, under the armpits, arms relaxed, after a normal breath out.",
+      "bust": "Circumference — wrap the tape around the fullest part of the bust, wearing a fitted (non-padded) bra, tape level all the way round.",
+      "hip": "Circumference — wrap the tape around the widest part of the hips and glutes, feet together, tape level.",
+      "armFlexed": "Circumference — flex the biceps hard and wrap the tape around the peak of the upper arm.",
+      "forearm": "Circumference — make a fist, arm straight, and wrap the tape around the widest part of the forearm near the elbow.",
+      "neck": "Circumference — wrap the tape around the neck just below the Adam's apple, sloping slightly down at the front.",
+      "thigh": "Circumference — standing, wrap the tape around the upper thigh at its widest, just below the glutes.",
+      "calf": "Circumference — standing with weight on both feet, wrap the tape around the widest part of the calf.",
+      "height": "Straight line — stand barefoot against a wall and measure from the floor to the top of your head.",
+      "waistNavy": "Circumference — wrap the tape around the waist, level: at the navel for men, at the narrowest point for women. Relaxed, after breathing out.",
+      "potentialCurrent": "Optional. With your current weight and body fat, the result shows how close your lean mass is to the ceiling.",
+      "lossRate": "0.5–1% of bodyweight a week is sustainable for most people; leaner people should stay near the low end.",
+      "abdomenArmy": "Circumference — level around the waist at the navel, for men and women alike. Relaxed, after breathing out.",
+      "rpe": "Rate of perceived exertion: 10 = nothing left, 9 = one more rep possible, 8 = two more, and so on."
+    },
+    "fields": {
+      "weight": "Weight",
+      "height": "Height",
+      "sex": "Sex",
+      "bodyFat": "Body fat",
+      "neck": "Neck",
+      "waist": "Waist",
+      "hip": "Hip",
+      "wrist": "Wrist",
+      "ankle": "Ankle",
+      "targetBodyFat": "Target body fat",
+      "age": "Age",
+      "activity": "Activity level",
+      "goal": "Goal",
+      "method": "Method",
+      "liftWeight": "Weight lifted",
+      "reps": "Reps",
+      "formula": "Formula",
+      "exercise": "Exercise",
+      "exerciseOptional": "Exercise (optional)",
+      "bodyweight": "Bodyweight",
+      "oneRepMax": "1RM",
+      "bestSetWeight": "Best set weight",
+      "bestSetReps": "Best set reps",
+      "squat": "Squat",
+      "bench": "Bench",
+      "deadlift": "Deadlift",
+      "equipment": "Equipment",
+      "lift1": "Lift 1",
+      "lift2": "Lift 2",
+      "lift3": "Lift 3",
+      "targetWeight": "Target weight",
+      "barWeight": "Bar weight",
+      "restingHr": "Resting heart rate",
+      "maxHr": "Max heart rate",
+      "activityType": "Activity",
+      "duration": "Duration",
+      "avgLoad": "Average load",
+      "repsPerSet": "Reps per set",
+      "setsCount": "Sets",
+      "shoulders": "Shoulders",
+      "chestOrBust": "Chest / bust",
+      "chest": "Chest",
+      "bust": "Bust",
+      "armFlexed": "Arm (flexed)",
+      "forearm": "Forearm",
+      "thigh": "Thigh",
+      "calf": "Calf",
+      "highHip": "High hip",
+      "currentWeight": "Current weight",
+      "currentBodyFat": "Current body fat",
+      "goalWeight": "Goal weight",
+      "lossRate": "Loss per week (% of bodyweight)",
+      "abdomen": "Waist at navel",
+      "exerciseMin": "Exercise",
+      "climate": "Climate",
+      "rpe": "RPE",
+      "targetReps": "Target reps",
+      "targetRpe": "Target RPE",
+      "topSetWeight": "Top set weight",
+      "topSetReps": "Top set reps",
+      "exercise1": "Exercise 1",
+      "exercise2": "Exercise 2",
+      "exercise3": "Exercise 3",
+      "load": "Load",
+      "sessionsPerWeek": "Sessions per week",
+      "steps": "Steps",
+      "pace": "Walking pace"
+    },
+    "bmi": {
+      "title": "BMI",
+      "desc": "Body mass index and its healthy-weight range for your height."
+    },
+    "bodyFat": {
+      "title": "Body fat",
+      "desc": "Estimate body-fat % from tape measurements (Navy) or from BMI + age (Deurenberg)."
+    },
+    "ffmi": {
+      "title": "FFMI / Lean body mass",
+      "desc": "Your lean body mass — muscle, bone, organs and water — and fat mass, plus the fat-free mass index: how much lean mass you carry for your height."
+    },
+    "maxPotential": {
+      "title": "Max muscular potential",
+      "desc": "Drug-free lean-mass ceiling from your frame (Casey Butt)."
+    },
+    "bmr": {
+      "title": "BMR / TDEE / macros",
+      "desc": "Basal metabolic rate, daily burn, and a macro target for your goal."
+    },
+    "oneRepMax": {
+      "title": "One-rep max",
+      "desc": "Estimate your 1RM for any lift from a submaximal set (weight × reps), with a rep-load table."
+    },
+    "strengthLevel": {
+      "title": "Strength standards",
+      "desc": "Rank a lift Beginner → Elite against population standards."
+    },
+    "powerlifting": {
+      "title": "Powerlifting score",
+      "desc": "Wilks, DOTS and IPF GoodLift scores from your total."
+    },
+    "symmetry": {
+      "title": "Lift symmetry",
+      "desc": "How balanced your lifts are — spot a lagging movement."
+    },
+    "plateRacking": {
+      "title": "Plate racking",
+      "desc": "Which plates to load on each side to hit a target weight."
+    },
+    "vo2max": {
+      "title": "VO₂max & heart rate zones",
+      "desc": "Aerobic fitness estimate from your resting heart rate, plus your max heart rate and five training zones."
+    },
+    "resistanceKcal": {
+      "title": "Resistance training burn",
+      "desc": "Calories from the work done — scales with load × reps × sets, not just clock time.",
+      "volume": "{{volume}} kg total volume"
+    },
+    "trainingKcal": {
+      "title": "Training calorie burn",
+      "desc": "Estimated calories burned for a session (MET-based, from activity + duration)."
+    },
+    "idealProportions": {
+      "title": "Ideal proportions",
+      "desc": "Your tape measurements against classic ideal proportions scaled to your wrist — see which body parts lag. Every value is a circumference: wrap the tape around, snug but not compressing. Tap (i) for where to measure."
+    },
+    "bodyShape": {
+      "title": "Body shape",
+      "desc": "Classify your body shape from bust or chest, waist and hips — plus your waist-to-hip ratio. Every value is a circumference: wrap the tape around, snug and level. Tap (i) for where to measure."
+    },
+    "calorieDeficit": {
+      "title": "Calorie deficit",
+      "desc": "Daily calories to reach a goal weight at a safe pace, and how many weeks it takes."
+    },
+    "idealWeight": {
+      "title": "Ideal weight",
+      "desc": "Ideal body weight for your height from four classic formulas, next to the healthy BMI range."
+    },
+    "waterIntake": {
+      "title": "Water intake",
+      "desc": "How much to drink a day for your weight, training and climate."
+    },
+    "rpe": {
+      "title": "RPE converter",
+      "desc": "Turn a set at an RPE into an estimated max and the load for your next set."
+    },
+    "warmup": {
+      "title": "Warm-up sets",
+      "desc": "A ramp of warm-up sets to your top set, with the plates for each."
+    },
+    "trainingVolume": {
+      "title": "Training volume",
+      "desc": "Tonnage and weekly hard sets per muscle group for a session."
+    },
+    "stepCalories": {
+      "title": "Steps to calories",
+      "desc": "Calories and distance from a step count, and a daily step goal."
+    }
+  }
+}

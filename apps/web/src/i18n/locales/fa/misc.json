@@ -1,0 +1,156 @@
+{
+  "lib": {
+    "toast": {
+      "verb": {
+        "log": "ثبت شد",
+        "add": "اضافه شد",
+        "save": "ذخیره شد",
+        "import": "وارد شد",
+        "update": "به‌روزرسانی شد",
+        "replace": "به‌روزرسانی شد",
+        "set": "به‌روزرسانی شد",
+        "activate": "فعال شد",
+        "delete": "حذف شد",
+        "remove": "حذف شد",
+        "submit": "ارسال شد"
+      },
+      "noun": {
+        "item": "مورد",
+        "update_profile": "نمایه",
+        "update_pantry": "انبار",
+        "import_pantry": "انبار",
+        "log_body_comp": "اندازه‌گیری بدن",
+        "delete_body_comp_entry": "اندازه‌گیری بدن",
+        "update_body_comp_entry": "اندازه‌گیری بدن",
+        "log_planned_meal": "وعده",
+        "log_recipe": "دستور پخت",
+        "update_recipe_portion": "دستور پخت",
+        "set_recipe_favorite": "دستور پخت",
+        "log_workout_session": "جلسه‌ی تمرین",
+        "delete_workout_session": "جلسه‌ی تمرین",
+        "delete_cardio_entry": "هوازی",
+        "update_cardio_entry": "هوازی",
+        "log_measurements": "اندازه‌ها",
+        "add_exercise_to_plan_day": "حرکت",
+        "remove_exercise_from_plan_day": "حرکت",
+        "update_plan_exercise": "حرکت",
+        "replace_plan_exercise": "حرکت",
+        "update_workout_plan_day": "برنامه‌ی تمرینی"
+      },
+      "httpNoun": {
+        "meal": "وعده",
+        "diet_plan": "برنامه‌ی غذایی",
+        "workout_session": "جلسه‌ی تمرین",
+        "workout_plan": "برنامه‌ی تمرینی",
+        "body_entry": "اندازه‌گیری بدن",
+        "cardio": "هوازی",
+        "measurements": "اندازه‌ها",
+        "steps": "قدم‌ها",
+        "water": "آب",
+        "profile": "نمایه"
+      },
+      "message": "{{noun}} {{verb}}"
+    },
+    "error": {
+      "invalidInput": "ورودی نامعتبر"
+    },
+    "energy": {
+      "bmr": "BMR",
+      "maintenance": "حفظ وزن",
+      "dailyTarget": "هدف روزانه",
+      "kcal": "kcal"
+    },
+    "gauge": {
+      "underweight": "کم‌وزن",
+      "normal": "طبیعی",
+      "overweight": "اضافه‌وزن",
+      "obese": "چاق",
+      "healthy": "سالم",
+      "veryLean": "بسیار لاغر",
+      "athletic": "ورزشکاری",
+      "fit": "متناسب",
+      "average": "متوسط",
+      "high": "بالا",
+      "belowAverage": "زیر متوسط",
+      "aboveAverage": "بالای متوسط",
+      "outstanding": "استثنایی",
+      "extremelyHigh": "بسیار بالا",
+      "aboveNatural": "فراتر از طبیعی",
+      "beginner": "مبتدی",
+      "intermediate": "متوسط",
+      "advanced": "پیشرفته",
+      "nearCeiling": "نزدیک سقف",
+      "lagging": "عقب",
+      "close": "نزدیک",
+      "onTarget": "ایده‌آل",
+      "ahead": "جلوتر",
+      "aboveIdeal": "بالاتر",
+      "wellAboveIdeal": "مازاد"
+    },
+    "goal": {
+      "cut": "کات",
+      "recomp": "ریکامپ",
+      "maintain": "حفظ وزن",
+      "lean_bulk": "حجم تمیز"
+    },
+    "burn": {
+      "title": "کالری‌سوزی تمرین",
+      "estimateHint": "تخمین از ست‌های جلسه (وزنه × تکرار)",
+      "kcal": "kcal"
+    },
+    "category": {
+      "body-comp": "بدن",
+      "nutrition": "تغذیه",
+      "pantry": "انبار",
+      "training": "تمرین",
+      "progress": "پیشرفت",
+      "navigation": "پیمایش",
+      "macros": "ماکروها",
+      "info": "اطلاعات"
+    }
+  },
+  "components": {
+    "camera": {
+      "scanAria": "اسکن بارکد",
+      "photoAria": "گرفتن عکس",
+      "noCameraApi": "این مرورگر API دوربین را در دسترس نمی‌گذارد. به‌جای آن از بارگذاری استفاده کنید.",
+      "previewFailed": "پیش‌نمایش شروع نشد: {{error}}",
+      "unavailable": "دوربین در دسترس نیست — {{error}}",
+      "grantPermission": "در مرورگر اجازه‌ی دوربین را بدهید و دوباره امتحان کنید، یا به‌جای آن از بارگذاری استفاده کنید.",
+      "notSupported": "اسکن زنده اینجا پشتیبانی نمی‌شود — به‌جای آن عکس بگیرید.",
+      "stalled": "خوانده نمی‌شود؟ گوشی را ثابت نگه دارید و کادر را پر کنید، یا عکس بگیرید.",
+      "notSupportedTypeIt": "اسکن زنده اینجا پشتیبانی نمی‌شود — به‌جای آن بارکد را تایپ کنید.",
+      "stalledNoPhoto": "خوانده نمی‌شود؟ گوشی را ثابت نگه دارید و کادر را پر کنید.",
+      "aim": "دوربین پشتی را به سمت بارکد بگیرید.",
+      "snapInstead": "به‌جای آن عکس بگیرید",
+      "snap": "عکس"
+    },
+    "rowActions": {
+      "aria": "گزینه‌های ردیف"
+    },
+    "lock": {
+      "noModel": "بدون مدل AI",
+      "noLlmTitle": "هیچ مدل AI روی این سرور پیکربندی نشده است",
+      "noVisionTitle": "هیچ مدل AI با قابلیت بینایی روی این سرور پیکربندی نشده است",
+      "locked": "در دسترس نیست",
+      "lockedTitle": "برای حساب شما در دسترس نیست"
+    },
+    "install": {
+      "title": "نصب {{name}}",
+      "iosSubtitle": "برای دسترسی سریع به صفحه‌ی اصلی اضافه کنید",
+      "androidSubtitle": "تجربه‌ی تمام‌صفحه‌ی اپ را داشته باشید",
+      "install": "نصب",
+      "dismiss": "بستن",
+      "iosTitle": "افزودن به صفحه‌ی اصلی",
+      "iosIntro": "iOS نصب با یک ضربه را ارائه نمی‌دهد — سه مرحله‌ی سریع در Safari:",
+      "iosStep1Prefix": "روی دکمه‌ی",
+      "iosStep1Share": "اشتراک‌گذاری",
+      "iosStep1Suffix": "در نوار ابزار Safari ضربه بزنید.",
+      "iosStep2Prefix": "پایین بروید و انتخاب کنید",
+      "iosStep2Action": "افزودن به صفحه‌ی اصلی",
+      "iosStep3Prefix": "روی",
+      "iosStep3Add": "افزودن",
+      "iosStep3Suffix": "ضربه بزنید — {{name}} به صفحه‌ی اصلی شما اضافه می‌شود."
+    }
+  }
+}

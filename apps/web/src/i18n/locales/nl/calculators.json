@@ -1,0 +1,224 @@
+{
+  "calculators": {
+    "title": "Calculators",
+    "subtitle": "Reken alles zelf uit — vooraf ingevuld vanuit je profiel, pas alles aan om te verkennen.",
+    "fillIn": "Vul hierboven de waarden in om je resultaat te zien.",
+    "select": "Kies…",
+    "pickExercise": "Kies een oefening",
+    "searchExercises": "Oefeningen zoeken…",
+    "noMatches": "Geen resultaten",
+    "sections": {
+      "body": "Lichaam & samenstelling",
+      "energy": "Energie & voeding",
+      "strength": "Kracht",
+      "cardio": "Cardio & training"
+    },
+    "units": {
+      "years": "jr",
+      "min": "min",
+      "reps": "reps"
+    },
+    "opt": {
+      "navy": "Navy (meetlint)",
+      "deurenberg": "Deurenberg (BMI)",
+      "epley": "Epley",
+      "brzycki": "Brzycki",
+      "average": "Gemiddelde",
+      "raw": "Raw",
+      "equipped": "Equipped",
+      "loss025": "0.25%",
+      "loss05": "0.5%",
+      "loss075": "0.75%",
+      "loss1": "1%",
+      "army": "Leger (taille)",
+      "temperate": "Gematigd",
+      "hot": "Warm",
+      "paceSlow": "Langzaam",
+      "paceBrisk": "Stevig"
+    },
+    "info": {
+      "wrist": "Omtrek — leg het meetlint om het smalste punt van je pols, net onder het handbotje.",
+      "ankle": "Omtrek — leg het meetlint om het smalste punt net boven het enkelbot.",
+      "bmrBodyFat": "Optioneel. Met vetpercentage wordt de nauwkeurigere Katch-McArdle-formule gebruikt.",
+      "oneRepMaxExercise": "Alleen een label — de 1RM-schatting gebruikt voor elke lift dezelfde formule (gewicht × reps).",
+      "strengthPerf": "Vul je 1RM direct in, of een beste set (gewicht + reps) om hem te schatten. Voor lichaamsgewichtoefeningen die op reps worden gescoord: vul alleen reps in.",
+      "restingHr": "Gemeten zittend of liggend na een paar minuten rust, bij voorkeur 's ochtends.",
+      "maxHr": "Optioneel. Laat leeg om te schatten op basis van leeftijd (208 − 0,7 × leeftijd).",
+      "shoulders": "Omtrek — leg het meetlint helemaal om beide schouders op het breedste punt (over de deltaspieren), armen ontspannen langs je lichaam.",
+      "waistNarrowest": "Omtrek — leg het meetlint om het smalste punt van je taille, ontspannen na het uitademen. Niet intrekken.",
+      "highHip": "Omtrek — leg het meetlint om je lichaam ongeveer 18 cm (7 in) onder je natuurlijke taille, rond de bovenkant van je heupbotten.",
+      "chest": "Omtrek — leg het meetlint om je borst op tepelhoogte, onder de oksels, armen ontspannen, na een normale uitademing.",
+      "bust": "Omtrek — leg het meetlint om het volste deel van je buste, met een goed passende (niet-gevoerde) bh, lint overal recht.",
+      "hip": "Omtrek — leg het meetlint om het breedste deel van je heupen en billen, voeten tegen elkaar, lint recht.",
+      "armFlexed": "Omtrek — span je biceps hard aan en leg het meetlint om het hoogste punt van je bovenarm.",
+      "forearm": "Omtrek — maak een vuist, arm gestrekt, en leg het meetlint om het breedste deel van je onderarm bij de elleboog.",
+      "neck": "Omtrek — leg het meetlint om je nek net onder de adamsappel, aan de voorkant iets aflopend.",
+      "thigh": "Omtrek — sta rechtop en leg het meetlint om het breedste deel van je bovenbeen, net onder de billen.",
+      "calf": "Omtrek — sta met je gewicht op beide voeten en leg het meetlint om het breedste deel van je kuit.",
+      "height": "Rechte lijn — sta blootsvoets tegen een muur en meet van de vloer tot de bovenkant van je hoofd.",
+      "waistNavy": "Omtrek — leg het meetlint recht om je taille: bij mannen ter hoogte van de navel, bij vrouwen op het smalste punt. Ontspannen, na het uitademen.",
+      "potentialCurrent": "Optioneel. Met je huidige gewicht en vetpercentage laat het resultaat zien hoe dicht je vetvrije massa bij het plafond zit.",
+      "lossRate": "0,5–1% van je lichaamsgewicht per week is voor de meeste mensen vol te houden; slankere mensen blijven beter aan de lage kant.",
+      "abdomenArmy": "Omtrek — horizontaal rond de taille ter hoogte van de navel, voor mannen en vrouwen. Ontspannen, na uitademen.",
+      "rpe": "Ervaren inspanning: 10 = niets meer over, 9 = nog één herhaling mogelijk, 8 = nog twee, enzovoort."
+    },
+    "fields": {
+      "weight": "Gewicht",
+      "height": "Lengte",
+      "sex": "Geslacht",
+      "bodyFat": "Vetpercentage",
+      "neck": "Nek",
+      "waist": "Taille",
+      "hip": "Heup",
+      "wrist": "Pols",
+      "ankle": "Enkel",
+      "targetBodyFat": "Doel vetpercentage",
+      "age": "Leeftijd",
+      "activity": "Activiteitsniveau",
+      "goal": "Doel",
+      "method": "Methode",
+      "liftWeight": "Getild gewicht",
+      "reps": "Reps",
+      "formula": "Formule",
+      "exercise": "Oefening",
+      "exerciseOptional": "Oefening (optioneel)",
+      "bodyweight": "Lichaamsgewicht",
+      "oneRepMax": "1RM",
+      "bestSetWeight": "Gewicht beste set",
+      "bestSetReps": "Reps beste set",
+      "squat": "Squat",
+      "bench": "Bench",
+      "deadlift": "Deadlift",
+      "equipment": "Uitrusting",
+      "lift1": "Lift 1",
+      "lift2": "Lift 2",
+      "lift3": "Lift 3",
+      "targetWeight": "Doelgewicht",
+      "barWeight": "Gewicht stang",
+      "restingHr": "Rusthartslag",
+      "maxHr": "Maximale hartslag",
+      "activityType": "Activiteit",
+      "duration": "Duur",
+      "avgLoad": "Gemiddeld gewicht",
+      "repsPerSet": "Reps per set",
+      "setsCount": "Sets",
+      "shoulders": "Schouders",
+      "chestOrBust": "Borst / buste",
+      "chest": "Borst",
+      "bust": "Buste",
+      "armFlexed": "Arm (aangespannen)",
+      "forearm": "Onderarm",
+      "thigh": "Bovenbeen",
+      "calf": "Kuit",
+      "highHip": "Hoge heup",
+      "currentWeight": "Huidig gewicht",
+      "currentBodyFat": "Huidig vetpercentage",
+      "goalWeight": "Streefgewicht",
+      "lossRate": "Verlies per week (% van lichaamsgewicht)",
+      "abdomen": "Taille ter hoogte van navel",
+      "exerciseMin": "Training",
+      "climate": "Klimaat",
+      "rpe": "RPE",
+      "targetReps": "Doelherhalingen",
+      "targetRpe": "Doel-RPE",
+      "topSetWeight": "Gewicht topset",
+      "topSetReps": "Herhalingen topset",
+      "exercise1": "Oefening 1",
+      "exercise2": "Oefening 2",
+      "exercise3": "Oefening 3",
+      "load": "Gewicht",
+      "sessionsPerWeek": "Trainingen per week",
+      "steps": "Stappen",
+      "pace": "Wandeltempo"
+    },
+    "bmi": {
+      "title": "BMI",
+      "desc": "Body mass index en het gezonde gewichtsbereik voor je lengte."
+    },
+    "bodyFat": {
+      "title": "Vetpercentage",
+      "desc": "Schat je vetpercentage met meetlintmetingen (Navy) of op basis van BMI + leeftijd (Deurenberg)."
+    },
+    "ffmi": {
+      "title": "FFMI / Vetvrije massa",
+      "desc": "Je vetvrije massa — spieren, botten, organen en water — en je vetmassa, plus de fat-free mass index: hoeveel vetvrije massa je hebt voor je lengte."
+    },
+    "maxPotential": {
+      "title": "Max. spierpotentieel",
+      "desc": "Natuurlijk plafond voor vetvrije massa op basis van je botbouw (Casey Butt)."
+    },
+    "bmr": {
+      "title": "BMR / TDEE / macro's",
+      "desc": "Basaal metabolisme, dagelijkse verbranding en een macrodoel voor je doel."
+    },
+    "oneRepMax": {
+      "title": "One-rep max",
+      "desc": "Schat je 1RM voor elke lift op basis van een submaximale set (gewicht × reps), met een tabel per aantal reps."
+    },
+    "strengthLevel": {
+      "title": "Krachtnormen",
+      "desc": "Plaats een lift van Beginner → Elite ten opzichte van populatienormen."
+    },
+    "powerlifting": {
+      "title": "Powerlifting-score",
+      "desc": "Wilks-, DOTS- en IPF GoodLift-scores op basis van je total."
+    },
+    "symmetry": {
+      "title": "Balans tussen lifts",
+      "desc": "Hoe gebalanceerd je lifts zijn — ontdek welke beweging achterblijft."
+    },
+    "plateRacking": {
+      "title": "Schijven laden",
+      "desc": "Welke schijven je aan elke kant laadt om een doelgewicht te halen."
+    },
+    "vo2max": {
+      "title": "VO₂max & hartslagzones",
+      "desc": "Schatting van je aerobe conditie op basis van je rusthartslag, plus je maximale hartslag en vijf trainingszones."
+    },
+    "resistanceKcal": {
+      "title": "Verbranding krachttraining",
+      "desc": "Calorieën op basis van het geleverde werk — schaalt met gewicht × reps × sets, niet alleen met tijd.",
+      "volume": "{{volume}} kg totaal volume"
+    },
+    "trainingKcal": {
+      "title": "Calorieverbranding training",
+      "desc": "Geschatte verbrande calorieën per sessie (op basis van MET, uit activiteit + duur)."
+    },
+    "idealProportions": {
+      "title": "Ideale verhoudingen",
+      "desc": "Je meetlintmetingen vergeleken met klassieke ideale verhoudingen, geschaald naar je pols — zie welke lichaamsdelen achterblijven. Elke waarde is een omtrek: leg het meetlint eromheen, strak maar zonder in te drukken. Tik op (i) om te zien waar je meet."
+    },
+    "bodyShape": {
+      "title": "Lichaamsvorm",
+      "desc": "Bepaal je lichaamsvorm op basis van buste of borst, taille en heupen — plus je taille-heupverhouding. Elke waarde is een omtrek: leg het meetlint eromheen, strak en recht. Tik op (i) om te zien waar je meet."
+    },
+    "calorieDeficit": {
+      "title": "Calorietekort",
+      "desc": "Dagelijkse calorieën om in een veilig tempo je streefgewicht te halen, en hoeveel weken dat duurt."
+    },
+    "idealWeight": {
+      "title": "Ideaal gewicht",
+      "desc": "Ideaal lichaamsgewicht voor je lengte volgens vier klassieke formules, naast het gezonde BMI-bereik."
+    },
+    "waterIntake": {
+      "title": "Waterinname",
+      "desc": "Hoeveel je per dag moet drinken voor je gewicht, training en klimaat."
+    },
+    "rpe": {
+      "title": "RPE-omrekenaar",
+      "desc": "Zet een set op een RPE om in een geschat maximum en het gewicht voor je volgende set."
+    },
+    "warmup": {
+      "title": "Opwarmsets",
+      "desc": "Een opbouw van opwarmsets naar je topset, met de schijven per set."
+    },
+    "trainingVolume": {
+      "title": "Trainingsvolume",
+      "desc": "Tonnage en harde sets per week per spiergroep voor een training."
+    },
+    "stepCalories": {
+      "title": "Stappen naar calorieën",
+      "desc": "Calorieën en afstand uit een aantal stappen, plus een dagelijks stappendoel."
+    }
+  }
+}

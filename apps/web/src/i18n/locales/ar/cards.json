@@ -1,0 +1,375 @@
+{
+  "cards": {
+    "common": {
+      "item": "عنصر"
+    },
+    "macros": {
+      "protein": "بروتين",
+      "fat": "دهون",
+      "carbs": "كربوهيدرات",
+      "fiber": "ألياف"
+    },
+    "energy": {
+      "atTdee": "عند TDEE",
+      "vsTdee": "{{sign}}{{pct}}% مقابل TDEE"
+    },
+    "dayTag": {
+      "today": "اليوم",
+      "openToday": "فتح اليوم",
+      "openDate": "فتح {{date}}"
+    },
+    "day": {
+      "macros": "المغذيات الكبرى"
+    },
+    "targets": {
+      "targetMacros": "المغذيات الكبرى المستهدفة",
+      "dailyTarget": "الهدف اليومي"
+    },
+    "meal": {
+      "preview": "معاينة الوجبة"
+    },
+    "bmi": {
+      "healthyRange": "النطاق الصحي لطولك: {{low}}–{{high}} kg"
+    },
+    "ffmi": {
+      "normalized": "مُعدَّل"
+    },
+    "bodyFat": {
+      "methodEstimate": "تقدير {{method}}"
+    },
+    "body": {
+      "bodyFat": "دهون الجسم",
+      "weight": "الوزن",
+      "leanMass": "الكتلة الصافية",
+      "composition": "تركيب الجسم",
+      "kgLean": "{{kg}} kg كتلة صافية",
+      "asOf": "حتى ",
+      "trend": "الاتجاه",
+      "vsPriorDays_zero": "مقابل {{count}} يوم سابق",
+      "vsPriorDays_one": "مقابل اليوم السابق",
+      "vsPriorDays_two": "مقابل اليومين السابقين",
+      "vsPriorDays_few": "مقابل {{count}} أيام سابقة",
+      "vsPriorDays_many": "مقابل {{count}} يومًا سابقًا",
+      "vsPriorDays_other": "مقابل {{count}} يوم سابق"
+    },
+    "food": {
+      "title": "طعام",
+      "per100": "{{kcal}} kcal / 100 {{unit}}",
+      "onHand": "{{qty}} {{unit}} متوفر"
+    },
+    "product": {
+      "title": "منتج",
+      "matches": "المنتجات المطابقة",
+      "per100g": "{{kcal}} kcal / 100 g",
+      "incomplete": "مغذيات كبرى ناقصة",
+      "found_zero": "{{count}} نتيجة",
+      "found_one": "نتيجة واحدة",
+      "found_two": "نتيجتان",
+      "found_few": "{{count}} نتائج",
+      "found_many": "{{count}} نتيجة",
+      "found_other": "{{count}} نتيجة",
+      "foundAvg_zero": "{{count}} نتيجة · المتوسط {{kcal}} kcal",
+      "foundAvg_one": "نتيجة واحدة · المتوسط {{kcal}} kcal",
+      "foundAvg_two": "نتيجتان · المتوسط {{kcal}} kcal",
+      "foundAvg_few": "{{count}} نتائج · المتوسط {{kcal}} kcal",
+      "foundAvg_many": "{{count}} نتيجة · المتوسط {{kcal}} kcal",
+      "foundAvg_other": "{{count}} نتيجة · المتوسط {{kcal}} kcal",
+      "show": "عرض المنتجات",
+      "hide": "إخفاء المنتجات",
+      "unnamed": "(بلا اسم)"
+    },
+    "substitute": {
+      "title": "البدائل",
+      "options_zero": "{{count}} خيار",
+      "options_one": "خيار واحد",
+      "options_two": "خياران",
+      "options_few": "{{count}} خيارات",
+      "options_many": "{{count}} خيارًا",
+      "options_other": "{{count}} خيار"
+    },
+    "training": {
+      "burn": "حرق التمرين",
+      "estimatedTotal": "الإجمالي التقديري",
+      "activity": "النشاط"
+    },
+    "maxPotential": {
+      "title": "أقصى إمكانات طبيعية",
+      "atBodyFat": "عند {{pct}}% دهون الجسم",
+      "maxWeight": "أقصى وزن",
+      "maxLeanMass": "أقصى كتلة صافية",
+      "leanToGain": "الكتلة الصافية المتبقية لاكتسابها",
+      "leanToGainPct": "الكتلة الصافية المتبقية لاكتسابها · {{pct}}% من الإمكانات",
+      "chest": "الصدر",
+      "neck": "الرقبة",
+      "bicep": "العضلة ذات الرأسين",
+      "forearm": "الساعد",
+      "thigh": "الفخذ",
+      "calf": "السمانة",
+      "ceilingNote": "الحد الأقصى مدى الحياة دون منشطات — مرجع، وليس هدفًا قريب المدى.",
+      "howClose": "مدى قربك",
+      "pctOfCeiling": "{{pct}}% من حدك الطبيعي"
+    },
+    "strength": {
+      "repsShort": "تكرارات",
+      "level": {
+        "title": "مستوى القوة",
+        "beginner": "مبتدئ",
+        "novice": "مستجد",
+        "intermediate": "متوسط",
+        "advanced": "متقدم",
+        "elite": "نخبة",
+        "strongerThan": "أقوى من {{pct}}% من الرياضيين",
+        "ratio": "{{ratio}}× وزن الجسم",
+        "nextLevel": "+{{remaining}} {{unit}} للوصول إلى {{level}}"
+      },
+      "oneRepMax": {
+        "title": "أقصى تكرار واحد",
+        "from": "من {{weight}} kg × {{reps}}",
+        "estimated": "1RM التقديري",
+        "epley": "Epley {{value}} kg",
+        "brzycki": "Brzycki {{value}} kg",
+        "repTable": "الحمل حسب عدد التكرارات (% من 1RM)"
+      },
+      "powerlifting": {
+        "title": "نتيجة رفع القوة",
+        "total": "الإجمالي {{total}} kg",
+        "wilks": "Wilks",
+        "dots": "DOTS",
+        "ipfgl": "IPF GL",
+        "breakdown": "{{parts}} kg"
+      },
+      "symmetry": {
+        "title": "تناسق القوة",
+        "balanced": "التوازن بين التمارين",
+        "lagging": "{{lift}} متأخر — أعطه الأولوية"
+      },
+      "plates": {
+        "title": "تحميل البار",
+        "target": "الهدف {{target}} {{unit}}",
+        "perSide": "لكل جانب",
+        "barOnly": "البار فقط — لا شيء للتحميل",
+        "loaded": "يصل الحمل إلى {{loaded}} {{unit}} بالضبط",
+        "closest": "الأقرب: {{loaded}} {{unit}}"
+      }
+    },
+    "progress": {
+      "title": "التقدم",
+      "lastDays_zero": "آخر {{count}} يوم",
+      "lastDays_one": "آخر يوم",
+      "lastDays_two": "آخر يومين",
+      "lastDays_few": "آخر {{count}} أيام",
+      "lastDays_many": "آخر {{count}} يومًا",
+      "lastDays_other": "آخر {{count}} يوم",
+      "avgWeight": "متوسط الوزن",
+      "waist": "الخصر"
+    },
+    "sets": {
+      "title": "المجموعات الأخيرة",
+      "next": "التالي: {{kg}} kg",
+      "set": "مجموعة"
+    },
+    "shopping": {
+      "title": "قائمة التسوق",
+      "days_zero": "{{count}} يوم",
+      "days_one": "يوم واحد",
+      "days_two": "يومان",
+      "days_few": "{{count}} أيام",
+      "days_many": "{{count}} يومًا",
+      "days_other": "{{count}} يوم",
+      "items_zero": "{{count}} عنصر",
+      "items_one": "عنصر واحد",
+      "items_two": "عنصران",
+      "items_few": "{{count}} عناصر",
+      "items_many": "{{count}} عنصرًا",
+      "items_other": "{{count}} عنصر",
+      "nothingToBuy": "لا شيء للشراء — المخزن يغطي الخطة."
+    },
+    "sources": {
+      "title": "المصادر",
+      "count_zero": "{{count}} مصدر",
+      "count_one": "مصدر واحد",
+      "count_two": "مصدران",
+      "count_few": "{{count}} مصادر",
+      "count_many": "{{count}} مصدرًا",
+      "count_other": "{{count}} مصدر",
+      "show": "عرض المصادر",
+      "hide": "إخفاء المصادر",
+      "source": "مصدر"
+    },
+    "proportions": {
+      "title": "النسب المثالية",
+      "method": {
+        "grecian_ideal": "المثال الإغريقي",
+        "hourglass_frame": "قوام الساعة الرملية"
+      },
+      "score": "نتيجة التناسب",
+      "adonis": "الكتفان : الخصر",
+      "whtr": "الخصر : الطول",
+      "ideal": "المثالي",
+      "you": "أنت",
+      "needThree": "أضف 3 قياسات على الأقل لترى مخطط التناسب.",
+      "focus": "التركيز:",
+      "reduceWaist": "تقليل الخصر",
+      "status": {
+        "lagging": "متأخر",
+        "close": "قريب",
+        "on_target": "ضمن الهدف",
+        "ahead": "متقدم",
+        "above_ideal": "فوق المثالي"
+      },
+      "parts": {
+        "shoulders": "الكتفان",
+        "chest": "الصدر",
+        "waist": "الخصر",
+        "hips": "الوركان",
+        "arm": "الذراع",
+        "forearm": "الساعد",
+        "neck": "الرقبة",
+        "thigh": "الفخذ",
+        "calf": "السمانة"
+      }
+    },
+    "bodyShape": {
+      "title": "شكل الجسم",
+      "whr": "الخصر : الورك",
+      "risk": {
+        "low": "خطر منخفض",
+        "moderate": "خطر متوسط",
+        "high": "خطر مرتفع"
+      },
+      "adonis": "الكتفان : الخصر",
+      "chestTaper": "الصدر : الخصر",
+      "alsoFits": "يناسب أيضًا:",
+      "shapes": {
+        "hourglass": "الساعة الرملية",
+        "bottom_hourglass": "الساعة الرملية السفلية",
+        "top_hourglass": "الساعة الرملية العلوية",
+        "spoon": "الملعقة",
+        "triangle": "المثلث (الكمثرى)",
+        "inverted_triangle": "المثلث المقلوب",
+        "rectangle": "المستطيل",
+        "v_taper": "شكل V",
+        "trapezoid": "شبه المنحرف",
+        "oval": "البيضاوي",
+        "unclassified": "بين الأشكال"
+      },
+      "desc": {
+        "hourglass": "الصدر والوركان متوازنان مع خصر محدد بوضوح.",
+        "bottom_hourglass": "خصر محدد مع وركين أعرض قليلًا من الصدر.",
+        "top_hourglass": "خصر محدد مع صدر أعرض قليلًا من الوركين.",
+        "spoon": "الوركان أعرض بوضوح من الصدر، مع «بروز» عند أعلى الورك.",
+        "triangle": "الوركان أعرض من الجزء العلوي من الجسم، مع خصر أقل تحديدًا.",
+        "inverted_triangle": "الجزء العلوي من الجسم أعرض من الوركين.",
+        "rectangle": "الكتفان/الصدر والخصر والوركان متقاربة في الحجم — قوام مستقيم.",
+        "v_taper": "الصدر أعرض بكثير من الوركين والخصر — الشكل الرياضي الكلاسيكي.",
+        "trapezoid": "الصدر والوركان متوازنان مع خصر أضيق منهما بوضوح.",
+        "oval": "الخصر هو أعرض نقطة في الجذع.",
+        "unclassified": "قياساتك تقع بين قواعد الأشكال المعتادة."
+      }
+    },
+    "macroSplit": {
+      "title": "توزيع المغذيات الكبرى",
+      "shares": "{{p}}% بروتين · {{c}}% كربوهيدرات · {{f}}% دهون",
+      "leanBasis": "البروتين محسوب على {{mass}} كتلة خالية من الدهون",
+      "bodyweightBasis": "البروتين محسوب على وزن الجسم",
+      "carbsFloored": "البروتين والدهون وحدهما يتجاوزان الهدف، لذا الكربوهيدرات صفر."
+    },
+    "protein": {
+      "title": "البروتين اليومي",
+      "gPerDay": "غ / يوم",
+      "perBodyweight": "{{v}} غ لكل {{unit}} من وزن الجسم",
+      "perMeal": "لكل وجبة",
+      "perMealValue": "{{g}} غ × {{n}}",
+      "basedOn": "محسوب على",
+      "bodyweight": "وزن الجسم",
+      "rda": "الحد الأدنى الموصى به"
+    },
+    "deficit": {
+      "title": "عجز السعرات",
+      "belowMaintenance": "{{kcal}} سعرة أقل من سعرات الثبات",
+      "maintenance": "سعرات الثبات",
+      "perWeek": "الخسارة الأسبوعية",
+      "toLose": "المطلوب خسارته",
+      "timeToGoal": "المدة حتى الهدف",
+      "weeksValue": "{{n}} أسبوع",
+      "capped": "حُدّد عند الحد الأدنى للسعرات — والجدول الزمني مبني عليه."
+    },
+    "idealWeight": {
+      "title": "الوزن المثالي",
+      "average": "متوسط أربع معادلات",
+      "healthyBmi": "نطاق مؤشر كتلة الجسم الصحي"
+    },
+    "hrZones": {
+      "title": "مناطق معدل ضربات القلب",
+      "karvonen": "كارفونين",
+      "percentMax": "% من الحد الأقصى",
+      "max": "أقصى معدل للقلب",
+      "maxEstimated": "أقصى معدل للقلب (تقديري)",
+      "zone": "المنطقة {{n}}",
+      "names": {
+        "z1": "استشفاء",
+        "z2": "قاعدة هوائية",
+        "z3": "إيقاع",
+        "z4": "العتبة",
+        "z5": "VO₂max"
+      }
+    },
+    "leanMass": {
+      "composition": "الكتلة الخالية من الدهون هي كل ما ليس دهونًا: العضلات والعظام والأعضاء والماء.",
+      "title": "الكتلة الخالية من الدهون",
+      "fromBodyFat": "من نسبة الدهون",
+      "fromFormula": "تقدير Boer",
+      "pctOfWeight": "{{pct}}% من وزن الجسم",
+      "fatMass": "كتلة الدهون"
+    },
+    "water": {
+      "title": "الماء اليومي",
+      "glasses": "نحو {{n}} أكواب سعة 250 مل",
+      "base": "الأساس (35 مل/كغ)",
+      "exercise": "التمرين",
+      "hot": "طقس حار",
+      "efsa": "إجمالي EFSA شاملًا الطعام"
+    },
+    "steps": {
+      "title": "الخطوات إلى سعرات",
+      "steps": "{{n}} خطوة",
+      "gross": "{{kcal}} سعرة شاملةً الحرق أثناء الراحة",
+      "distance": "المسافة",
+      "time": "مدة المشي",
+      "minutes": "{{n}} دقيقة",
+      "per1000": "لكل 1,000 خطوة",
+      "goal": "الهدف اليومي للخطوات",
+      "pctOfGoal": "{{pct}}% من الهدف"
+    },
+    "rpe": {
+      "title": "RPE",
+      "set": "{{reps}} تكرارات @ RPE {{rpe}}",
+      "e1rm": "1RM التقديري",
+      "pctOf1rm": "% من 1RM",
+      "rir": "تكرارات احتياطية",
+      "target": "{{reps}} @ RPE {{rpe}}",
+      "loadsAt": "الأحمال عند RPE {{rpe}}",
+      "reps": "{{n}} تكرارات"
+    },
+    "warmup": {
+      "title": "مجموعات الإحماء",
+      "to": "حتى {{reps}} × {{load}} {{unit}}",
+      "topSet": "المجموعة الرئيسية",
+      "emptyBar": "البار فارغًا",
+      "setN": "المجموعة {{n}} · {{pct}}%",
+      "perSide": "{{plates}} {{unit}} لكل جانب"
+    },
+    "volume": {
+      "title": "حجم التمرين",
+      "sessions": "{{n}}× أسبوعيًا",
+      "perSession": "{{v}} لكل جلسة · الحمولة الأسبوعية",
+      "weeklySets": "المجموعات الأسبوعية (الهدف {{min}}–{{max}})",
+      "weeklySetsPlain": "المجموعات الأسبوعية",
+      "verdict": {
+        "under": "قليل",
+        "ok": "ضمن النطاق",
+        "over": "كثير"
+      }
+    }
+  }
+}

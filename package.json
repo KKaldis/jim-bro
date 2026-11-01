@@ -1,0 +1,50 @@
+{
+  "name": "jim-bro",
+  "private": true,
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "type": "module",
+  "workspaces": [
+    "apps/server",
+    "apps/web",
+    "packages/*"
+  ],
+  "scripts": {
+    "server:prod": "bun run apps/server/src/index.ts",
+    "server:dev": "bun --watch run apps/server/src/index.ts",
+    "web:dev": "npm --workspace @fa/web run dev",
+    "web:build": "npm --workspace @fa/web run build",
+    "gen:api": "npm --workspace @fa/server run gen:api && npm --workspace @fa/web run gen:hooks",
+    "db:migrate": "drizzle-kit migrate",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.45.2",
+    "postgres": "^3.4.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@types/bun": "latest",
+    "@types/node": "latest",
+    "drizzle-kit": "^0.31.4",
+    "eslint": "^10.5.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-better-tailwindcss": "^4.10.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^16.4.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.6.2",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.61.1"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,mjs}": "eslint --fix --no-warn-ignored"
+  }
+}

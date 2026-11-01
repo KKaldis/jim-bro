@@ -1,0 +1,4 @@
+# Lint the staged files, then typecheck every workspace (a change in one file
+# can break the types of another). Skip in an emergency with `git commit -n`.
+npx lint-staged
+npm run typecheck

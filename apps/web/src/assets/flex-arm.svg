@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Pivots for Lottie: forearm rotates around elbow (~60,320); bicep scales from its base (~245,318). -->
+  <g fill="none" stroke="#000" stroke-width="24" stroke-linecap="round" stroke-linejoin="round">
+    <g id="upper-arm" inkscape:groupmode="layer" inkscape:label="upper-arm">
+      <path id="arm-outline" d="M48 318 Q36 370 92 400 Q190 450 300 448 Q330 447 345 457 L380 476 L470 476 L470 272 Q430 232 380 245 Q345 252 325 278"/>
+      <path id="crease" d="M122 380 Q200 425 285 412"/>
+    </g>
+    <g id="bicep" inkscape:groupmode="layer" inkscape:label="bicep">
+      <path id="bicep-bulge" d="M155 318 Q175 262 228 258 Q300 254 340 325"/>
+    </g>
+    <g id="forearm" inkscape:groupmode="layer" inkscape:label="forearm">
+      <path id="forearm-outer" d="M110 82 L48 318"/>
+      <path id="forearm-inner" d="M178 128 L178 275"/>
+      <path id="fist" d="M110 82 L236 26 L284 90 L225 150 L190 122 L148 140"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <!-- Single dynamic theme-color, kept in sync with the resolved (possibly
+         user-overridden) theme below and in src/lib/theme.tsx. -->
+    <meta name="theme-color" content="#0d1117" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/logo-2.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Jim-Bro" />
+    <meta name="application-name" content="Jim-Bro" />
+    <title>Jim-Bro.ai</title>
+    <!-- Link-preview / share metadata. The Bun server makes the image URLs
+         absolute per Host header (see serveIndexHtml in apps/server/src/index.ts). -->
+    <meta name="description" content="AI fitness & nutrition assistant" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Jim-Bro.ai" />
+    <meta property="og:title" content="Jim-Bro.ai" />
+    <meta property="og:description" content="AI fitness & nutrition assistant" />
+    <meta property="og:image" content="/pwa-512x512.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Jim-Bro.ai" />
+    <meta name="twitter:description" content="AI fitness & nutrition assistant" />
+    <meta name="twitter:image" content="/pwa-512x512.png" />
+    <script>
+      // Apply theme class before React mounts so the first paint matches the
+      // stored / system preference (no flash of incorrect theme).
+      // Reads the persisted UI store (src/lib/uiStore.ts, key "fa.ui").
+      (function () {
+        try {
+          var state = JSON.parse(localStorage.getItem("fa.ui") || "{}").state || {};
+          var pref = state.theme;
+          var style = state.themeStyle || "soft"; // first visit: the store's default
+          var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          var dark = pref === "dark" || ((!pref || pref === "system") && prefersDark);
+          if (dark) document.documentElement.classList.add("dark");
+          if (style === "soft" || style === "brutal")
+            document.documentElement.dataset.style = style;
+          document.documentElement.style.colorScheme = dark ? "dark" : "light";
+          var meta = document.querySelector('meta[name="theme-color"]');
+          var colors = { soft: ["#edf0f4", "#1b2025"], brutal: ["#ebf7ff", "#050d1c"] };
+          var color = (colors[style] || ["#fafafa", "#0d1117"])[dark ? 1 : 0];
+          if (meta) meta.setAttribute("content", color);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="overflow-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "@fa/storage",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fa/logger": "*",
+    "minio": "^8.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "typescript": "^6.0.3"
+  }
+}

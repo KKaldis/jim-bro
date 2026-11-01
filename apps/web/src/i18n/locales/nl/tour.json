@@ -1,0 +1,83 @@
+{
+  "tour": {
+    "menuItem": "Rondleiding",
+    "skip": "Overslaan",
+    "start": "Laat zien",
+    "next": "Volgende",
+    "back": "Terug",
+    "done": "Klaar",
+    "setUpProfile": "Mijn profiel instellen",
+    "progress": "Stap {{current}} van {{total}}",
+    "language": "Taal",
+    "steps": {
+      "welcome": {
+        "title": "Welkom bij {{brand}}",
+        "body": "{{agent}} is je AI-coach voor fitness en voeding. Deze rondleiding van een minuut laat zien hoe de app werkt."
+      },
+      "chat": {
+        "title": "Gewoon praten",
+        "body": "Vertel {{agent}} in je eigen woorden wat je hebt gegeten, hoe je hebt getraind of wat je doel is. Voeg een foto van je bord of een voedingsetiket toe, of gebruik de microfoon."
+      },
+      "confirm": {
+        "title": "Jij bevestigt, de coach doet het werk",
+        "body": "Als de coach iets logt of wijzigt, opent er een formulier dat al is ingevuld. Controleer het en tik op Opslaan. Zonder jouw akkoord wordt er niets opgeslagen."
+      },
+      "screens": {
+        "title": "Je gegevens, in vier schermen",
+        "body": "Alles wat de coach logt komt in deze schermen terecht, en je kunt alles zelf aanpassen. We kijken snel even naar elk scherm."
+      },
+      "day": {
+        "title": "Kies de dag",
+        "body": "Alles wat je logt komt op de geselecteerde dag. Tik hier om terug te kijken of om iets voor gisteren te loggen."
+      },
+      "menu": {
+        "title": "Profiel en instellingen",
+        "body": "Je profiel bepaalt je calorie- en macrodoelen. In dit menu vind je ook AI-gebruik, calculators, het thema en deze rondleiding als je hem nog eens wilt zien."
+      },
+      "dashboard": {
+        "title": "Vandaag in één oogopslag",
+        "body": "Je calorieënring, macro's, doel vs gegeten vs resterend, geplande training, stappen, water en verbrande calorieën. Gebruik de pijlen bovenaan om tussen dagen te wisselen."
+      },
+      "foodLog": {
+        "title": "Voedingslog",
+        "body": "Alles wat je op de geselecteerde dag hebt gegeten, per maaltijd, met totalen ten opzichte van je doelen. Voeg zelf voeding toe of vertel het gewoon aan de coach."
+      },
+      "pantry": {
+        "title": "Voorraad",
+        "body": "Je eigen catalogus van voedingsmiddelen en supplementen, met macro's, barcodes en wat je in huis hebt. Scan een barcode, of importeer een kassabon of foto van je boodschappen via de chat."
+      },
+      "recipes": {
+        "title": "Recepten",
+        "body": "Bewaar recepten die je vaak maakt, of importeer er een via een link. Log een heel recept, of een paar porties, in één keer als maaltijd."
+      },
+      "diet": {
+        "title": "Voedingsschema's",
+        "body": "Meerdaagse maaltijdplannen met dagdoelen en een weekschema. Log een geplande maaltijd met één tik, of krijg een boodschappenlijst van wat er in je voorraad ontbreekt."
+      },
+      "training": {
+        "title": "Training",
+        "body": "Log je sessies: sets, reps, gewicht en inspanning, vanuit een schema of vrij. Na het loggen stelt de coach voor wat je de volgende keer tilt."
+      },
+      "progress": {
+        "title": "Voortgang",
+        "body": "Geschiedenis per oefening, geschatte one-rep max en krachttrends, zodat je ziet dat je sterker wordt."
+      },
+      "plans": {
+        "title": "Trainingsschema's",
+        "body": "Je trainingssplit: dagen, oefeningen en doelsets, reps en gewicht. Stel er hier een samen, vraag de coach er een te maken, of upload het schema van je trainer."
+      },
+      "bodyComposition": {
+        "title": "Lichaamssamenstelling",
+        "body": "Wegingen en vetpercentage, plus de waarden die daaruit worden berekend: BMI, vetvrije massa en FFMI. Trendgrafieken laten zien hoe ze over weken of maanden veranderen."
+      },
+      "bodyMeasurements": {
+        "title": "Metingen",
+        "body": "Log meetlintmetingen van je schouders, borst, armen, bovenbenen en kuiten. Een radar vergelijkt elke meting met het ideaal voor je botbouw en laat zien op welke spieren je kunt focussen. Je kunt je vorm ook scannen met de camera."
+      },
+      "finish": {
+        "title": "Je bent klaar",
+        "body": "Begin met het invullen van je profiel (doel, lengte, gewicht en activiteit) zodat je doelen bij je passen. Of zeg gewoon hoi tegen {{agent}}."
+      }
+    }
+  }
+}

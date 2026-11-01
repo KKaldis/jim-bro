@@ -1,0 +1,160 @@
+{
+  "physique": {
+    "entry": "Scansione con fotocamera",
+    "title": "Scansione corporea",
+    "beta": "Beta",
+    "switchCamera": "Cambia fotocamera",
+    "capture": "Scatta",
+    "measuring": "Misurazione…",
+    "hint": "Telefono in verticale all'altezza del petto, a circa 2,5 m. Braccia leggermente aperte, abbigliamento aderente. Lo scatto parte da solo.",
+    "framing": {
+      "none": "Entra nell'inquadratura",
+      "head_cut": "Testa tagliata: fai un passo indietro",
+      "feet_cut": "Piedi tagliati: fai un passo indietro",
+      "full": "Corpo intero inquadrato: resta fermo"
+    },
+    "loading": {
+      "chunk": "Caricamento scanner…",
+      "download": "Download dei modelli per la scansione corporea",
+      "mb": "{{loaded}} / {{total}} MB",
+      "oneTime": "Download una tantum. Resta su questo dispositivo per le prossime volte.",
+      "cached": "Caricamento dei modelli da questo dispositivo…",
+      "init": "Avvio dei modelli…",
+      "failed": "Impossibile caricare i modelli per la scansione corporea: {{error}}",
+      "retry": "Riprova"
+    },
+    "result": {
+      "full": "Corpo intero: misure in centimetri, scalate in base alla tua altezza.",
+      "torso": "Solo busto: rapporti, niente centimetri.",
+      "noPerson": "Non è stato possibile ottenere un contorno pulito di te in questi fotogrammi, di solito per uno sfondo troppo pieno o per le braccia attaccate al corpo. Prova davanti a una parete liscia, braccia leggermente aperte e corpo intero inquadrato.",
+      "privacy": "La foto resta su questo dispositivo. Non viene caricato nulla.",
+      "retake": "Rifai"
+    },
+    "parts": {
+      "shoulders": "Spalle",
+      "chest": "Petto",
+      "waist": "Vita",
+      "hips": "Fianchi",
+      "neck": "Collo",
+      "upper_arm": "Braccio",
+      "forearm": "Avambraccio",
+      "thigh": "Coscia",
+      "calf": "Polpaccio"
+    },
+    "shapes": {
+      "v_taper": "Forma a V",
+      "square": "Quadrato",
+      "diamond": "Diamante",
+      "triangle": "Triangolo",
+      "hourglass": "Clessidra",
+      "pear": "Pera",
+      "apple": "Mela",
+      "inverted_triangle": "Triangolo invertito",
+      "rectangle": "Rettangolo"
+    },
+    "report": {
+      "shapeUnknown": "Forma non determinata",
+      "widths": "Larghezze frontali",
+      "girths": "Circonferenze stimate",
+      "girthsNote": "Stimate dalla vista frontale con una profondità corporea media, quindi aspettati qualche centimetro di errore. Per i valori che registri, usa un metro da sarta.",
+      "accuracy": "Meno preciso di un metro da sarta. Una foto vede solo la tua larghezza, quindi le circonferenze sono stimate e possono sbagliare di diversi centimetri. Registra le misure prese col metro come riferimento; usa le scansioni per confrontarle con scansioni precedenti fatte nello stesso modo.",
+      "ratios": "Rapporti (larghezze frontali)",
+      "target": "obiettivo {{value}}",
+      "composition": "Composizione",
+      "bodyFat": "Massa grassa",
+      "bfSource": {
+        "user": "la tua ultima pesata",
+        "navy_from_photo": "Stima Navy dalla foto"
+      },
+      "somatotype": "Somatotipo (endo / meso / ecto)",
+      "balance": "Sinistra / destra",
+      "biggerSide": "{{pct}}% più largo a {{side}}",
+      "side": {
+        "left": "sinistra",
+        "right": "destra"
+      },
+      "priorities": "Su cosa lavorare",
+      "reduceWaist": "Ridurre la vita (perdita di grasso)",
+      "method": "Note sul metodo ({{count}})",
+      "uncalibrated": "Le soglie sono stime iniziali e non sono ancora state verificate con misure prese col metro.",
+      "bodyShape": "Forma del corpo",
+      "scale": "1 px = {{cmPerPx}} cm: la tua altezza di {{heightCm}} cm su una silhouette alta {{heightPx}} px.",
+      "addHeight": "Aggiungi l'altezza e ripeti la scansione",
+      "checkThese": "Controlla questi punti",
+      "soma": {
+        "endo": "Endo",
+        "meso": "Meso",
+        "ecto": "Ecto"
+      },
+      "torso": {
+        "no_height": "Solo rapporti: aggiungi la tua altezza per convertire le larghezze in centimetri.",
+        "head_cut": "Solo rapporti: la parte alta della testa toccava il bordo dell'inquadratura. Fai un piccolo passo indietro o abbassa leggermente il telefono.",
+        "feet_cut": "Solo rapporti: i piedi erano sul bordo inferiore dell'inquadratura. Arretra finché non si vede un po' di pavimento sotto i piedi.",
+        "legs_hidden": "Solo rapporti: ginocchia o caviglie non erano ben visibili. Assicurati che nulla copra le gambe e che il pavimento intorno ai piedi sia inquadrato."
+      }
+    },
+    "perf": "{{fps}} fps · {{delegate}} · caricato in {{s}} s ({{source}})",
+    "source": {
+      "cache": "dal dispositivo",
+      "network": "scaricato"
+    },
+    "gate": {
+      "title": "La tua altezza definisce la scala",
+      "why": "La foto non ha un righello: la tua altezza reale divisa per la tua altezza in pixel dà i centimetri di ogni larghezza.",
+      "male": "Uomo",
+      "female": "Donna",
+      "height": "Altezza",
+      "save": "Salva nel mio profilo",
+      "skip": "Salta (solo rapporti)",
+      "start": "Avvia scansione"
+    },
+    "guide": {
+      "open": "Consigli per la foto",
+      "kicker": "Prima della scansione",
+      "title": "Come ottenere misure precise",
+      "diagramAria": "Telefono su una mensola all'altezza del petto, a circa 2,5 m da te, braccia aperte di circa 20 gradi",
+      "done": "Ho capito",
+      "tips": {
+        "background": {
+          "title": "Sfondo uniforme",
+          "body": "Mettiti davanti a una parete liscia e chiara. Tende con fantasie, mensole o mobili alle tue spalle si confondono con il tuo contorno, soprattutto intorno alle braccia."
+        },
+        "light": {
+          "title": "Luce uniforme frontale",
+          "body": "Mettiti di fronte alla fonte di luce. Una finestra luminosa alle spalle ti trasforma in una sagoma scura dai bordi sfocati."
+        },
+        "phone": {
+          "title": "Telefono in verticale all'altezza del petto",
+          "body": "Appoggialo su una mensola a circa 2,5 m, senza inclinarlo verso l'alto o il basso. Usa il conto alla rovescia automatico, non uno specchio."
+        },
+        "frame": {
+          "title": "Corpo intero inquadrato",
+          "body": "Lascia un po' di spazio sopra la testa e sotto i piedi. La tua altezza fa da righello, quindi con testa o piedi tagliati ottieni solo i rapporti."
+        },
+        "pose": {
+          "title": "Braccia aperte di circa 20°, piedi alla larghezza dei fianchi",
+          "body": "Stai dritto, rivolto verso la fotocamera, con uno spazio libero sotto ogni ascella e tra braccia e vita. Le braccia attaccate ai fianchi vengono misurate come parte del busto."
+        },
+        "clothes": {
+          "title": "Abbigliamento aderente",
+          "body": "Pantaloncini e top aderente, o costume da bagno. I tessuti larghi aumentano ogni larghezza. Lega i capelli lunghi così non allargano collo e spalle."
+        },
+        "barefoot": {
+          "title": "A piedi nudi",
+          "body": "Le scarpe aggiungono altezza alla tua silhouette, riducendo leggermente ogni misura."
+        },
+        "repeat": {
+          "title": "Sempre le stesse condizioni",
+          "body": "Stesso posto, luce, abbigliamento e ora del giorno (idealmente al mattino, prima di mangiare). Così la differenza tra una scansione e l'altra è reale, non dovuta alla configurazione."
+        }
+      }
+    },
+    "privacy": {
+      "badge": "Sul dispositivo",
+      "badgeTitle": "Il flusso della fotocamera e le foto vengono elaborati su questo telefono e non vengono mai caricati.",
+      "title": "Elaborato sul tuo telefono",
+      "body": "Il flusso della fotocamera e le foto vengono analizzati direttamente su questo dispositivo. Non viene caricato né salvato nulla, e la foto sparisce quando chiudi lo scanner. Vengono scaricati solo i modelli, una volta sola.",
+      "loading": "Il flusso della fotocamera resta su questo telefono. Non viene caricato nulla."
+    }
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "cards": {
+    "common": {
+      "item": "elemento"
+    },
+    "macros": {
+      "protein": "proteine",
+      "fat": "grassi",
+      "carbs": "carboidrati",
+      "fiber": "fibre"
+    },
+    "energy": {
+      "atTdee": "pari al TDEE",
+      "vsTdee": "{{sign}}{{pct}}% rispetto al TDEE"
+    },
+    "dayTag": {
+      "today": "Oggi",
+      "openToday": "Apri oggi",
+      "openDate": "Apri {{date}}"
+    },
+    "day": {
+      "macros": "Macro"
+    },
+    "targets": {
+      "targetMacros": "macro obiettivo",
+      "dailyTarget": "Obiettivo giornaliero"
+    },
+    "meal": {
+      "preview": "Anteprima pasto"
+    },
+    "bmi": {
+      "healthyRange": "Intervallo sano per la tua altezza: {{low}}–{{high}} kg"
+    },
+    "ffmi": {
+      "normalized": "Normalizzato"
+    },
+    "bodyFat": {
+      "methodEstimate": "Stima {{method}}"
+    },
+    "body": {
+      "bodyFat": "Massa grassa",
+      "weight": "Peso",
+      "leanMass": "Massa magra",
+      "composition": "Composizione corporea",
+      "kgLean": "{{kg}} kg di massa magra",
+      "asOf": "al ",
+      "trend": "Andamento",
+      "vsPriorDays_one": "rispetto a {{count}} giorno prima",
+      "vsPriorDays_other": "rispetto ai {{count}} giorni precedenti"
+    },
+    "food": {
+      "title": "Alimento",
+      "per100": "{{kcal}} kcal / 100 {{unit}}",
+      "onHand": "{{qty}} {{unit}} in dispensa"
+    },
+    "product": {
+      "title": "Prodotto",
+      "matches": "Prodotti trovati",
+      "per100g": "{{kcal}} kcal / 100 g",
+      "incomplete": "macro incompleti",
+      "found_one": "{{count}} trovato",
+      "found_other": "{{count}} trovati",
+      "foundAvg_one": "{{count}} trovato · media {{kcal}} kcal",
+      "foundAvg_other": "{{count}} trovati · media {{kcal}} kcal",
+      "show": "Mostra prodotti",
+      "hide": "Nascondi prodotti",
+      "unnamed": "(senza nome)"
+    },
+    "substitute": {
+      "title": "Sostituti",
+      "options_one": "{{count}} opzione",
+      "options_other": "{{count}} opzioni"
+    },
+    "training": {
+      "burn": "Calorie bruciate in allenamento",
+      "estimatedTotal": "totale stimato",
+      "activity": "attività"
+    },
+    "maxPotential": {
+      "title": "Potenziale natural massimo",
+      "atBodyFat": "al {{pct}}% di massa grassa",
+      "maxWeight": "Peso massimo",
+      "maxLeanMass": "Massa magra massima",
+      "leanToGain": "Massa magra da guadagnare",
+      "leanToGainPct": "Massa magra da guadagnare · {{pct}}% del potenziale",
+      "chest": "Petto",
+      "neck": "Collo",
+      "bicep": "Bicipite",
+      "forearm": "Avambraccio",
+      "thigh": "Coscia",
+      "calf": "Polpaccio",
+      "ceilingNote": "Limite natural raggiungibile in una vita: un riferimento, non un obiettivo a breve termine.",
+      "howClose": "Quanto ci sei vicino",
+      "pctOfCeiling": "{{pct}}% del tuo limite natural"
+    },
+    "strength": {
+      "repsShort": "rip.",
+      "level": {
+        "title": "Livello di forza",
+        "beginner": "Principiante",
+        "novice": "Novizio",
+        "intermediate": "Intermedio",
+        "advanced": "Avanzato",
+        "elite": "Élite",
+        "strongerThan": "Più forte del {{pct}}% di chi si allena",
+        "ratio": "{{ratio}}× peso corporeo",
+        "nextLevel": "+{{remaining}} {{unit}} per {{level}}"
+      },
+      "oneRepMax": {
+        "title": "Massimale (1RM)",
+        "from": "da {{weight}} kg × {{reps}}",
+        "estimated": "1RM stimato",
+        "epley": "Epley {{value}} kg",
+        "brzycki": "Brzycki {{value}} kg",
+        "repTable": "Carico per numero di ripetizioni (% dell'1RM)"
+      },
+      "powerlifting": {
+        "title": "Punteggio powerlifting",
+        "total": "Totale {{total}} kg",
+        "wilks": "Wilks",
+        "dots": "DOTS",
+        "ipfgl": "IPF GL",
+        "breakdown": "{{parts}} kg"
+      },
+      "symmetry": {
+        "title": "Equilibrio della forza",
+        "balanced": "Equilibrio tra le alzate",
+        "lagging": "{{lift}} è indietro: dagli priorità"
+      },
+      "plates": {
+        "title": "Caricamento bilanciere",
+        "target": "Obiettivo {{target}} {{unit}}",
+        "perSide": "Per lato",
+        "barOnly": "Solo il bilanciere: niente da caricare",
+        "loaded": "Caricato esattamente a {{loaded}} {{unit}}",
+        "closest": "Il più vicino: {{loaded}} {{unit}}"
+      }
+    },
+    "progress": {
+      "title": "Progressi",
+      "lastDays_one": "ultimo {{count}} giorno",
+      "lastDays_other": "ultimi {{count}} giorni",
+      "avgWeight": "peso medio",
+      "waist": "Vita"
+    },
+    "sets": {
+      "title": "Serie recenti",
+      "next": "prossima: {{kg}} kg",
+      "set": "serie"
+    },
+    "shopping": {
+      "title": "Lista della spesa",
+      "days_one": "{{count}} giorno",
+      "days_other": "{{count}} giorni",
+      "items_one": "{{count}} articolo",
+      "items_other": "{{count}} articoli",
+      "nothingToBuy": "Niente da comprare: la dispensa copre il piano."
+    },
+    "sources": {
+      "title": "Fonti",
+      "count_one": "{{count}} fonte",
+      "count_other": "{{count}} fonti",
+      "show": "Mostra fonti",
+      "hide": "Nascondi fonti",
+      "source": "fonte"
+    },
+    "proportions": {
+      "title": "Proporzioni ideali",
+      "method": {
+        "grecian_ideal": "Ideale greco",
+        "hourglass_frame": "Figura a clessidra"
+      },
+      "score": "Punteggio proporzioni",
+      "adonis": "Spalle : vita",
+      "whtr": "Vita : altezza",
+      "ideal": "Ideale",
+      "you": "Tu",
+      "needThree": "Aggiungi almeno 3 misure per vedere il radar delle tue proporzioni.",
+      "focus": "Focus:",
+      "reduceWaist": "Snellire la vita",
+      "status": {
+        "lagging": "Indietro",
+        "close": "Vicino",
+        "on_target": "In linea",
+        "ahead": "Avanti",
+        "above_ideal": "Sopra l'ideale"
+      },
+      "parts": {
+        "shoulders": "Spalle",
+        "chest": "Petto",
+        "waist": "Vita",
+        "hips": "Fianchi",
+        "arm": "Braccio",
+        "forearm": "Avambraccio",
+        "neck": "Collo",
+        "thigh": "Coscia",
+        "calf": "Polpaccio"
+      }
+    },
+    "bodyShape": {
+      "title": "Forma del corpo",
+      "whr": "Vita : fianchi",
+      "risk": {
+        "low": "rischio basso",
+        "moderate": "rischio moderato",
+        "high": "rischio alto"
+      },
+      "adonis": "Spalle : vita",
+      "chestTaper": "Petto : vita",
+      "alsoFits": "Corrisponde anche a:",
+      "shapes": {
+        "hourglass": "Clessidra",
+        "bottom_hourglass": "Clessidra bassa",
+        "top_hourglass": "Clessidra alta",
+        "spoon": "Cucchiaio",
+        "triangle": "Triangolo (pera)",
+        "inverted_triangle": "Triangolo invertito",
+        "rectangle": "Rettangolo",
+        "v_taper": "Forma a V",
+        "trapezoid": "Trapezio",
+        "oval": "Ovale",
+        "unclassified": "Tra più forme"
+      },
+      "desc": {
+        "hourglass": "Seno e fianchi sono equilibrati, con un punto vita ben definito.",
+        "bottom_hourglass": "Punto vita definito, con fianchi un po' più pieni del seno.",
+        "top_hourglass": "Punto vita definito, con il seno un po' più pieno dei fianchi.",
+        "spoon": "Fianchi decisamente più pieni del seno, con una \"mensola\" all'altezza dei fianchi alti.",
+        "triangle": "Fianchi più larghi della parte superiore del corpo, con un punto vita meno marcato.",
+        "inverted_triangle": "Parte superiore del corpo più larga dei fianchi.",
+        "rectangle": "Spalle/petto, vita e fianchi hanno misure simili: una silhouette dritta.",
+        "v_taper": "Petto molto più ampio di fianchi e vita: la classica forma a V atletica.",
+        "trapezoid": "Petto e fianchi equilibrati, con una vita nettamente più stretta di entrambi.",
+        "oval": "La vita è il punto più largo del busto.",
+        "unclassified": "Le tue misure si collocano tra le regole delle forme standard."
+      }
+    },
+    "macroSplit": {
+      "title": "Ripartizione macro",
+      "shares": "{{p}}% proteine · {{c}}% carboidrati · {{f}}% grassi",
+      "leanBasis": "Proteine calcolate su {{mass}} di massa magra",
+      "bodyweightBasis": "Proteine calcolate sul peso corporeo",
+      "carbsFloored": "Proteine e grassi da soli superano l'obiettivo, quindi i carboidrati sono a zero."
+    },
+    "protein": {
+      "title": "Proteine giornaliere",
+      "gPerDay": "g / giorno",
+      "perBodyweight": "{{v}} g per {{unit}} di peso corporeo",
+      "perMeal": "Per pasto",
+      "perMealValue": "{{g}} g × {{n}}",
+      "basedOn": "Calcolate su",
+      "bodyweight": "peso corporeo",
+      "rda": "Minimo RDA"
+    },
+    "deficit": {
+      "title": "Deficit calorico",
+      "belowMaintenance": "{{kcal}} kcal sotto il mantenimento",
+      "maintenance": "Mantenimento",
+      "perWeek": "Perdita a settimana",
+      "toLose": "Da perdere",
+      "timeToGoal": "Tempo all'obiettivo",
+      "weeksValue": "{{n}} sett.",
+      "capped": "Limitato all'apporto minimo — la tempistica lo presuppone."
+    },
+    "idealWeight": {
+      "title": "Peso ideale",
+      "average": "Media di quattro formule",
+      "healthyBmi": "Intervallo BMI sano"
+    },
+    "hrZones": {
+      "title": "Zone di frequenza cardiaca",
+      "karvonen": "Karvonen",
+      "percentMax": "% della massima",
+      "max": "frequenza massima",
+      "maxEstimated": "frequenza massima (stimata)",
+      "zone": "Zona {{n}}",
+      "names": {
+        "z1": "Recupero",
+        "z2": "Base aerobica",
+        "z3": "Tempo",
+        "z4": "Soglia",
+        "z5": "VO₂max"
+      }
+    },
+    "leanMass": {
+      "composition": "La massa magra è tutto ciò che non è grasso: muscoli, ossa, organi e acqua.",
+      "title": "Massa magra",
+      "fromBodyFat": "Dalla % di grasso",
+      "fromFormula": "Stima Boer",
+      "pctOfWeight": "{{pct}}% del peso corporeo",
+      "fatMass": "Massa grassa"
+    },
+    "water": {
+      "title": "Acqua giornaliera",
+      "glasses": "circa {{n}} bicchieri da 250 ml",
+      "base": "Base (35 ml/kg)",
+      "exercise": "Allenamento",
+      "hot": "Caldo",
+      "efsa": "Totale EFSA, cibo incluso"
+    },
+    "steps": {
+      "title": "Passi in calorie",
+      "steps": "{{n}} passi",
+      "gross": "{{kcal}} kcal incluso il dispendio a riposo",
+      "distance": "Distanza",
+      "time": "Tempo di cammino",
+      "minutes": "{{n}} min",
+      "per1000": "Ogni 1.000 passi",
+      "goal": "Obiettivo di passi giornaliero",
+      "pctOfGoal": "{{pct}}% dell'obiettivo"
+    },
+    "rpe": {
+      "title": "RPE",
+      "set": "{{reps}} rip. @ RPE {{rpe}}",
+      "e1rm": "1RM stimato",
+      "pctOf1rm": "% dell'1RM",
+      "rir": "Ripetizioni in riserva",
+      "target": "{{reps}} @ RPE {{rpe}}",
+      "loadsAt": "Carichi a RPE {{rpe}}",
+      "reps": "{{n}} rip."
+    },
+    "warmup": {
+      "title": "Serie di riscaldamento",
+      "to": "Fino a {{reps}} × {{load}} {{unit}}",
+      "topSet": "Serie top",
+      "emptyBar": "Bilanciere vuoto",
+      "setN": "Serie {{n}} · {{pct}}%",
+      "perSide": "{{plates}} {{unit}} per lato"
+    },
+    "volume": {
+      "title": "Volume di allenamento",
+      "sessions": "{{n}}× a settimana",
+      "perSession": "{{v}} a seduta · tonnellaggio settimanale",
+      "weeklySets": "Serie settimanali (obiettivo {{min}}–{{max}})",
+      "weeklySetsPlain": "Serie settimanali",
+      "verdict": {
+        "under": "basso",
+        "ok": "nel range",
+        "over": "alto"
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "usage": {
+    "title": "Përdorimi i AI",
+    "subtitle": "Sa kushton funksionimi i veçorive AI, sipas çmimeve zyrtare të ofruesit tënd të AI.",
+    "month": "Muaji",
+    "current": "aktual",
+    "noLlm": "Në këtë server nuk është konfiguruar asnjë model AI, ndaj biseda me trajnerin dhe njohja e fotove janë të çaktivizuara. Vendos LLM_PROVIDER dhe çelësin API të atij ofruesi në mjedisin e serverit për t'i aktivizuar.",
+    "estCost": "Kosto e vlerësuar",
+    "estCostHint": "Sipas çmimeve zyrtare",
+    "requests": "Kërkesa",
+    "inputTokens": "Tokenë hyrës",
+    "outputTokens": "Tokenë dalës",
+    "cachedHint": "{{n}} nga cache",
+    "bySource": "Sipas veçorisë",
+    "byModel": "Sipas modelit",
+    "noUsage": "Ende pa përdorim të AI këtë muaj.",
+    "dailyChart": "Tokenë në ditë",
+    "feature": "Veçoria",
+    "cost": "Kosto e vlerësuar",
+    "unpriced": "Nuk ka çmim të listuar për këtë model",
+    "inOut": "{{input}} hyrje · {{output}} dalje",
+    "tokensCount": "{{n}} tokenë",
+    "requestsCount_one": "{{count}} kërkesë",
+    "requestsCount_other": "{{count}} kërkesa",
+    "kind": {
+      "llm": "Bisedë AI",
+      "image_recognition": "Njohje imazhesh"
+    },
+    "source": {
+      "chat": "Bisedë me trajnerin",
+      "chat_image": "Foto në bisedë",
+      "food_scan": "Skanim foto ushqimi",
+      "receipt_scan": "Skanim fature"
+    }
+  }
+}

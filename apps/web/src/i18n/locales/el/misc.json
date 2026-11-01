@@ -1,0 +1,156 @@
+{
+  "lib": {
+    "toast": {
+      "verb": {
+        "log": "καταγράφηκε",
+        "add": "προστέθηκε",
+        "save": "αποθηκεύτηκε",
+        "import": "εισήχθη",
+        "update": "ενημερώθηκε",
+        "replace": "ενημερώθηκε",
+        "set": "ενημερώθηκε",
+        "activate": "ενεργοποιήθηκε",
+        "delete": "αφαιρέθηκε",
+        "remove": "αφαιρέθηκε",
+        "submit": "υποβλήθηκε"
+      },
+      "noun": {
+        "item": "Στοιχείο",
+        "update_profile": "Το προφίλ",
+        "update_pantry": "Η αποθήκη",
+        "import_pantry": "Η αποθήκη",
+        "log_body_comp": "Η καταχώρηση σώματος",
+        "delete_body_comp_entry": "Η καταχώρηση σώματος",
+        "update_body_comp_entry": "Η καταχώρηση σώματος",
+        "log_planned_meal": "Το γεύμα",
+        "log_recipe": "Η συνταγή",
+        "update_recipe_portion": "Η συνταγή",
+        "set_recipe_favorite": "Η συνταγή",
+        "log_workout_session": "Η προπόνηση",
+        "delete_workout_session": "Η προπόνηση",
+        "delete_cardio_entry": "Το cardio",
+        "update_cardio_entry": "Το cardio",
+        "log_measurements": "Η καταχώρηση μετρήσεων",
+        "add_exercise_to_plan_day": "Η άσκηση",
+        "remove_exercise_from_plan_day": "Η άσκηση",
+        "update_plan_exercise": "Η άσκηση",
+        "replace_plan_exercise": "Η άσκηση",
+        "update_workout_plan_day": "Το πρόγραμμα προπόνησης"
+      },
+      "httpNoun": {
+        "meal": "Το γεύμα",
+        "diet_plan": "Το διατροφικό πλάνο",
+        "workout_session": "Η προπόνηση",
+        "workout_plan": "Το πρόγραμμα προπόνησης",
+        "body_entry": "Η καταχώρηση σώματος",
+        "cardio": "Το cardio",
+        "measurements": "Η καταχώρηση μετρήσεων",
+        "steps": "Τα βήματα",
+        "water": "Το νερό",
+        "profile": "Το προφίλ"
+      },
+      "message": "{{noun}} {{verb}}"
+    },
+    "error": {
+      "invalidInput": "Μη έγκυρη τιμή"
+    },
+    "energy": {
+      "bmr": "BMR",
+      "maintenance": "συντήρηση",
+      "dailyTarget": "ημερήσιος στόχος",
+      "kcal": "kcal"
+    },
+    "gauge": {
+      "underweight": "λιποβαρής",
+      "normal": "φυσιολογικό",
+      "overweight": "υπέρβαρος",
+      "obese": "παχύσαρκος",
+      "healthy": "υγιές",
+      "veryLean": "πολύ αδύνατος",
+      "athletic": "αθλητικό",
+      "fit": "σε φόρμα",
+      "average": "μέτριο",
+      "high": "υψηλό",
+      "belowAverage": "κάτω από τον μέσο όρο",
+      "aboveAverage": "πάνω από τον μέσο όρο",
+      "outstanding": "εξαιρετικό",
+      "extremelyHigh": "πολύ υψηλό",
+      "aboveNatural": "πάνω από το φυσικό όριο",
+      "beginner": "αρχάριος",
+      "intermediate": "μέτριος",
+      "advanced": "προχωρημένος",
+      "nearCeiling": "κοντά στο όριο",
+      "lagging": "υστερεί",
+      "close": "κοντά",
+      "onTarget": "ιδανικό",
+      "ahead": "πάνω από τον στόχο",
+      "aboveIdeal": "αυξημένο",
+      "wellAboveIdeal": "υπερβολικό"
+    },
+    "goal": {
+      "cut": "Γράμμωση",
+      "recomp": "Ανασύνθεση",
+      "maintain": "Συντήρηση",
+      "lean_bulk": "Καθαρός όγκος"
+    },
+    "burn": {
+      "title": "θερμίδες προπόνησης",
+      "estimateHint": "Εκτίμηση από τα σετ της προπόνησης (βάρος × επαναλήψεις)",
+      "kcal": "kcal"
+    },
+    "category": {
+      "body-comp": "Σώμα",
+      "nutrition": "Διατροφή",
+      "pantry": "Αποθήκη",
+      "training": "Προπόνηση",
+      "progress": "Πρόοδος",
+      "navigation": "Πλοήγηση",
+      "macros": "Μακροθρεπτικά",
+      "info": "Πληροφορίες"
+    }
+  },
+  "components": {
+    "camera": {
+      "scanAria": "Σάρωση barcode",
+      "photoAria": "Τράβα φωτογραφία",
+      "noCameraApi": "Αυτό το πρόγραμμα περιήγησης δεν διαθέτει API κάμερας. Χρησιμοποίησε μεταφόρτωση.",
+      "previewFailed": "δεν ξεκίνησε η προεπισκόπηση: {{error}}",
+      "unavailable": "η κάμερα δεν είναι διαθέσιμη — {{error}}",
+      "grantPermission": "Δώσε άδεια κάμερας στο πρόγραμμα περιήγησης και δοκίμασε ξανά, ή χρησιμοποίησε μεταφόρτωση.",
+      "notSupported": "Η ζωντανή σάρωση δεν υποστηρίζεται εδώ — τράβα μια φωτογραφία.",
+      "stalled": "Δεν διαβάζεται; Κράτα σταθερά και γέμισε το κάδρο, ή τράβα μια φωτογραφία.",
+      "notSupportedTypeIt": "Η ζωντανή σάρωση δεν υποστηρίζεται εδώ — πληκτρολόγησε το barcode.",
+      "stalledNoPhoto": "Δεν διαβάζεται; Κράτα σταθερά και γέμισε το κάδρο.",
+      "aim": "Στρέψε την πίσω κάμερα στο barcode.",
+      "snapInstead": "Τράβα φωτογραφία αντ' αυτού",
+      "snap": "Τράβα"
+    },
+    "rowActions": {
+      "aria": "Ενέργειες γραμμής"
+    },
+    "lock": {
+      "noModel": "Χωρίς μοντέλο AI",
+      "noLlmTitle": "Δεν έχει ρυθμιστεί μοντέλο AI σε αυτόν τον διακομιστή",
+      "noVisionTitle": "Δεν έχει ρυθμιστεί μοντέλο AI με δυνατότητα όρασης σε αυτόν τον διακομιστή",
+      "locked": "Μη διαθέσιμο",
+      "lockedTitle": "Δεν είναι διαθέσιμο στον λογαριασμό σου"
+    },
+    "install": {
+      "title": "Εγκατάσταση {{name}}",
+      "iosSubtitle": "Πρόσθεσε στην αρχική οθόνη για γρήγορη πρόσβαση",
+      "androidSubtitle": "Απόλαυσε την εμπειρία πλήρους οθόνης",
+      "install": "Εγκατάσταση",
+      "dismiss": "Απόρριψη",
+      "iosTitle": "Πρόσθεσε στην αρχική οθόνη",
+      "iosIntro": "Το iOS δεν έχει εγκατάσταση με ένα πάτημα — τρία γρήγορα βήματα στο Safari:",
+      "iosStep1Prefix": "Πάτα το κουμπί",
+      "iosStep1Share": "Κοινή χρήση",
+      "iosStep1Suffix": "στη γραμμή εργαλείων του Safari.",
+      "iosStep2Prefix": "Κάνε κύλιση και διάλεξε",
+      "iosStep2Action": "Πρόσθεσε στην αρχική οθόνη",
+      "iosStep3Prefix": "Πάτα",
+      "iosStep3Add": "Πρόσθεσε",
+      "iosStep3Suffix": "— το {{name}} εμφανίζεται στην αρχική σου οθόνη."
+    }
+  }
+}

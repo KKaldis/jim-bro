@@ -1,0 +1,118 @@
+/* "Soft" style (neumorphism), opt-in via <html data-style="soft"> — set by
+   ThemeProvider from the user menu. Surfaces share the page color and read
+   as extruded or pressed through paired light/dark shadows instead of
+   outlines, so card/popover collapse onto --background and --edge goes
+   transparent. Only tokens change here; components pick it up through the
+   shadow-* / border-edge utilities, and the `soft:` variant covers the few
+   places that need a different treatment (e.g. active nav pressed in).
+
+   `.dark[data-style="soft"]` outranks `.dark` and `[data-style="soft"]`, so
+   the dark block must redefine everything the light block does. */
+
+[data-style="soft"] {
+  --background: oklch(0.955 0.006 250);
+  --card: var(--background);
+  --popover: var(--background);
+  --secondary: oklch(0.925 0.008 250);
+  --muted: oklch(0.925 0.008 250);
+  --accent: oklch(0.925 0.008 250);
+  --border: oklch(0.895 0.01 250);
+  --input: oklch(0.895 0.01 250);
+  --muted-foreground: oklch(0.47 0.02 250);
+  --radius: 0.875rem;
+
+  /* The light source sits top-left: highlight up-left, shade down-right. */
+  --nm-light: oklch(1 0 0 / 0.9);
+  --nm-shade: oklch(0.65 0.03 255 / 0.35);
+}
+
+.dark[data-style="soft"] {
+  --background: oklch(0.31 0.014 250);
+  --card: var(--background);
+  --popover: var(--background);
+  --secondary: oklch(0.35 0.016 250);
+  --muted: oklch(0.35 0.016 250);
+  --accent: oklch(0.35 0.016 250);
+  --border: oklch(0.38 0.016 250);
+  --input: oklch(0.38 0.016 250);
+  --muted-foreground: oklch(0.74 0.015 250);
+  --radius: 0.875rem;
+
+  /* Lifted off near-black so both the highlight and the shade have room to
+     read; on a darker base the highlight barely shows. */
+  --nm-light: oklch(0.41 0.016 250 / 0.85);
+  --nm-shade: oklch(0.16 0.012 250 / 0.75);
+}
+
+[data-style="soft"] {
+  --edge: transparent;
+
+  --elevation-surface: 6px 6px 14px var(--nm-shade), -6px -6px 14px var(--nm-light);
+  --elevation-tile: 4px 4px 10px var(--nm-shade), -4px -4px 10px var(--nm-light);
+  --elevation-control: 3px 3px 7px var(--nm-shade), -3px -3px 7px var(--nm-light);
+  --elevation-pressed: inset 3px 3px 6px var(--nm-shade), inset -3px -3px 6px var(--nm-light);
+  --elevation-field: inset 2px 2px 5px var(--nm-shade), inset -2px -2px 5px var(--nm-light);
+  --elevation-well: inset 2px 2px 4px var(--nm-shade), inset -2px -2px 4px var(--nm-light);
+  --elevation-overlay: 12px 12px 28px var(--nm-shade), -8px -8px 22px var(--nm-light);
+}
+
+/* Opt-in checkboxes (.nm-check): a pressed well; checked fills it with an
+   inset primary pad, indeterminate with a primary bar. Painted with
+   background gradients so the mark follows --primary in both modes. */
+[data-style="soft"] input[type="checkbox"].nm-check {
+  appearance: none;
+  flex-shrink: 0;
+  margin: 0;
+  border-radius: 0.3rem;
+  background: var(--background);
+  box-shadow: var(--elevation-well);
+  cursor: pointer;
+  transition: background 120ms ease;
+}
+[data-style="soft"] input[type="checkbox"].nm-check:checked {
+  background:
+    linear-gradient(var(--primary), var(--primary)) center / 50% 50% no-repeat,
+    var(--background);
+}
+[data-style="soft"] input[type="checkbox"].nm-check:indeterminate {
+  background:
+    linear-gradient(var(--primary), var(--primary)) center / 55% 2px no-repeat,
+    var(--background);
+}
+[data-style="soft"] input[type="checkbox"].nm-check:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+[data-style="soft"] input[type="checkbox"].nm-check:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Scrollbars follow the same light: the track is a pressed groove and the
+   thumb a raised pill sitting in it, with no primary outline. WebKit clips
+   outer shadows to the scrollbar box, so the thumb's lift is an inset bevel
+   (highlight up-left, shade down-right) rather than a drop shadow. */
+[data-style="soft"] *:not(.no-scrollbar)::-webkit-scrollbar {
+  width: 11px;
+  height: 11px;
+}
+[data-style="soft"] *:not(.no-scrollbar)::-webkit-scrollbar-track {
+  border-radius: 9999px;
+  box-shadow: var(--elevation-well);
+}
+[data-style="soft"] *:not(.no-scrollbar)::-webkit-scrollbar-thumb {
+  border-color: transparent;
+  background-color: var(--background);
+  box-shadow:
+    inset 1.5px 1.5px 2px var(--nm-light),
+    inset -1.5px -1.5px 2px var(--nm-shade);
+}
+[data-style="soft"] *:not(.no-scrollbar)::-webkit-scrollbar-thumb:hover {
+  border-color: transparent;
+  background-color: color-mix(in srgb, var(--primary) 18%, var(--background));
+}
+@supports not selector(::-webkit-scrollbar) {
+  [data-style="soft"] * {
+    scrollbar-color: var(--nm-shade) transparent;
+  }
+}

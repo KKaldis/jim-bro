@@ -1,0 +1,343 @@
+{
+  "cards": {
+    "common": {
+      "item": "مورد"
+    },
+    "macros": {
+      "protein": "پروتئین",
+      "fat": "چربی",
+      "carbs": "کربوهیدرات",
+      "fiber": "فیبر"
+    },
+    "energy": {
+      "atTdee": "در حد TDEE",
+      "vsTdee": "{{sign}}{{pct}}% نسبت به TDEE"
+    },
+    "dayTag": {
+      "today": "امروز",
+      "openToday": "باز کردن امروز",
+      "openDate": "باز کردن {{date}}"
+    },
+    "day": {
+      "macros": "ماکروها"
+    },
+    "targets": {
+      "targetMacros": "ماکروهای هدف",
+      "dailyTarget": "هدف روزانه"
+    },
+    "meal": {
+      "preview": "پیش‌نمایش وعده"
+    },
+    "bmi": {
+      "healthyRange": "محدوده سالم برای قد شما: {{low}}–{{high}} kg"
+    },
+    "ffmi": {
+      "normalized": "نرمال‌شده"
+    },
+    "bodyFat": {
+      "methodEstimate": "تخمین {{method}}"
+    },
+    "body": {
+      "bodyFat": "چربی بدن",
+      "weight": "وزن",
+      "leanMass": "توده بدون چربی",
+      "composition": "ترکیب بدن",
+      "kgLean": "{{kg}} kg توده بدون چربی",
+      "asOf": "تا ",
+      "trend": "روند",
+      "vsPriorDays_one": "نسبت به {{count}} روز قبل",
+      "vsPriorDays_other": "نسبت به {{count}} روز قبل"
+    },
+    "food": {
+      "title": "غذا",
+      "per100": "{{kcal}} kcal / 100 {{unit}}",
+      "onHand": "{{qty}} {{unit}} موجود"
+    },
+    "product": {
+      "title": "محصول",
+      "matches": "محصولات منطبق",
+      "per100g": "{{kcal}} kcal / 100 g",
+      "incomplete": "ماکروها ناقص",
+      "found_one": "{{count}} مورد یافت شد",
+      "found_other": "{{count}} مورد یافت شد",
+      "foundAvg_one": "{{count}} مورد یافت شد · میانگین {{kcal}} kcal",
+      "foundAvg_other": "{{count}} مورد یافت شد · میانگین {{kcal}} kcal",
+      "show": "نمایش محصولات",
+      "hide": "پنهان کردن محصولات",
+      "unnamed": "(بی‌نام)"
+    },
+    "substitute": {
+      "title": "جایگزین‌ها",
+      "options_one": "{{count}} گزینه",
+      "options_other": "{{count}} گزینه"
+    },
+    "training": {
+      "burn": "کالری سوزانده‌شده در تمرین",
+      "estimatedTotal": "مجموع تخمینی",
+      "activity": "فعالیت"
+    },
+    "maxPotential": {
+      "title": "حداکثر پتانسیل طبیعی",
+      "atBodyFat": "در {{pct}}% چربی بدن",
+      "maxWeight": "حداکثر وزن",
+      "maxLeanMass": "حداکثر توده بدون چربی",
+      "leanToGain": "توده بدون چربی قابل افزایش",
+      "leanToGainPct": "توده بدون چربی قابل افزایش · {{pct}}% از پتانسیل",
+      "chest": "سینه",
+      "neck": "گردن",
+      "bicep": "جلوبازو",
+      "forearm": "ساعد",
+      "thigh": "ران",
+      "calf": "ساق پا",
+      "ceilingNote": "سقف طبیعی و بدون دارو در طول عمر — یک مرجع، نه هدفی کوتاه‌مدت.",
+      "howClose": "چقدر نزدیک هستید",
+      "pctOfCeiling": "{{pct}}% از سقف طبیعی شما"
+    },
+    "strength": {
+      "repsShort": "تکرار",
+      "level": {
+        "title": "سطح قدرت",
+        "beginner": "مبتدی",
+        "novice": "تازه‌کار",
+        "intermediate": "متوسط",
+        "advanced": "پیشرفته",
+        "elite": "نخبه",
+        "strongerThan": "قوی‌تر از {{pct}}% ورزشکاران",
+        "ratio": "{{ratio}}× وزن بدن",
+        "nextLevel": "+{{remaining}} {{unit}} تا {{level}}"
+      },
+      "oneRepMax": {
+        "title": "یک تکرار بیشینه",
+        "from": "از {{weight}} kg × {{reps}}",
+        "estimated": "1RM تخمینی",
+        "epley": "Epley {{value}} kg",
+        "brzycki": "Brzycki {{value}} kg",
+        "repTable": "وزنه بر اساس تعداد تکرار (% از 1RM)"
+      },
+      "powerlifting": {
+        "title": "امتیاز پاورلیفتینگ",
+        "total": "مجموع {{total}} kg",
+        "wilks": "Wilks",
+        "dots": "DOTS",
+        "ipfgl": "IPF GL",
+        "breakdown": "{{parts}} kg"
+      },
+      "symmetry": {
+        "title": "تقارن قدرت",
+        "balanced": "تعادل بین حرکات",
+        "lagging": "{{lift}} عقب مانده است — در اولویت قرارش دهید"
+      },
+      "plates": {
+        "title": "بارگذاری هالتر",
+        "target": "هدف {{target}} {{unit}}",
+        "perSide": "هر طرف",
+        "barOnly": "فقط میله — چیزی برای بارگذاری نیست",
+        "loaded": "دقیقاً {{loaded}} {{unit}} می‌شود",
+        "closest": "نزدیک‌ترین: {{loaded}} {{unit}}"
+      }
+    },
+    "progress": {
+      "title": "پیشرفت",
+      "lastDays_one": "{{count}} روز اخیر",
+      "lastDays_other": "{{count}} روز اخیر",
+      "avgWeight": "میانگین وزن",
+      "waist": "کمر"
+    },
+    "sets": {
+      "title": "ست‌های اخیر",
+      "next": "بعدی: {{kg}} kg",
+      "set": "ست"
+    },
+    "shopping": {
+      "title": "فهرست خرید",
+      "days_one": "{{count}} روز",
+      "days_other": "{{count}} روز",
+      "items_one": "{{count}} مورد",
+      "items_other": "{{count}} مورد",
+      "nothingToBuy": "چیزی برای خرید نیست — انبار برای برنامه کافی است."
+    },
+    "sources": {
+      "title": "منابع",
+      "count_one": "{{count}} منبع",
+      "count_other": "{{count}} منبع",
+      "show": "نمایش منابع",
+      "hide": "پنهان کردن منابع",
+      "source": "منبع"
+    },
+    "proportions": {
+      "title": "تناسب ایدئال",
+      "method": {
+        "grecian_ideal": "ایدئال یونانی",
+        "hourglass_frame": "اندام ساعت شنی"
+      },
+      "score": "امتیاز تناسب",
+      "adonis": "شانه : کمر",
+      "whtr": "کمر : قد",
+      "ideal": "ایدئال",
+      "you": "شما",
+      "needThree": "برای دیدن نمودار راداری تناسب، دست‌کم 3 اندازه وارد کنید.",
+      "focus": "تمرکز:",
+      "reduceWaist": "کاهش دور کمر",
+      "status": {
+        "lagging": "عقب",
+        "close": "نزدیک",
+        "on_target": "در هدف",
+        "ahead": "جلوتر",
+        "above_ideal": "بالاتر از ایدئال"
+      },
+      "parts": {
+        "shoulders": "شانه‌ها",
+        "chest": "سینه",
+        "waist": "کمر",
+        "hips": "باسن",
+        "arm": "بازو",
+        "forearm": "ساعد",
+        "neck": "گردن",
+        "thigh": "ران",
+        "calf": "ساق پا"
+      }
+    },
+    "bodyShape": {
+      "title": "فرم بدن",
+      "whr": "کمر : باسن",
+      "risk": {
+        "low": "خطر کم",
+        "moderate": "خطر متوسط",
+        "high": "خطر زیاد"
+      },
+      "adonis": "شانه : کمر",
+      "chestTaper": "سینه : کمر",
+      "alsoFits": "همچنین منطبق با:",
+      "shapes": {
+        "hourglass": "ساعت شنی",
+        "bottom_hourglass": "ساعت شنی پایینی",
+        "top_hourglass": "ساعت شنی بالایی",
+        "spoon": "قاشقی",
+        "triangle": "مثلثی (گلابی)",
+        "inverted_triangle": "مثلث وارونه",
+        "rectangle": "مستطیلی",
+        "v_taper": "V شکل",
+        "trapezoid": "ذوزنقه‌ای",
+        "oval": "بیضی",
+        "unclassified": "بین فرم‌ها"
+      },
+      "desc": {
+        "hourglass": "سینه و باسن متعادل‌اند و کمر به‌وضوح مشخص است.",
+        "bottom_hourglass": "کمری مشخص با باسنی کمی پُرتر از سینه.",
+        "top_hourglass": "کمری مشخص با سینه‌ای کمی پُرتر از باسن.",
+        "spoon": "باسن به‌طور محسوسی پُرتر از سینه، با «برآمدگی» در بالای لگن.",
+        "triangle": "باسن پهن‌تر از بالاتنه، با کمری کمتر مشخص.",
+        "inverted_triangle": "بالاتنه پهن‌تر از باسن.",
+        "rectangle": "شانه/سینه، کمر و باسن تقریباً هم‌اندازه‌اند — اندامی صاف.",
+        "v_taper": "سینه بسیار پهن‌تر از باسن و کمر — فرم ورزشی کلاسیک.",
+        "trapezoid": "سینه و باسن متعادل، با کمری به‌وضوح باریک‌تر از هر دو.",
+        "oval": "کمر پهن‌ترین بخش تنه است.",
+        "unclassified": "اندازه‌های شما بین قواعد فرم‌های استاندارد قرار می‌گیرد."
+      }
+    },
+    "macroSplit": {
+      "title": "تقسیم درشت‌مغذی‌ها",
+      "shares": "{{p}}٪ پروتئین · {{c}}٪ کربوهیدرات · {{f}}٪ چربی",
+      "leanBasis": "پروتئین بر اساس {{mass}} توده بدون چربی",
+      "bodyweightBasis": "پروتئین بر اساس وزن بدن",
+      "carbsFloored": "پروتئین و چربی به‌تنهایی از هدف بیشترند، پس کربوهیدرات صفر است."
+    },
+    "protein": {
+      "title": "پروتئین روزانه",
+      "gPerDay": "گرم / روز",
+      "perBodyweight": "{{v}} گرم به ازای هر {{unit}} وزن بدن",
+      "perMeal": "در هر وعده",
+      "perMealValue": "{{g}} گرم × {{n}}",
+      "basedOn": "بر اساس",
+      "bodyweight": "وزن بدن",
+      "rda": "حداقل RDA"
+    },
+    "deficit": {
+      "title": "کسری کالری",
+      "belowMaintenance": "{{kcal}} کیلوکالری کمتر از نگهداری",
+      "maintenance": "کالری نگهداری",
+      "perWeek": "کاهش در هفته",
+      "toLose": "مقدار کاهش",
+      "timeToGoal": "زمان تا هدف",
+      "weeksValue": "{{n}} هفته",
+      "capped": "روی حداقل دریافت محدود شد — زمان‌بندی بر همین اساس است."
+    },
+    "idealWeight": {
+      "title": "وزن ایده‌آل",
+      "average": "میانگین چهار فرمول",
+      "healthyBmi": "محدوده سالم BMI"
+    },
+    "hrZones": {
+      "title": "ناحیه‌های ضربان قلب",
+      "karvonen": "کاروونن",
+      "percentMax": "٪ از حداکثر",
+      "max": "حداکثر ضربان قلب",
+      "maxEstimated": "حداکثر ضربان قلب (تخمینی)",
+      "zone": "ناحیه {{n}}",
+      "names": {
+        "z1": "ریکاوری",
+        "z2": "پایه هوازی",
+        "z3": "تمپو",
+        "z4": "آستانه",
+        "z5": "VO₂max"
+      }
+    },
+    "leanMass": {
+      "composition": "توده‌ی بدون چربی هر چیزی است که چربی نیست: عضله، استخوان، اندام‌ها و آب.",
+      "title": "توده بدون چربی",
+      "fromBodyFat": "از درصد چربی",
+      "fromFormula": "تخمین Boer",
+      "pctOfWeight": "{{pct}}٪ از وزن بدن",
+      "fatMass": "توده چربی"
+    },
+    "water": {
+      "title": "آب روزانه",
+      "glasses": "حدود {{n}} لیوان ۲۵۰ میلی‌لیتری",
+      "base": "پایه (۳۵ میلی‌لیتر/کیلوگرم)",
+      "exercise": "ورزش",
+      "hot": "هوای گرم",
+      "efsa": "کل EFSA، همراه با غذا"
+    },
+    "steps": {
+      "title": "قدم به کالری",
+      "steps": "{{n}} قدم",
+      "gross": "{{kcal}} کیلوکالری با احتساب سوخت در حالت استراحت",
+      "distance": "مسافت",
+      "time": "زمان پیاده‌روی",
+      "minutes": "{{n}} دقیقه",
+      "per1000": "به ازای هر ۱٬۰۰۰ قدم",
+      "goal": "هدف روزانه قدم",
+      "pctOfGoal": "{{pct}}٪ از هدف"
+    },
+    "rpe": {
+      "title": "RPE",
+      "set": "{{reps}} تکرار @ RPE {{rpe}}",
+      "e1rm": "1RM تخمینی",
+      "pctOf1rm": "٪ از 1RM",
+      "rir": "تکرار در ذخیره",
+      "target": "{{reps}} @ RPE {{rpe}}",
+      "loadsAt": "وزنه‌ها در RPE {{rpe}}",
+      "reps": "{{n}} تکرار"
+    },
+    "warmup": {
+      "title": "ست‌های گرم‌کردن",
+      "to": "تا {{reps}} × {{load}} {{unit}}",
+      "topSet": "ست اصلی",
+      "emptyBar": "هالتر خالی",
+      "setN": "ست {{n}} · {{pct}}٪",
+      "perSide": "{{plates}} {{unit}} هر طرف"
+    },
+    "volume": {
+      "title": "حجم تمرین",
+      "sessions": "{{n}}× در هفته",
+      "perSession": "{{v}} در هر جلسه · تناژ هفتگی",
+      "weeklySets": "ست‌های هفتگی (هدف {{min}}–{{max}})",
+      "weeklySetsPlain": "ست‌های هفتگی",
+      "verdict": {
+        "under": "کم",
+        "ok": "مناسب",
+        "over": "زیاد"
+      }
+    }
+  }
+}

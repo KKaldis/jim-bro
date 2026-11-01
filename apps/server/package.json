@@ -1,0 +1,26 @@
+{
+  "name": "@fa/server",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --env-file=../../.env run --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "gen:api": "bun run scripts/gen-api-types.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.40.0",
+    "@fa/agent": "*",
+    "@fa/auth": "*",
+    "@fa/db_postgres": "*",
+    "@fa/logger": "*",
+    "@fa/shared": "*",
+    "@fa/storage": "*",
+    "drizzle-orm": "^0.45.2"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^6.0.3"
+  }
+}

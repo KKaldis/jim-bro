@@ -1,0 +1,264 @@
+# Local + staging compose. For production, use the same image but supply
+# DATABASE_URL pointing at a managed Postgres (Neon/Supabase/RDS).
+#
+# Usage:
+#   docker compose up -d              # start postgres + app
+#   docker compose run --rm migrate   # one-shot: apply migrations
+#   docker compose logs -f app
+#   docker compose down               # stop (volumes persist)
+#   docker compose down -v            # stop + wipe data
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: fa
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-dev}
+      POSTGRES_DB: fitness
+    ports:
+      # Host port is configurable to avoid clashing with other local Postgres
+      # instances. Container port stays 5432; the app service connects via the
+      # internal `postgres:5432` host, unaffected by this mapping.
+      - "${POSTGRES_PORT:-5433}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U fa -d fitness"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # Self-hosted food reference search. Holds the OpenFoodFacts subset + USDA
+  # FoodData Central, loaded by the `foodref-import` job below. Replaces the
+  # live OpenFoodFacts API the app used to call at request time.
+  meilisearch:
+    image: getmeili/meilisearch:v1.10
+    restart: unless-stopped
+    environment:
+      MEILI_MASTER_KEY: ${MEILI_MASTER_KEY:-dev_master_key_change_me}
+      MEILI_ENV: ${MEILI_ENV:-production}
+      MEILI_NO_ANALYTICS: "true"
+    ports:
+      # Host port configurable; the app connects via internal meilisearch:7700.
+      - "${MEILI_PORT:-7700}:7700"
+    volumes:
+      - meili_data:/meili_data
+
+  # Web UI for browsing/searching the Meilisearch indexes during development.
+  # Open http://localhost:24900, then connect to http://localhost:7700 using
+  # MEILI_MASTER_KEY. Handy for inspecting the imported food reference data.
+  meilisearch-ui:
+    image: riccoxie/meilisearch-ui:latest
+    # No restart policy — start it manually when you need it, e.g.
+    #   docker compose up -d meilisearch-ui
+    depends_on:
+      meilisearch:
+        condition: service_started
+    ports:
+      - "${MEILI_UI_PORT:-24900}:24900"
+
+  # Vector DB for semantic knowledge/RAG retrieval. Stores embeddings the app
+  # queries at request time (see packages/qdrant).
+  #
+  # Qdrant ships its own web dashboard built into this image — no separate UI
+  # container needed. Open http://localhost:6333/dashboard to browse the
+  # collection, inspect points, and run test queries.
+  qdrant:
+    image: qdrant/qdrant:v1.12.4
+    restart: unless-stopped
+    ports:
+      # REST (6333) and gRPC (6334) host ports configurable; the app connects
+      # via the internal qdrant:6333 / qdrant:6334 hosts.
+      - "${QDRANT_PORT:-6333}:6333"
+      - "${QDRANT_GRPC_PORT:-6334}:6334"
+    volumes:
+      - qdrant_data:/qdrant/storage
+
+  # Object storage (S3-compatible) for the original reference files behind the
+  # knowledge base — guideline PDFs, book chapters, uploaded documents. The
+  # vector DB stores derived text + embeddings; the binaries live here and are
+  # served to users for citations (see packages/storage). Console on :9001.
+  minio:
+    image: minio/minio:latest
+    restart: unless-stopped
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${S3_ACCESS_KEY:-minioadmin}
+      MINIO_ROOT_PASSWORD: ${S3_SECRET_KEY:-minioadmin}
+    ports:
+      - "${MINIO_PORT:-9000}:9000"
+      - "${MINIO_CONSOLE_PORT:-9001}:9001"
+    volumes:
+      - minio_data:/data
+    healthcheck:
+      test: ["CMD", "mc", "ready", "local"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # One-shot bucket creator: makes the knowledge bucket if it doesn't exist.
+  # Runs on `docker compose up` then exits.
+  minio-init:
+    image: minio/mc:latest
+    depends_on:
+      minio:
+        condition: service_started
+    entrypoint: >
+      /bin/sh -c "
+      until mc alias set fa http://minio:9000 ${S3_ACCESS_KEY:-minioadmin} ${S3_SECRET_KEY:-minioadmin}; do sleep 1; done;
+      mc mb -p fa/${S3_BUCKET:-fa-knowledge};
+      echo 'bucket ready: ${S3_BUCKET:-fa-knowledge}';
+      "
+
+  # Qwen3-Embedding + Qwen3-Reranker, served behind OpenAI-compatible routes.
+  # Opt-in: `docker compose --profile rag up -d embedder reranker`. Without them
+  # the app falls back to the dependency-free local embedder (QDRANT_EMBEDDER=auto
+  # → local). vLLM images are large and want a GPU; on CPU-only hosts swap the
+  # image for an Infinity/TEI build (see docs/vector-rag-implementation.md §10).
+  embedder:
+    image: vllm/vllm-openai:latest
+    profiles: ["rag"]
+    restart: unless-stopped
+    command: ["--model", "Qwen/Qwen3-Embedding-0.6B", "--task", "embed"]
+    ports:
+      - "${EMBEDDER_PORT:-8080}:8000"
+    volumes:
+      - hf_cache:/root/.cache/huggingface
+
+  reranker:
+    image: vllm/vllm-openai:latest
+    profiles: ["rag"]
+    restart: unless-stopped
+    command: ["--model", "Qwen/Qwen3-Reranker-0.6B", "--task", "score"]
+    ports:
+      - "${RERANKER_PORT:-8081}:8000"
+    volumes:
+      - hf_cache:/root/.cache/huggingface
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: jim-bro:latest
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      meilisearch:
+        condition: service_started
+      qdrant:
+        condition: service_started
+      minio:
+        condition: service_started
+    environment:
+      # Required — set these in .env (compose auto-loads it)
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+      BETTER_AUTH_SECRET: ${BETTER_AUTH_SECRET}
+      BETTER_AUTH_URL: ${BETTER_AUTH_URL:-http://localhost:3000}
+      # Compose-internal URL — uses the postgres service name as host
+      DATABASE_URL: postgres://fa:${POSTGRES_PASSWORD:-dev}@postgres:5432/fitness
+      # Self-hosted food index — internal service host, unaffected by MEILI_PORT
+      MEILI_URL: http://meilisearch:7700
+      MEILI_MASTER_KEY: ${MEILI_MASTER_KEY:-dev_master_key_change_me}
+      # Self-hosted vector DB — internal service host, unaffected by QDRANT_PORT
+      QDRANT_URL: http://qdrant:6333
+      QDRANT_API_KEY: ${QDRANT_API_KEY:-}
+      # RAG embedder/reranker — provider-agnostic (any OpenAI-compatible API).
+      # Defaults to the dependency-free local embedder. Set QDRANT_EMBEDDER=remote
+      # + EMBEDDER_URL/EMBEDDER_API_KEY (a hosted provider, or the local
+      # `embedder`/`reranker` services under profile: rag).
+      QDRANT_EMBEDDER: ${QDRANT_EMBEDDER:-auto}
+      EMBEDDER_URL: ${EMBEDDER_URL:-}
+      EMBEDDER_API_KEY: ${EMBEDDER_API_KEY:-}
+      RERANKER_URL: ${RERANKER_URL:-}
+      RERANKER_API_KEY: ${RERANKER_API_KEY:-}
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-Qwen/Qwen3-Embedding-8B}
+      RERANKER_MODEL: ${RERANKER_MODEL:-Qwen/Qwen3-Reranker-8B}
+      EMBEDDING_DIM: ${EMBEDDING_DIM:-}
+      EMBED_REVISION: ${EMBED_REVISION:-v1}
+      RAG_RERANK: ${RAG_RERANK:-true}
+      RAG_QUERY_INSTRUCTION: ${RAG_QUERY_INSTRUCTION:-}
+      # PubMed ingest (E-utilities) — optional, only used by the ingest script.
+      NCBI_API_KEY: ${NCBI_API_KEY:-}
+      NCBI_EMAIL: ${NCBI_EMAIL:-}
+      # Object storage for reference files — internal compose host.
+      S3_ENDPOINT: minio
+      S3_PORT: "9000"
+      S3_USE_SSL: "false"
+      S3_ACCESS_KEY: ${S3_ACCESS_KEY:-minioadmin}
+      S3_SECRET_KEY: ${S3_SECRET_KEY:-minioadmin}
+      S3_BUCKET: ${S3_BUCKET:-fa-knowledge}
+      # Where citation file URLs point. Unset → served via the app's /files route.
+      S3_PUBLIC_BASE_URL: ${S3_PUBLIC_BASE_URL:-}
+      PUBLIC_BASE_URL: ${PUBLIC_BASE_URL:-http://localhost:3000}
+      # Optional
+      FRONTEND_ORIGIN: ${FRONTEND_ORIGIN:-http://localhost:3000}
+      RESEND_API_KEY: ${RESEND_API_KEY:-}
+      EMAIL_FROM: ${EMAIL_FROM:-Jim-Bro <noreply@example.com>}
+      PORT: "3000"
+    ports:
+      - "3000:3000"
+
+  # One-shot migration runner: `docker compose run --rm migrate`
+  # Uses the same image but runs drizzle-kit migrate instead of the server.
+  migrate:
+    image: jim-bro:latest
+    profiles: ["tools"] # not started by `docker compose up`
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgres://fa:${POSTGRES_PASSWORD:-dev}@postgres:5432/fitness
+    # Applies versioned migrations from drizzle/ — non-interactive by design.
+    # Generate new ones on the host with `npm run db:generate`, commit them,
+    # rebuild the image, then run this service to apply them.
+    command: ["bunx", "drizzle-kit", "migrate"]
+    user: root
+
+  # One-shot food-data importer: `docker compose run --rm foodref-import`
+  # Loads the OpenFoodFacts subset + USDA JSON into Meilisearch. Place the
+  # dumps under ./data first (see SETUP.md). Re-runnable: stable ids upsert.
+  foodref-import:
+    image: jim-bro:latest
+    profiles: ["tools"] # not started by `docker compose up`
+    depends_on:
+      meilisearch:
+        condition: service_started
+    environment:
+      MEILI_URL: http://meilisearch:7700
+      MEILI_MASTER_KEY: ${MEILI_MASTER_KEY:-dev_master_key_change_me}
+      OFF_DUMP_PATH: ${OFF_DUMP_PATH:-/data/openfoodfacts-products.jsonl.gz}
+      USDA_DIR: ${USDA_DIR:-/data/usda}
+    volumes:
+      # Host dumps mounted read-only; the importer only reads them.
+      - ./data:/data:ro
+    command: ["bun", "run", "packages/db_meilisearch/src/import.ts"]
+
+  # One-shot knowledge-base seeder: `docker compose run --rm qdrant-seed`
+  # Embeds the default fitness/nutrition corpus into the Qdrant collection so
+  # the agent's `search_knowledge` tool returns hits before a real ingest runs.
+  # Re-runnable: stable ids upsert. Pass `--force` to drop + recreate (needed
+  # after an embedder dimension change). Uses the local hashing embedder unless
+  # an embedder endpoint / OPENAI_API_KEY is configured.
+  qdrant-seed:
+    image: jim-bro:latest
+    profiles: ["tools"] # not started by `docker compose up`
+    depends_on:
+      qdrant:
+        condition: service_started
+    environment:
+      QDRANT_URL: http://qdrant:6333
+      QDRANT_API_KEY: ${QDRANT_API_KEY:-}
+      # Embedder selection — see .env / packages/db_qdrant/src/embed.ts.
+      QDRANT_EMBEDDER: ${QDRANT_EMBEDDER:-auto}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-}
+    command: ["bun", "run", "packages/db_qdrant/src/seed.ts"]
+
+volumes:
+  pgdata:
+  meili_data:
+  qdrant_data:
+  minio_data:
+  hf_cache:

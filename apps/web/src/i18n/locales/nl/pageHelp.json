@@ -1,0 +1,96 @@
+{
+  "pageHelp": {
+    "aria": "Wat kan ik hier doen?",
+    "heading": "Op deze pagina kun je",
+    "dashboard": {
+      "items": [
+        "De calorieën en macro's van vandaag zien, en wat er nog over is van je doelen.",
+        "Geplande training, stappen, water en verbrande calorieën bekijken.",
+        "Met de pijlen bovenaan tussen dagen wisselen."
+      ]
+    },
+    "nutrition": {
+      "items": [
+        "Alles zien wat je op de gekozen dag hebt gegeten, per maaltijd.",
+        "Je totalen vergelijken met je calorie- en macrodoelen.",
+        "Zelf voeding toevoegen, of de coach gewoon vertellen wat je hebt gegeten.",
+        "Elk gelogd item bewerken of verwijderen.",
+        "De periode wijzigen om trends over weken of maanden te zien."
+      ]
+    },
+    "pantry": {
+      "items": [
+        "Een overzicht bijhouden van je voeding en supplementen met hun macro's.",
+        "Items zelf toevoegen of een barcode scannen.",
+        "Bijhouden wat je in huis hebt.",
+        "Een kassabon of foto van je boodschappen importeren via de chat."
+      ]
+    },
+    "recipes": {
+      "items": [
+        "Recepten opslaan die je vaak maakt, of er een importeren via een link.",
+        "Macro's per portie zien.",
+        "Een heel recept, of een paar porties, in één keer als maaltijd loggen."
+      ]
+    },
+    "diet": {
+      "items": [
+        "Meerdaagse voedingsplannen maken met dagdoelen.",
+        "Een weekschema instellen voor welke plandag je volgt.",
+        "Een geplande maaltijd met één tik loggen.",
+        "Een boodschappenlijst krijgen van wat er in je voorraadkast ontbreekt."
+      ]
+    },
+    "training": {
+      "items": [
+        "Sessies loggen: sets, herhalingen, gewicht en inspanning.",
+        "Beginnen vanuit een trainingsplan of vrij trainen.",
+        "Het advies van de coach krijgen voor wat je de volgende keer tilt.",
+        "Tussen dagen wisselen om eerdere sessies terug te kijken."
+      ]
+    },
+    "progress": {
+      "items": [
+        "De geschiedenis van elke oefening zien.",
+        "Je geschatte one-rep max en krachttrends volgen.",
+        "De periode wijzigen om weken of maanden te vergelijken."
+      ]
+    },
+    "plans": {
+      "items": [
+        "Je trainingsschema opbouwen: dagen, oefeningen en doelsets, -herhalingen en -gewicht.",
+        "De coach vragen een plan voor je te maken.",
+        "Een plan uploaden dat je van je trainer hebt gekregen."
+      ]
+    },
+    "composition": {
+      "items": [
+        "Wegingen en vetpercentage loggen.",
+        "BMI, vetvrije massa en FFMI zien die daaruit worden berekend.",
+        "Trendgrafieken over weken of maanden volgen."
+      ]
+    },
+    "measurements": {
+      "items": [
+        "Lintmetingen van schouders, borst, armen, bovenbenen en kuiten loggen.",
+        "Elke maat in de radargrafiek vergelijken met het ideaal voor je lichaamsbouw.",
+        "Zien op welke spieren je je moet richten.",
+        "Je lichaamsvorm scannen met de camera."
+      ]
+    },
+    "usage": {
+      "items": [
+        "Zien wat de AI-functies deze maand kosten, per functie en per model.",
+        "Eerdere maanden terugkijken.",
+        "De kosten zijn schattingen tegen de lijstprijzen van je AI-provider."
+      ]
+    },
+    "calculators": {
+      "items": [
+        "Elke rekentool die de coach gebruikt zelf uitvoeren.",
+        "Invoer begint met je profiel; pas het aan om wat-als-scenario's te proberen.",
+        "Niets hier wordt in je logs opgeslagen."
+      ]
+    }
+  }
+}

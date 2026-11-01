@@ -1,0 +1,23 @@
+{
+  "name": "@fa/db_meilisearch",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "import": "bun run src/import.ts",
+    "sync-settings": "bun run src/sync-settings.ts",
+    "prune-implausible": "bun run src/prune-implausible.ts"
+  },
+  "dependencies": {
+    "@fa/logger": "*",
+    "@fa/shared": "*",
+    "meilisearch": "^0.45.0"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}

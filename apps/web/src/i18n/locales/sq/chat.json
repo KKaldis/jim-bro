@@ -1,0 +1,108 @@
+{
+  "chat": {
+    "title": "Biseda",
+    "user": "Përdoruesi",
+    "send": "Dërgo",
+    "stop": "Ndalo",
+    "stopped": "U ndal",
+    "reset": "Rifillo",
+    "resetConversation": "Rifillo bisedën",
+    "streaming": "…duke shkruar",
+    "hideOptions": "Fshih opsionet",
+    "showOptions": "Shfaq opsionet",
+    "loadingOlder": "Duke ngarkuar mesazhet e vjetra",
+    "scrollToLatest": "Shko te më i fundit",
+    "scrollToLatestAria": "Shko te mesazhi i fundit",
+    "inputPlaceholder": "Çfarë hëngre? (Enter për dërgim · Shift/Ctrl+Enter për rresht të ri)",
+    "attachImage": "bashkëngjit një imazh",
+    "imageNeedsModel": "njohja e fotove kërkon në server një model AI që mund të analizojë imazhe",
+    "chatUnavailable": "biseda me AI kërkon një model AI të konfiguruar në server",
+    "takePhoto": "Bëj foto",
+    "uploadImage": "Ngarko imazh",
+    "removeImage": "hiq {{name}}",
+    "attachedImageAlt": "e bashkëngjitur",
+    "imageUnavailable": "Imazhi nuk është më i disponueshëm",
+    "sources": "Burimet",
+    "sourceFallback": "burim",
+    "micError": "gabim mikrofoni: {{error}}",
+    "errorPrefix": "gabim: {{error}}",
+    "connectionLost": "Lidhja u ndërpre para se të përfundonte përgjigjja — rifresko faqen për ta parë.",
+    "loaderIs": "{{name}} po",
+    "loaderReplying": "{{name}} po përgjigjet",
+    "loaderPhrases": [
+      "mendon",
+      "gatuan",
+      "shtyn",
+      "llogarit",
+      "zien idetë",
+      "tendos muskujt",
+      "rrah mendjen",
+      "shton masë",
+      "të mban sigurinë",
+      "merr ritmin",
+      "bluan mendimet",
+      "nxehet",
+      "bën përsëritje",
+      "ngarkon disqet",
+      "numëron makrot",
+      "ul peshën",
+      "shtrihet",
+      "lyen duart me magnez",
+      "rregullon peshat",
+      "rrit progresivisht ngarkesën",
+      "bën superset",
+      "bën deload",
+      "thyen rekorde",
+      "planifikon ndarjen e stërvitjes",
+      "përsos teknikën",
+      "regjistron setet",
+      "ndërton planin tënd",
+      "ndjek progresin",
+      "bën ditën e këmbëve"
+    ],
+    "thinking": {
+      "label": "Mendimi",
+      "onTitle": "Mendimi i zgjeruar është aktiv — kliko për ta çaktivizuar për radhën tjetër",
+      "offTitle": "Mendimi i zgjeruar është joaktiv — kliko për ta aktivizuar"
+    },
+    "resetDialog": {
+      "title": "Të fshihet historiku i bisedës?",
+      "description": "Kjo e pastron përgjithmonë bisedën aktuale. Modeli do të fillojë nga e para pa kontekst të mëparshëm."
+    },
+    "dock": {
+      "ask": "Pyet {{name}}…",
+      "using": "{{tool}}…",
+      "openChat": "Hap bisedën",
+      "gateTitle": "{{name}} pret konfirmimin tënd",
+      "gateAction": "Prek për të parë dhe ruajtur →"
+    },
+    "activity": {
+      "thinking": "Duke menduar…",
+      "thoughtProcess": "Procesi i mendimit",
+      "working": "Duke punuar…",
+      "thoughtWithTools_one": "Mendim · {{count}} mjet",
+      "thoughtWithTools_other": "Mendim · {{count}} mjete",
+      "usedTools_one": "Përdori {{count}} mjet",
+      "usedTools_other": "Përdori {{count}} mjete"
+    },
+    "language": {
+      "title": "gjuha e bisedës — përdoret për njohjen e zërit dhe gjuhën e përgjigjes së agjentit",
+      "label": "gjuha e bisedës"
+    },
+    "dictation": {
+      "start": "dikto me zë (funksionon më mirë në Chrome/Edge)",
+      "stop": "ndalo diktimin",
+      "toggle": "Ndiz/fik diktimin"
+    },
+    "attach": {
+      "label": "Bashkëngjit",
+      "maxPerTurn": "maksimumi {{n}} imazhe për mesazh",
+      "unsupportedType": "{{name}}: lloj i pambështetur ({{type}})",
+      "unknownType": "i panjohur",
+      "tooLarge": "{{name}}: shumë i madh (maks. ~7.5MB)",
+      "readError": "{{name}}: {{error}}",
+      "readFailed": "leximi dështoi",
+      "onlyFirst": "u bashkëngjitën vetëm {{n}} të parat"
+    }
+  }
+}

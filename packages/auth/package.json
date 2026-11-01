@@ -1,0 +1,20 @@
+{
+  "name": "@fa/auth",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fa/db_postgres": "*",
+    "better-auth": "^1.6.9",
+    "resend": "^4.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "tour": {
+    "menuItem": "App tour",
+    "skip": "Skip",
+    "start": "Show me",
+    "next": "Next",
+    "back": "Back",
+    "done": "Done",
+    "setUpProfile": "Set up my profile",
+    "progress": "Step {{current}} of {{total}}",
+    "language": "Language",
+    "steps": {
+      "welcome": {
+        "title": "Welcome to {{brand}}",
+        "body": "{{agent}} is your AI fitness and nutrition coach. This one-minute tour shows how the app works."
+      },
+      "chat": {
+        "title": "Just talk to it",
+        "body": "Tell {{agent}} what you ate, how you trained or what you're aiming for, in your own words. Attach a photo of a plate or a nutrition label, or use the mic."
+      },
+      "confirm": {
+        "title": "You confirm, it does the work",
+        "body": "When the coach logs or changes something, it opens a form that's already filled in. Check it and tap Save. Nothing is saved without your OK."
+      },
+      "screens": {
+        "title": "Your data, in four screens",
+        "body": "Everything the coach logs lands in these screens, and you can edit anything by hand. Let's take a quick look at each one."
+      },
+      "day": {
+        "title": "Pick the day",
+        "body": "Everything you log goes to the selected day. Tap here to look back or to log something for yesterday."
+      },
+      "menu": {
+        "title": "Profile and settings",
+        "body": "Your profile sets your calorie and macro targets. This menu also has AI usage, calculators, the theme, and this tour if you want it again."
+      },
+      "dashboard": {
+        "title": "Today at a glance",
+        "body": "Your calorie ring, macros, target vs eaten vs remaining, planned training, steps, water and calories burned. Use the arrows at the top to move between days."
+      },
+      "foodLog": {
+        "title": "Food log",
+        "body": "Everything you ate on the selected day, meal by meal, with totals against your targets. Add food yourself or just tell the coach."
+      },
+      "pantry": {
+        "title": "Pantry",
+        "body": "Your own catalogue of foods and supplements, with macros, barcodes and what you have on hand. Scan a barcode, or import a receipt or grocery photo through the chat."
+      },
+      "recipes": {
+        "title": "Recipes",
+        "body": "Save recipes you make often, or import one from a link. Log a whole recipe, or just a few servings, as a meal in one go."
+      },
+      "diet": {
+        "title": "Diet plans",
+        "body": "Multi-day meal plans with daily targets and a weekly schedule. Log a planned meal in one tap, or get a shopping list of what's missing from your pantry."
+      },
+      "training": {
+        "title": "Training",
+        "body": "Log your sessions: sets, reps, weight and effort, from a plan or freestyle. After you log, the coach suggests what to lift next time."
+      },
+      "progress": {
+        "title": "Progress",
+        "body": "History for each exercise, estimated one-rep max and strength trends, so you can see yourself getting stronger."
+      },
+      "plans": {
+        "title": "Workout plans",
+        "body": "Your training split: days, exercises and target sets, reps and weight. Build one here, ask the coach to make one, or upload the plan your trainer gave you."
+      },
+      "bodyComposition": {
+        "title": "Body composition",
+        "body": "Weigh-ins and body fat, plus the numbers worked out from them: BMI, lean mass and FFMI. Trend charts show how they move over weeks or months."
+      },
+      "bodyMeasurements": {
+        "title": "Measurements",
+        "body": "Log tape measurements of your shoulders, chest, arms, thighs and calves. A radar compares each one with the ideal for your frame and shows which muscles to focus on. You can also scan your shape with the camera."
+      },
+      "finish": {
+        "title": "You're all set",
+        "body": "Start by filling in your profile (goal, height, weight and activity) so your targets fit you. Or just say hi to {{agent}}."
+      }
+    }
+  }
+}

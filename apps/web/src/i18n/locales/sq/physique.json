@@ -1,0 +1,160 @@
+{
+  "physique": {
+    "entry": "Skanim me kamerë",
+    "title": "Skanimi i trupit",
+    "beta": "Beta",
+    "switchCamera": "Ndërro kamerën",
+    "capture": "Fotografo",
+    "measuring": "Po matet…",
+    "hint": "Telefoni drejt në lartësinë e gjoksit, rreth 2.5 m larg. Krahët pak hapur, veshje e puthitur. Fotografimi nis vetë.",
+    "framing": {
+      "none": "Hyr në kuadër",
+      "head_cut": "Koka del jashtë: shko pak prapa",
+      "feet_cut": "Këmbët dalin jashtë: shko pak prapa",
+      "full": "I gjithë trupi në kuadër: qëndro pa lëvizur"
+    },
+    "loading": {
+      "chunk": "Po ngarkohet skaneri…",
+      "download": "Po shkarkohen modelet e skanimit",
+      "mb": "{{loaded}} / {{total}} MB",
+      "oneTime": "Shkarkim një herë. Mbetet në këtë pajisje për herën tjetër.",
+      "cached": "Po ngarkohen modelet nga kjo pajisje…",
+      "init": "Po nisen modelet…",
+      "failed": "Modelet e skanimit nuk u ngarkuan dot: {{error}}",
+      "retry": "Provo sërish"
+    },
+    "result": {
+      "full": "I gjithë trupi: matur në centimetra, shkallëzuar nga gjatësia jote.",
+      "torso": "Vetëm trupi: raporte, pa centimetra.",
+      "noPerson": "Nuk u mor dot një kontur i qartë yti në këto pamje, zakonisht për shkak të një sfondi të ngarkuar ose krahëve që prekin trupin. Provo një mur të thjeshtë, krahët pak hapur, të gjithë trupin në pamje.",
+      "privacy": "Fotoja mbetet në këtë pajisje. Asgjë nuk ngarkohet.",
+      "retake": "Riprovo"
+    },
+    "parts": {
+      "shoulders": "Shpatullat",
+      "chest": "Gjoksi",
+      "waist": "Beli",
+      "hips": "Vithet",
+      "neck": "Qafa",
+      "upper_arm": "Krahu",
+      "forearm": "Parakrahu",
+      "thigh": "Kofsha",
+      "calf": "Pulpa"
+    },
+    "shapes": {
+      "v_taper": "Formë V",
+      "square": "Katror",
+      "diamond": "Diamant",
+      "triangle": "Trekëndësh",
+      "hourglass": "Orë rëre",
+      "pear": "Dardhë",
+      "apple": "Mollë",
+      "inverted_triangle": "Trekëndësh i përmbysur",
+      "rectangle": "Drejtkëndësh"
+    },
+    "report": {
+      "shapeUnknown": "Forma nuk u përcaktua",
+      "widths": "Gjerësitë nga përpara",
+      "girths": "Perimetrat e vlerësuar",
+      "girthsNote": "Vlerësuar nga pamja e përparme me thellësi mesatare trupi, ndaj prit disa centimetra gabim. Për numrat që regjistron, përdor metrin e shiritit.",
+      "accuracy": "Më pak i saktë se metri i shiritit. Fotoja sheh vetëm gjerësinë, ndaj perimetrat janë të vlerësuar dhe mund të ndryshojnë me disa centimetra. Regjistro matjet me metër si të dhënat e tua; përdor skanimet për t'i krahasuar me skanime të mëparshme të bëra në të njëjtën mënyrë.",
+      "ratios": "Raportet (gjerësitë nga përpara)",
+      "target": "qëllimi {{value}}",
+      "composition": "Përbërja",
+      "bodyFat": "Yndyra trupore",
+      "bfSource": {
+        "user": "peshimi yt i fundit",
+        "navy_from_photo": "Vlerësim Navy nga fotoja"
+      },
+      "somatotype": "Somatotipi (endo / mezo / ekto)",
+      "balance": "Majtas / djathtas",
+      "biggerSide": "{{pct}}% më i gjerë në anën {{side}}",
+      "side": {
+        "left": "e majtë",
+        "right": "e djathtë"
+      },
+      "priorities": "Ku të punosh",
+      "reduceWaist": "Zvogëlo belin (humbje yndyre)",
+      "method": "Shënime metode ({{count}})",
+      "uncalibrated": "Pragjet janë vlerësime fillestare dhe ende nuk janë kontrolluar me matje me metër.",
+      "bodyShape": "Forma e trupit",
+      "scale": "1 px = {{cmPerPx}} cm: gjatësia jote {{heightCm}} cm mbi një siluetë {{heightPx}} px të gjatë.",
+      "addHeight": "Shto gjatësinë dhe riskano",
+      "checkThese": "Kontrollo këto",
+      "soma": {
+        "endo": "Endo",
+        "meso": "Mezo",
+        "ecto": "Ekto"
+      },
+      "torso": {
+        "no_height": "Vetëm raporte: shto gjatësinë që gjerësitë të kthehen në centimetra.",
+        "head_cut": "Vetëm raporte: maja e kokës preku skajin e kuadrit. Shko pak prapa ose ule pak telefonin.",
+        "feet_cut": "Vetëm raporte: këmbët ishin në skajin e poshtëm të kuadrit. Shko prapa derisa të duket pak dysheme poshtë këmbëve.",
+        "legs_hidden": "Vetëm raporte: gjunjët ose kyçet e këmbëve nuk dukeshin qartë. Sigurohu që asgjë të mos i mbulojë këmbët dhe që dyshemeja rreth tyre të jetë në pamje."
+      }
+    },
+    "perf": "{{fps}} fps · {{delegate}} · ngarkuar në {{s}} s ({{source}})",
+    "source": {
+      "cache": "nga pajisja",
+      "network": "shkarkuar"
+    },
+    "gate": {
+      "title": "Gjatësia jote përcakton shkallën",
+      "why": "Fotoja nuk ka vizore: gjatësia jote reale e pjesëtuar me gjatësinë në piksel jep centimetrat për çdo gjerësi.",
+      "male": "Mashkull",
+      "female": "Femër",
+      "height": "Gjatësia",
+      "save": "Ruaje në profil",
+      "skip": "Kapërce (vetëm raporte)",
+      "start": "Nis skanimin"
+    },
+    "guide": {
+      "open": "Këshilla për foton",
+      "kicker": "Para skanimit",
+      "title": "Si të marrësh matje të sakta",
+      "diagramAria": "Telefoni në një raft në lartësinë e gjoksit, rreth 2.5 m larg teje, krahët rreth 20 gradë hapur",
+      "done": "Në rregull",
+      "tips": {
+        "background": {
+          "title": "Sfond i thjeshtë",
+          "body": "Qëndro para një muri të thjeshtë e të çelët. Perdet me motive, raftet ose mobiliet pas teje përzihen me konturin tënd, sidomos rreth krahëve."
+        },
+        "light": {
+          "title": "Dritë e njëtrajtshme nga përpara",
+          "body": "Kthehu nga burimi i dritës. Një dritare e ndritshme pas teje të kthen në një figurë të errët me skaje të turbullta."
+        },
+        "phone": {
+          "title": "Telefoni drejt në lartësinë e gjoksit",
+          "body": "Mbështete në një raft rreth 2.5 m larg, pa e anuar lart ose poshtë. Përdor numërimin automatik, jo pasqyrën."
+        },
+        "frame": {
+          "title": "I gjithë trupi në kuadër",
+          "body": "Lër pak hapësirë mbi kokë dhe poshtë këmbëve. Gjatësia jote është vizorja, ndaj koka ose këmbët e prera do të thotë vetëm raporte."
+        },
+        "pose": {
+          "title": "Krahët rreth 20° hapur, këmbët sa gjerësia e ijeve",
+          "body": "Qëndro drejt, përballë kamerës, me një hapësirë të qartë nën secilën sqetull dhe mes krahëve e belit. Krahët ngjitur me trupin maten si pjesë e trupit."
+        },
+        "clothes": {
+          "title": "Veshje e puthitur",
+          "body": "Pantallona të shkurtra dhe një bluzë e puthitur, ose rroba banje. Rrobat e gjera shtojnë çdo gjerësi. Lidhi flokët e gjata që të mos zgjerojnë qafën dhe shpatullat."
+        },
+        "barefoot": {
+          "title": "Zbathur",
+          "body": "Këpucët i shtojnë gjatësi siluetës, gjë që e zvogëlon pak çdo matje."
+        },
+        "repeat": {
+          "title": "Të njëjtat kushte çdo herë",
+          "body": "I njëjti vend, dritë, veshje dhe orë e ditës (mundësisht në mëngjes, para se të hash). Atëherë ndryshimi mes skanimeve është real, jo nga përgatitja."
+        }
+      }
+    },
+    "privacy": {
+      "badge": "Në pajisje",
+      "badgeTitle": "Pamjet e kamerës dhe fotot përpunohen në këtë telefon dhe nuk ngarkohen kurrë.",
+      "title": "Përpunohet në telefonin tënd",
+      "body": "Pamjet e kamerës dhe fotot analizohen pikërisht këtu në këtë pajisje. Asgjë nuk ngarkohet apo ruhet, dhe fotoja zhduket kur mbyll skanerin. Vetëm modelet shkarkohen, një herë.",
+      "loading": "Pamjet e kamerës mbeten në këtë telefon. Asgjë nuk ngarkohet."
+    }
+  }
+}

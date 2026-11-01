@@ -1,0 +1,156 @@
+{
+  "lib": {
+    "toast": {
+      "verb": {
+        "log": "تم التسجيل",
+        "add": "تمت الإضافة",
+        "save": "تم الحفظ",
+        "import": "تم الاستيراد",
+        "update": "تم التحديث",
+        "replace": "تم التحديث",
+        "set": "تم التحديث",
+        "activate": "تم التفعيل",
+        "delete": "تمت الإزالة",
+        "remove": "تمت الإزالة",
+        "submit": "تم الإرسال"
+      },
+      "noun": {
+        "item": "العنصر",
+        "update_profile": "الملف الشخصي",
+        "update_pantry": "المخزن",
+        "import_pantry": "المخزن",
+        "log_body_comp": "قياس الجسم",
+        "delete_body_comp_entry": "قياس الجسم",
+        "update_body_comp_entry": "قياس الجسم",
+        "log_planned_meal": "الوجبة",
+        "log_recipe": "الوصفة",
+        "update_recipe_portion": "الوصفة",
+        "set_recipe_favorite": "الوصفة",
+        "log_workout_session": "جلسة التمرين",
+        "delete_workout_session": "جلسة التمرين",
+        "delete_cardio_entry": "الكارديو",
+        "update_cardio_entry": "الكارديو",
+        "log_measurements": "القياسات",
+        "add_exercise_to_plan_day": "التمرين",
+        "remove_exercise_from_plan_day": "التمرين",
+        "update_plan_exercise": "التمرين",
+        "replace_plan_exercise": "التمرين",
+        "update_workout_plan_day": "خطة التمرين"
+      },
+      "httpNoun": {
+        "meal": "الوجبة",
+        "diet_plan": "خطة التغذية",
+        "workout_session": "جلسة التمرين",
+        "workout_plan": "خطة التمرين",
+        "body_entry": "قياس الجسم",
+        "cardio": "الكارديو",
+        "measurements": "القياسات",
+        "steps": "الخطوات",
+        "water": "الماء",
+        "profile": "الملف الشخصي"
+      },
+      "message": "{{noun}}: {{verb}}"
+    },
+    "error": {
+      "invalidInput": "إدخال غير صالح"
+    },
+    "energy": {
+      "bmr": "BMR",
+      "maintenance": "الثبات",
+      "dailyTarget": "الهدف اليومي",
+      "kcal": "kcal"
+    },
+    "gauge": {
+      "underweight": "نقص الوزن",
+      "normal": "طبيعي",
+      "overweight": "زيادة الوزن",
+      "obese": "سمنة",
+      "healthy": "صحي",
+      "veryLean": "نحيف جدًا",
+      "athletic": "رياضي",
+      "fit": "لائق",
+      "average": "متوسط",
+      "high": "مرتفع",
+      "belowAverage": "دون المتوسط",
+      "aboveAverage": "فوق المتوسط",
+      "outstanding": "استثنائي",
+      "extremelyHigh": "مرتفع جدًا",
+      "aboveNatural": "فوق الطبيعي",
+      "beginner": "مبتدئ",
+      "intermediate": "متوسط المستوى",
+      "advanced": "متقدّم",
+      "nearCeiling": "قرب الحد الأقصى",
+      "lagging": "متأخر",
+      "close": "قريب",
+      "onTarget": "مثالي",
+      "ahead": "متقدّم",
+      "aboveIdeal": "أعلى",
+      "wellAboveIdeal": "زائد"
+    },
+    "goal": {
+      "cut": "تنشيف",
+      "recomp": "إعادة تكوين",
+      "maintain": "ثبات",
+      "lean_bulk": "تضخيم نظيف"
+    },
+    "burn": {
+      "title": "حرق التمرين",
+      "estimateHint": "مقدّر من مجموعات الجلسة (الحمل × التكرارات)",
+      "kcal": "kcal"
+    },
+    "category": {
+      "body-comp": "الجسم",
+      "nutrition": "التغذية",
+      "pantry": "المخزن",
+      "training": "التمرين",
+      "progress": "التقدّم",
+      "navigation": "التنقّل",
+      "macros": "المغذيات الكبرى",
+      "info": "معلومات"
+    }
+  },
+  "components": {
+    "camera": {
+      "scanAria": "مسح الباركود",
+      "photoAria": "التقاط صورة",
+      "noCameraApi": "هذا المتصفح لا يوفّر واجهة للكاميرا. استخدم الرفع بدلًا من ذلك.",
+      "previewFailed": "تعذّر بدء المعاينة: {{error}}",
+      "unavailable": "الكاميرا غير متاحة — {{error}}",
+      "grantPermission": "امنح إذن الكاميرا في متصفحك وأعد المحاولة، أو استخدم الرفع بدلًا من ذلك.",
+      "notSupported": "المسح المباشر غير مدعوم هنا — التقط صورة بدلًا من ذلك.",
+      "stalled": "تتعذّر القراءة؟ ثبّت يدك واملأ الإطار، أو التقط صورة.",
+      "notSupportedTypeIt": "المسح المباشر غير مدعوم هنا — اكتب الباركود بدلًا من ذلك.",
+      "stalledNoPhoto": "تتعذّر القراءة؟ ثبّت يدك واملأ الإطار.",
+      "aim": "وجّه الكاميرا الخلفية نحو الباركود.",
+      "snapInstead": "التقاط صورة بدلًا من ذلك",
+      "snap": "التقاط"
+    },
+    "rowActions": {
+      "aria": "إجراءات الصف"
+    },
+    "lock": {
+      "noModel": "لا يوجد نموذج ذكاء اصطناعي",
+      "noLlmTitle": "لا يوجد نموذج ذكاء اصطناعي مُعدّ على هذا الخادم",
+      "noVisionTitle": "لا يوجد نموذج ذكاء اصطناعي يدعم الرؤية مُعدّ على هذا الخادم",
+      "locked": "غير متاح",
+      "lockedTitle": "غير متاح في حسابك"
+    },
+    "install": {
+      "title": "تثبيت {{name}}",
+      "iosSubtitle": "أضِفه إلى الشاشة الرئيسية للوصول السريع",
+      "androidSubtitle": "احصل على تجربة التطبيق بملء الشاشة",
+      "install": "تثبيت",
+      "dismiss": "إغلاق",
+      "iosTitle": "الإضافة إلى الشاشة الرئيسية",
+      "iosIntro": "لا يوفّر iOS تثبيتًا بنقرة واحدة — ثلاث خطوات سريعة في Safari:",
+      "iosStep1Prefix": "اضغط على زر",
+      "iosStep1Share": "المشاركة",
+      "iosStep1Suffix": "في شريط أدوات Safari.",
+      "iosStep2Prefix": "مرّر واختر",
+      "iosStep2Action": "إضافة إلى الشاشة الرئيسية",
+      "iosStep3Prefix": "اضغط",
+      "iosStep3Add": "إضافة",
+      "iosStep3Suffix": "— سيظهر {{name}} على شاشتك الرئيسية."
+    }
+  }
+}

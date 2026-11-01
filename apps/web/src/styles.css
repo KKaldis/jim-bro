@@ -1,0 +1,513 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+/* Theme tokens: the flat base, then opt-in styles layered on top. */
+@import "./theme/palette.css";
+@import "./theme/soft.css";
+@import "./theme/brutal.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant soft (&:where([data-style="soft"], [data-style="soft"] *));
+@custom-variant brutal (&:where([data-style="brutal"], [data-style="brutal"] *));
+
+@font-face {
+  font-family: "Evogria";
+  src: url("/fonts/Evogria.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Evogria";
+  src: url("/fonts/Evogria-Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-info: var(--info);
+  --color-border: var(--border);
+  --color-edge: var(--edge);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  --shadow-surface: var(--elevation-surface);
+  --shadow-tile: var(--elevation-tile);
+  --shadow-control: var(--elevation-control);
+  --shadow-pressed: var(--elevation-pressed);
+  --shadow-field: var(--elevation-field);
+  --shadow-well: var(--elevation-well);
+  --shadow-overlay: var(--elevation-overlay);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --font-brand: "Evogria", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+  /* Directional icons (back/next, expand, submenu) mirror in RTL. Tailwind's
+     rotate-* uses the separate `rotate` property, so it composes with this. */
+  [dir="rtl"]
+    :is(.lucide-chevron-left, .lucide-chevron-right, .lucide-arrow-left, .lucide-arrow-right) {
+    transform: scaleX(-1);
+  }
+  [dir="rtl"]
+    [dir="ltr"]
+    :is(.lucide-chevron-left, .lucide-chevron-right, .lucide-arrow-left, .lucide-arrow-right) {
+    transform: none;
+  }
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family:
+      ui-sans-serif,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Helvetica,
+      Arial,
+      sans-serif;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  /* Form controls + text selection follow the theme accent (blue in light,
+     electric cyan-blue in dark) instead of the browser default blue. */
+  :root {
+    accent-color: var(--primary);
+    caret-color: var(--primary);
+  }
+  ::selection {
+    background-color: color-mix(in srgb, var(--primary) 35%, transparent);
+  }
+}
+
+/* Streaming "thinking" deltas — italic + dim, no markdown */
+.thinking-dim {
+  color: var(--muted-foreground);
+  font-style: italic;
+}
+
+/* "Jim is …" typewriter loader — blinking caret */
+@keyframes tw-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.tw-cursor {
+  animation: tw-blink 1s step-end infinite;
+}
+
+/* Flexing-arm Lottie loader (FlexLoader.tsx): recolor lottie's black strokes
+   to the text color, and allow thicker strokes at small sizes. */
+.flex-loader path {
+  stroke: currentColor;
+  stroke-width: var(--flex-stroke, 24px);
+}
+
+/* Tool-input chip — pulsing glow + shimmer sweep while a gate awaits Save */
+@keyframes tool-chip-pulse {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--primary) 55%, transparent);
+  }
+  70% {
+    box-shadow: 0 0 0 7px color-mix(in srgb, var(--primary) 0%, transparent);
+  }
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--primary) 0%, transparent);
+  }
+}
+@keyframes tool-chip-shimmer {
+  to {
+    transform: translateX(100%);
+  }
+}
+.tool-chip-bling {
+  position: relative;
+  overflow: hidden;
+  animation: tool-chip-pulse 2s ease-out infinite;
+}
+.tool-chip-bling::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    color-mix(in srgb, var(--primary) 25%, transparent) 50%,
+    transparent 60%
+  );
+  transform: translateX(-100%);
+  animation: tool-chip-shimmer 2.4s ease-in-out infinite;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tool-chip-bling,
+  .tool-chip-bling::after {
+    animation: none;
+  }
+}
+
+/* Loading skeleton — soft primary-tinted base with a wide reflecting sweep */
+@keyframes skeleton-shimmer {
+  to {
+    transform: translateX(150%);
+  }
+}
+@keyframes skeleton-breathe {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+.skeleton-shimmer {
+  position: relative;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--primary) 10%, var(--muted));
+  animation: skeleton-breathe 2.4s ease-in-out infinite;
+}
+.skeleton-shimmer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 60%;
+  border-radius: inherit;
+  background: linear-gradient(
+    100deg,
+    transparent 0%,
+    color-mix(in srgb, var(--primary) 22%, transparent) 45%,
+    color-mix(in srgb, var(--primary) 45%, transparent) 50%,
+    color-mix(in srgb, var(--primary) 22%, transparent) 55%,
+    transparent 100%
+  );
+  transform: translateX(-100%);
+  animation: skeleton-shimmer 1.8s ease-in-out infinite;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .skeleton-shimmer,
+  .skeleton-shimmer::after {
+    animation: none;
+  }
+}
+
+/* Jump-to-latest pill — chevrons tumble downward like a slot-machine reel.
+   The window clips to a single chevron; the reel is a stack of identical
+   chevrons translated by one icon so the loop is seamless. On hover a bright
+   shine sweeps across the window. */
+@keyframes scroll-arrow-reel {
+  from {
+    transform: translateY(-0.875rem); /* one chevron up */
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes scroll-arrow-shine {
+  from {
+    transform: translateX(-160%);
+  }
+  to {
+    transform: translateX(160%);
+  }
+}
+.scroll-arrow-window {
+  position: relative;
+  display: block;
+  height: 0.875rem; /* clip to one chevron (h-3.5) */
+  overflow: hidden;
+  line-height: 0;
+  /* Recessed-slot look: inner shadow fades the chevrons into the top and
+     bottom edges as they roll past. */
+  box-shadow:
+    inset 0 5px 4px -4px color-mix(in srgb, var(--background) 70%, transparent),
+    inset 0 -5px 4px -4px color-mix(in srgb, var(--background) 70%, transparent);
+}
+.scroll-arrow-reel {
+  display: flex;
+  flex-direction: column;
+  animation: scroll-arrow-reel 0.7s linear infinite;
+}
+/* Shine sweep across the whole pill — hidden until hover, then loops a
+   diagonal highlight. Pill needs position:relative + overflow-hidden. */
+.scroll-latest-pill::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 35%,
+    color-mix(in srgb, var(--primary) 70%, white) 50%,
+    transparent 65%
+  );
+  transform: translateX(-160%);
+  opacity: 0;
+  pointer-events: none;
+}
+.scroll-latest-pill:hover::after {
+  opacity: 1;
+  animation: scroll-arrow-shine 1.1s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .scroll-arrow-reel {
+    animation: none;
+    transform: translateY(0);
+  }
+  .scroll-latest-pill:hover::after {
+    animation: none;
+  }
+}
+
+/* Centered dialogs are vertically centered in the viewport. In a standalone
+   iOS PWA (black-translucent status bar + viewport-fit=cover) the web view
+   extends under the status bar / Dynamic Island, so a tall centered dialog
+   tucks its top edge — and its absolutely-positioned close button — under it,
+   where iOS makes it untappable. Capping the height leaves room for the top
+   safe-area inset on BOTH sides of the centered box (margins grow equally),
+   keeping the box and its close button below the status bar. Use this on
+   centered DialogContent instead of a bare max-h-[…vh]. */
+.modal-cap {
+  max-height: min(85dvh, calc(100dvh - 1rem - 2 * env(safe-area-inset-top)));
+}
+
+/* Hide scrollbars on the mobile bottom-nav while keeping scrollability */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Prominent, theme-aware scrollbars. The OS default thumb is nearly
+   invisible on our dark background, so we derive a visible thumb from the
+   foreground color and brighten it on hover. Applies to every scroll
+   container except those opting out via .no-scrollbar. */
+:root {
+  /* Solid thumb color — used by Firefox, which can't render a hollow
+     outlined thumb. WebKit uses a background-filled pill instead (below). */
+  --scrollbar-thumb: color-mix(in srgb, var(--foreground) 60%, transparent);
+}
+.dark {
+  --scrollbar-thumb: color-mix(in srgb, var(--foreground) 70%, transparent);
+}
+
+/* Firefox / standards — scoped to engines WITHOUT ::-webkit-scrollbar
+   support. Setting scrollbar-width/color in Chromium makes it switch to the
+   standard renderer and ignore our ::-webkit-scrollbar rules (which is where
+   the primary outline lives), so we must keep these away from Chromium. */
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb) transparent;
+  }
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+}
+
+/* WebKit / Chromium / Edge / Safari */
+*:not(.no-scrollbar)::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+*:not(.no-scrollbar)::-webkit-scrollbar-track {
+  background: transparent;
+}
+*:not(.no-scrollbar)::-webkit-scrollbar-thumb {
+  /* Fill matches the app background so the thumb reads as a hollow pill
+     with just the primary outline. */
+  background-color: var(--background);
+  border-radius: 9999px;
+  /* Inset the thumb so it reads as a rounded pill with breathing room.
+     The 2px border is tinted with the theme accent so the thumb carries a
+     subtle primary outline. background-clip keeps the fill inside it. */
+  border: 2px solid color-mix(in srgb, var(--primary) 85%, transparent);
+  background-clip: padding-box;
+}
+*:not(.no-scrollbar)::-webkit-scrollbar-thumb:hover {
+  border-color: var(--primary);
+}
+*:not(.no-scrollbar)::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Markdown rendering inside chat bubbles */
+.md {
+  min-width: 0;
+  max-width: 100%;
+  /* Long unbreakable tokens (URLs, long inline code, long words) would
+     otherwise overflow the clamped bubble and push past the viewport. */
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.md > :first-child {
+  margin-top: 0;
+}
+.md > :last-child {
+  margin-bottom: 0;
+}
+.md p {
+  margin: 0.4em 0;
+  line-height: 1.55;
+}
+.md h1,
+.md h2,
+.md h3 {
+  font-size: 0.95rem;
+  margin: 0.6em 0 0.3em;
+  font-weight: 600;
+  color: var(--primary);
+}
+.md ul,
+.md ol {
+  padding-left: 1.25em;
+  margin: 0.4em 0;
+}
+.md li {
+  margin: 0.1em 0;
+}
+.md code {
+  background: var(--muted);
+  border-radius: 0.25rem;
+  padding: 0.05em 0.35em;
+  font-size: 0.86em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+.md pre {
+  background: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  /* Scroll wide code horizontally rather than letting the longest line
+     stretch the bubble past the viewport. max-width pins the box to the
+     bubble so overflow-x can take over. */
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 0.5em 0;
+  font-size: 0.85em;
+}
+.md pre code {
+  background: transparent;
+  padding: 0;
+  /* Keep code on one (scrollable) line — don't inherit .md's word-break,
+     which would mangle code indentation/tokens. */
+  overflow-wrap: normal;
+  word-break: normal;
+  white-space: pre;
+}
+.md blockquote {
+  margin: 0.5em 0;
+  padding: 0.1em 0.75em;
+  border-left: 3px solid var(--border);
+  color: var(--muted-foreground);
+}
+.md table {
+  border-collapse: collapse;
+  margin: 0.5em 0;
+  font-size: 0.85em;
+  /* Scroll wide tables horizontally instead of overflowing the chat bubble
+     on narrow/mobile viewports. display:block lets the table grow past the
+     bubble and clip to its own scroll area. */
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.md th,
+.md td {
+  white-space: nowrap;
+}
+.md th,
+.md td {
+  border: 1px solid var(--border);
+  padding: 0.25em 0.5em;
+  text-align: left;
+}
+.md th {
+  background: var(--muted);
+  font-weight: 600;
+}
+.md a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.md hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 0.6em 0;
+}
+
+/* Muscle icons (public/muscle-icons, rendered by MuscleMap). The SVG layers
+   read these via var(), so the whole figure follows the theme and the
+   targeted muscle takes the primary. Greys are neutral and kept well apart
+   from both the card and the primary: light in light mode (so the dark blue
+   primary stands out), lifted in dark mode (so the figure doesn't sink into
+   the card, while the bright cyan-blue primary stays the brightest thing). Derived from
+   the theme tokens so a new theme/brand needs no extra work. */
+:root {
+  --muscle-outline: color-mix(in oklab, var(--foreground) 38%, var(--background));
+  --muscle-body: color-mix(in oklab, var(--foreground) 10%, var(--background));
+  --muscle-primary: var(--primary);
+  --muscle-secondary: color-mix(in oklab, var(--primary) 50%, var(--muscle-body));
+}
+.dark {
+  --muscle-outline: color-mix(in oklab, var(--foreground) 40%, var(--background));
+  --muscle-body: color-mix(in oklab, var(--foreground) 66%, var(--background));
+}
+
+/* Optional form fields (formKit <Field optional>): no "optional" label — an
+   empty control gets a dashed, softer border that reads as "fill in if you
+   like", and turns solid once it has a value. Covers text inputs, textareas
+   and Radix select triggers (data-placeholder = nothing chosen). */
+[data-optional] :is(input:not([type="checkbox"], [type="radio"]), textarea):placeholder-shown,
+[data-optional] [role="combobox"][data-placeholder] {
+  border-style: dashed;
+  border-color: color-mix(in oklab, var(--muted-foreground) 45%, transparent);
+}

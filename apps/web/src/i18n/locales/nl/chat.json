@@ -1,0 +1,108 @@
+{
+  "chat": {
+    "title": "Chat",
+    "user": "Gebruiker",
+    "send": "Versturen",
+    "stop": "Stoppen",
+    "stopped": "Gestopt",
+    "reset": "Reset",
+    "resetConversation": "Gesprek resetten",
+    "streaming": "…bezig",
+    "hideOptions": "Opties verbergen",
+    "showOptions": "Opties tonen",
+    "loadingOlder": "Oudere berichten laden",
+    "scrollToLatest": "Naar nieuwste",
+    "scrollToLatestAria": "Scroll naar het nieuwste bericht",
+    "inputPlaceholder": "Wat heb je gegeten? (Enter om te versturen · Shift/Ctrl+Enter voor nieuwe regel)",
+    "attachImage": "afbeelding toevoegen",
+    "imageNeedsModel": "fotoherkenning vereist een AI-model met beeldherkenning op de server",
+    "chatUnavailable": "AI-chat vereist een ingesteld AI-model op de server",
+    "takePhoto": "Foto maken",
+    "uploadImage": "Afbeelding uploaden",
+    "removeImage": "{{name}} verwijderen",
+    "attachedImageAlt": "bijlage",
+    "imageUnavailable": "Afbeelding niet meer beschikbaar",
+    "sources": "Bronnen",
+    "sourceFallback": "bron",
+    "micError": "microfoonfout: {{error}}",
+    "errorPrefix": "fout: {{error}}",
+    "connectionLost": "Verbinding verbroken voordat het antwoord klaar was — vernieuw de pagina om het te zien.",
+    "loaderIs": "{{name}} is aan het",
+    "loaderReplying": "{{name}} antwoordt",
+    "loaderPhrases": [
+      "nadenken",
+      "koken",
+      "pushen",
+      "rekenen",
+      "pruttelen",
+      "flexen",
+      "puzzelen",
+      "bulken",
+      "spotten",
+      "chillen",
+      "herkauwen",
+      "opwarmen",
+      "reps maken",
+      "schijven laden",
+      "macro's tellen",
+      "cutten",
+      "stretchen",
+      "krijt smeren",
+      "gewichten opruimen",
+      "progressive overloaden",
+      "supersetten",
+      "deloaden",
+      "PR's breken",
+      "je split plannen",
+      "techniek finetunen",
+      "sets loggen",
+      "je plan bouwen",
+      "voortgang bijhouden",
+      "legday doen"
+    ],
+    "thinking": {
+      "label": "Nadenken",
+      "onTitle": "Uitgebreid nadenken staat aan — klik om het voor de volgende beurt uit te zetten",
+      "offTitle": "Uitgebreid nadenken staat uit — klik om het aan te zetten"
+    },
+    "resetDialog": {
+      "title": "Gespreksgeschiedenis wissen?",
+      "description": "Hiermee wordt de huidige chat definitief gewist. Het model begint opnieuw zonder eerdere context."
+    },
+    "dock": {
+      "ask": "Vraag het {{name}}…",
+      "using": "{{tool}}…",
+      "openChat": "Chat openen",
+      "gateTitle": "{{name}} wacht op jou",
+      "gateAction": "Tik om te controleren en op te slaan →"
+    },
+    "activity": {
+      "thinking": "Nadenken…",
+      "thoughtProcess": "Denkproces",
+      "working": "Bezig…",
+      "thoughtWithTools_one": "Nagedacht · {{count}} tool",
+      "thoughtWithTools_other": "Nagedacht · {{count}} tools",
+      "usedTools_one": "{{count}} tool gebruikt",
+      "usedTools_other": "{{count}} tools gebruikt"
+    },
+    "language": {
+      "title": "chattaal — gebruikt voor spraakherkenning en de taal van de antwoorden",
+      "label": "chattaal"
+    },
+    "dictation": {
+      "start": "dicteren met je stem (werkt het best in Chrome/Edge)",
+      "stop": "dicteren stoppen",
+      "toggle": "Dicteren aan/uit"
+    },
+    "attach": {
+      "label": "Bijvoegen",
+      "maxPerTurn": "max. {{n}} afbeeldingen per bericht",
+      "unsupportedType": "{{name}}: niet-ondersteund type ({{type}})",
+      "unknownType": "onbekend",
+      "tooLarge": "{{name}}: te groot (max. ~7,5 MB)",
+      "readError": "{{name}}: {{error}}",
+      "readFailed": "lezen mislukt",
+      "onlyFirst": "alleen de eerste {{n}} zijn toegevoegd"
+    }
+  }
+}

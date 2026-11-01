@@ -1,0 +1,108 @@
+{
+  "chat": {
+    "title": "Chat",
+    "user": "User",
+    "send": "Send",
+    "stop": "Stop",
+    "stopped": "Stopped",
+    "reset": "Reset",
+    "resetConversation": "Reset conversation",
+    "streaming": "…streaming",
+    "hideOptions": "Hide options",
+    "showOptions": "Show options",
+    "loadingOlder": "Loading older messages",
+    "scrollToLatest": "Scroll to latest",
+    "scrollToLatestAria": "Scroll to latest message",
+    "inputPlaceholder": "What did you eat? (Enter to send · Shift/Ctrl+Enter for newline)",
+    "attachImage": "attach an image",
+    "imageNeedsModel": "photo recognition needs a vision-capable AI model on the server",
+    "chatUnavailable": "AI chat needs an AI model configured on the server",
+    "takePhoto": "Take photo",
+    "uploadImage": "Upload image",
+    "removeImage": "remove {{name}}",
+    "attachedImageAlt": "attached",
+    "imageUnavailable": "Image no longer available",
+    "sources": "Sources",
+    "sourceFallback": "source",
+    "micError": "mic error: {{error}}",
+    "errorPrefix": "error: {{error}}",
+    "connectionLost": "Lost the connection before the reply finished — refresh the page to see it.",
+    "loaderIs": "{{name}} is",
+    "loaderReplying": "{{name}} is replying",
+    "loaderPhrases": [
+      "thinking",
+      "cooking",
+      "pushing",
+      "crunching",
+      "percolating",
+      "flexing",
+      "noodling",
+      "bulking",
+      "spotting you",
+      "vibing",
+      "ruminating",
+      "warming up",
+      "repping out",
+      "loading plates",
+      "counting macros",
+      "cutting weight",
+      "stretching",
+      "chalking up",
+      "racking weights",
+      "progressive overloading",
+      "supersetting",
+      "deloading",
+      "hitting PRs",
+      "planning your split",
+      "dialing in form",
+      "logging sets",
+      "building your plan",
+      "tracking progress",
+      "leg day-ing"
+    ],
+    "thinking": {
+      "label": "Thinking",
+      "onTitle": "Extended thinking is on — click to disable for the next turn",
+      "offTitle": "Extended thinking is off — click to enable"
+    },
+    "resetDialog": {
+      "title": "Wipe conversation history?",
+      "description": "This permanently clears the current chat. The model will start fresh with no prior context."
+    },
+    "dock": {
+      "ask": "Ask {{name}}…",
+      "using": "{{tool}}…",
+      "openChat": "Open chat",
+      "gateTitle": "{{name}} needs a tap",
+      "gateAction": "Tap to review & save →"
+    },
+    "activity": {
+      "thinking": "Thinking…",
+      "thoughtProcess": "Thought process",
+      "working": "Working…",
+      "thoughtWithTools_one": "Thought · {{count}} tool",
+      "thoughtWithTools_other": "Thought · {{count}} tools",
+      "usedTools_one": "Used {{count}} tool",
+      "usedTools_other": "Used {{count}} tools"
+    },
+    "language": {
+      "title": "chat language — used for mic recognition and the agent's reply language",
+      "label": "chat language"
+    },
+    "dictation": {
+      "start": "dictate by voice (Chrome/Edge work best)",
+      "stop": "stop dictation",
+      "toggle": "Toggle dictation"
+    },
+    "attach": {
+      "label": "Attach",
+      "maxPerTurn": "max {{n}} images per turn",
+      "unsupportedType": "{{name}}: unsupported type ({{type}})",
+      "unknownType": "unknown",
+      "tooLarge": "{{name}}: too large (~7.5MB max)",
+      "readError": "{{name}}: {{error}}",
+      "readFailed": "read failed",
+      "onlyFirst": "only the first {{n}} were attached"
+    }
+  }
+}

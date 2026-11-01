@@ -1,0 +1,41 @@
+{
+  // The Bun apps (server) use the "bun" debug type, which is provided by
+  // the "Bun for Visual Studio Code" extension (oven.bun-vscode). Install it
+  // or the Bun configs below won't start — Bun uses the WebKit inspector
+  // protocol, so the built-in Node debugger can't attach to it.
+  // The web app debugs via Chrome against the Vite dev server (run
+  // `npm run web:dev` first, then launch "Debug Web (Chrome)").
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "bun",
+      "request": "launch",
+      "name": "Debug Server (Bun)",
+      "program": "${workspaceFolder}/apps/server/src/index.ts",
+      "cwd": "${workspaceFolder}",
+      "watchMode": true,
+      "stopOnEntry": false
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Debug Web (Chrome)",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/apps/web",
+      "sourceMaps": true
+    },
+    {
+      "type": "bun",
+      "request": "attach",
+      "name": "Attach to Bun (:6499)",
+      "url": "ws://localhost:6499/"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Server + Web",
+      "configurations": ["Debug Server (Bun)", "Debug Web (Chrome)"],
+      "stopAll": true
+    }
+  ]
+}

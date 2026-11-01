@@ -1,0 +1,29 @@
+{
+  "name": "@fa/agent",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.40.0",
+    "@fa/db_postgres": "*",
+    "@fa/db_qdrant": "*",
+    "@fa/db_meilisearch": "*",
+    "@fa/logger": "*",
+    "@fa/shared": "*",
+    "drizzle-orm": "^0.45.2",
+    "openai": "^4.77.0"
+  },
+  "optionalDependencies": {
+    "@google/genai": "^0.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "typescript": "^6.0.3"
+  }
+}

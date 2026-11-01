@@ -1,0 +1,160 @@
+{
+  "physique": {
+    "entry": "Camerascan",
+    "title": "Lichaamsscan",
+    "beta": "Bèta",
+    "switchCamera": "Camera wisselen",
+    "capture": "Vastleggen",
+    "measuring": "Meten…",
+    "hint": "Telefoon rechtop op borsthoogte, ongeveer 2,5 m afstand. Armen iets van je lichaam, nauwsluitende kleding. Het vastleggen start vanzelf.",
+    "framing": {
+      "none": "Stap in beeld",
+      "head_cut": "Hoofd valt buiten beeld: stap achteruit",
+      "feet_cut": "Voeten vallen buiten beeld: stap achteruit",
+      "full": "Hele lichaam in beeld: blijf stilstaan"
+    },
+    "loading": {
+      "chunk": "Scanner laden…",
+      "download": "Modellen voor lichaamsscan downloaden",
+      "mb": "{{loaded}} / {{total}} MB",
+      "oneTime": "Eenmalige download. Ze blijven op dit apparaat staan voor de volgende keer.",
+      "cached": "Modellen laden van dit apparaat…",
+      "init": "Modellen starten…",
+      "failed": "Kon de modellen voor de lichaamsscan niet laden: {{error}}",
+      "retry": "Opnieuw proberen"
+    },
+    "result": {
+      "full": "Hele lichaam: gemeten in centimeters, geschaald op basis van je lengte.",
+      "torso": "Alleen romp: verhoudingen, geen centimeters.",
+      "noPerson": "Kon in deze beelden geen duidelijke omtrek van je krijgen, meestal door een drukke achtergrond of doordat je armen je lichaam raken. Probeer een lege muur, armen iets van je lichaam, hele lichaam in beeld.",
+      "privacy": "De foto blijft op dit apparaat. Er wordt niets geüpload.",
+      "retake": "Opnieuw"
+    },
+    "parts": {
+      "shoulders": "Schouders",
+      "chest": "Borst",
+      "waist": "Taille",
+      "hips": "Heupen",
+      "neck": "Nek",
+      "upper_arm": "Bovenarm",
+      "forearm": "Onderarm",
+      "thigh": "Bovenbeen",
+      "calf": "Kuit"
+    },
+    "shapes": {
+      "v_taper": "V-vorm",
+      "square": "Vierkant",
+      "diamond": "Diamant",
+      "triangle": "Driehoek",
+      "hourglass": "Zandloper",
+      "pear": "Peer",
+      "apple": "Appel",
+      "inverted_triangle": "Omgekeerde driehoek",
+      "rectangle": "Rechthoek"
+    },
+    "report": {
+      "shapeUnknown": "Vorm niet bepaald",
+      "widths": "Breedtes vooraanzicht",
+      "girths": "Geschatte omtrekken",
+      "girthsNote": "Geschat op basis van het vooraanzicht met een gemiddelde lichaamsdiepte, dus reken op een paar centimeter afwijking. Gebruik een meetlint voor de waarden die je logt.",
+      "accuracy": "Minder nauwkeurig dan een meetlint. Een foto ziet alleen je breedte, dus omtrekken worden geschat en kunnen enkele centimeters afwijken. Log meetlintmetingen als je officiële waarden; gebruik scans om te vergelijken met eerdere scans die op dezelfde manier zijn gemaakt.",
+      "ratios": "Verhoudingen (breedtes vooraanzicht)",
+      "target": "doel {{value}}",
+      "composition": "Samenstelling",
+      "bodyFat": "Vetpercentage",
+      "bfSource": {
+        "user": "je laatste weging",
+        "navy_from_photo": "Navy-schatting op basis van de foto"
+      },
+      "somatotype": "Somatotype (endo / meso / ecto)",
+      "balance": "Links / rechts",
+      "biggerSide": "{{pct}}% breder {{side}}",
+      "side": {
+        "left": "links",
+        "right": "rechts"
+      },
+      "priorities": "Waar je aan kunt werken",
+      "reduceWaist": "Taille verkleinen (vetverlies)",
+      "method": "Toelichting methode ({{count}})",
+      "uncalibrated": "De drempelwaarden zijn eerste schattingen en nog niet getoetst aan meetlintmetingen.",
+      "bodyShape": "Lichaamsvorm",
+      "scale": "1 px = {{cmPerPx}} cm: je lengte van {{heightCm}} cm gedeeld door een silhouet van {{heightPx}} px hoog.",
+      "addHeight": "Voeg je lengte toe en scan opnieuw",
+      "checkThese": "Controleer deze",
+      "soma": {
+        "endo": "Endo",
+        "meso": "Meso",
+        "ecto": "Ecto"
+      },
+      "torso": {
+        "no_height": "Alleen verhoudingen: voeg je lengte toe zodat de breedtes in centimeters kunnen worden omgerekend.",
+        "head_cut": "Alleen verhoudingen: de bovenkant van je hoofd raakte de rand van het beeld. Stap iets achteruit of houd de telefoon iets lager.",
+        "feet_cut": "Alleen verhoudingen: je voeten stonden op de onderrand van het beeld. Stap achteruit tot er wat vloer onder je voeten te zien is.",
+        "legs_hidden": "Alleen verhoudingen: je knieën of enkels waren niet goed zichtbaar. Zorg dat niets je benen blokkeert en dat de vloer rond je voeten in beeld is."
+      }
+    },
+    "perf": "{{fps}} fps · {{delegate}} · geladen in {{s}} s ({{source}})",
+    "source": {
+      "cache": "van apparaat",
+      "network": "gedownload"
+    },
+    "gate": {
+      "title": "Je lengte bepaalt de schaal",
+      "why": "De foto heeft geen liniaal: je echte lengte gedeeld door je lengte in pixels geeft de centimeters voor elke breedte.",
+      "male": "Man",
+      "female": "Vrouw",
+      "height": "Lengte",
+      "save": "Opslaan in mijn profiel",
+      "skip": "Overslaan (alleen verhoudingen)",
+      "start": "Scan starten"
+    },
+    "guide": {
+      "open": "Fototips",
+      "kicker": "Voordat je scant",
+      "title": "Zo krijg je nauwkeurige metingen",
+      "diagramAria": "Telefoon op een plank op borsthoogte, ongeveer 2,5 m van je af, armen ongeveer 20 graden van je lichaam",
+      "done": "Begrepen",
+      "tips": {
+        "background": {
+          "title": "Rustige achtergrond",
+          "body": "Ga voor een lege, lichte muur staan. Gordijnen met een patroon, planken of meubels achter je worden onderdeel van je omtrek, vooral rond de armen."
+        },
+        "light": {
+          "title": "Gelijkmatig licht van voren",
+          "body": "Kijk naar de lichtbron. Een fel raam achter je maakt je tot een donkere vorm met wazige randen."
+        },
+        "phone": {
+          "title": "Telefoon rechtop op borsthoogte",
+          "body": "Zet hem op een plank op ongeveer 2,5 m afstand, niet omhoog of omlaag gekanteld. Gebruik de automatische aftelling, geen spiegel."
+        },
+        "frame": {
+          "title": "Hele lichaam in beeld",
+          "body": "Laat wat ruimte boven je hoofd en onder je voeten. Je lengte is de liniaal, dus een afgesneden hoofd of voeten betekent alleen verhoudingen."
+        },
+        "pose": {
+          "title": "Armen ongeveer 20° uit, voeten op heupbreedte",
+          "body": "Sta rechtop, met je gezicht naar de camera, met een duidelijke opening onder elke oksel en tussen je armen en taille. Armen tegen je zij worden gemeten als deel van je romp."
+        },
+        "clothes": {
+          "title": "Nauwsluitende kleding",
+          "body": "Een korte broek en een nauwsluitend shirt, of zwemkleding. Losse stof maakt elke breedte groter. Bind lang haar op zodat het je nek en schouders niet breder maakt."
+        },
+        "barefoot": {
+          "title": "Blootsvoets",
+          "body": "Schoenen maken je silhouet langer, waardoor elke meting iets kleiner uitvalt."
+        },
+        "repeat": {
+          "title": "Elke keer dezelfde omstandigheden",
+          "body": "Dezelfde plek, hetzelfde licht, dezelfde kleding en hetzelfde tijdstip (bij voorkeur 's ochtends, voor het eten). Dan is het verschil tussen scans echt en niet door de opstelling."
+        }
+      }
+    },
+    "privacy": {
+      "badge": "Op apparaat",
+      "badgeTitle": "Het camerabeeld en de foto's worden op deze telefoon verwerkt en nooit geüpload.",
+      "title": "Verwerkt op je telefoon",
+      "body": "Het camerabeeld en de foto's worden hier op dit apparaat geanalyseerd. Er wordt niets geüpload of opgeslagen, en de foto is weg zodra je de scanner sluit. Alleen de modellen worden gedownload, één keer.",
+      "loading": "Je camerabeeld blijft op deze telefoon. Er wordt niets geüpload."
+    }
+  }
+}
